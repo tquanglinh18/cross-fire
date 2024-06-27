@@ -3,9 +3,166 @@
 @tailwind utilities;
 
 @layer base {
+  .tabs__header {
+    @apply py-4;
 
+    .tabs__header--items {
+      @apply min-w-[120px] px-4 first:pl-0 text-white hover:text-[#f75014] border-l-[#2c3944] border-l-[2px] first:border-none;
+    }
+
+    .tabs__header--active {
+      @apply text-[#f75014];
+    }
+  }
+
+  .tabs__contents {
+    @apply py-4;
+
+    .tabs__contents--items {
+      @apply hidden;
+    }
+
+    .tabs__contents--active {
+      display: block;
+    }
+  }
+
+  #lst-tournaments,
+  #lst-tournaments-upcoming {
+    .tabs__header {
+      @apply w-full flex items-center gap-4 overflow-x-auto p-0 mb-8;
+      .tabs__header--items {
+        @apply first:pl-4 bg-[#0f141a] hover:bg-[#f75014] hover:text-white border-none min-w-[96px];
+      }
+
+      .tabs__header--active {
+        @apply !bg-[#f75014] !text-white;
+      }
+    }
+
+    .tabs__contents {
+      @apply !p-0;
+      .tabs__contents--active {
+        @apply !block;
+      }
+    }
+  }
 }
 
 @layer components {
+  .lst-news-layout {
+    @apply !grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
+  }
+  .news-card {
+    @apply flex flex-col bg-[#0f141a] hover:scale-[1.01] transition-all hover:bg-[#f75014] cursor-pointer;
 
+    .news-card__banner {
+      @apply aspect-[348/132] w-full;
+
+      img {
+        @apply w-full aspect-[348/132] object-cover;
+      }
+    }
+
+    .news-card__contents {
+      @apply px-4 py-2 text-white flex flex-col gap-2;
+
+      h3 {
+        @apply text-[12px] line-clamp-2 h-[36px];
+      }
+
+      p {
+        @apply text-[10px];
+      }
+
+      .news-card__contents--time {
+        @apply flex gap-2 items-center;
+
+        img {
+          @apply w-[6px] h-[6px] aspect-square;
+        }
+      }
+    }
+  }
+
+  .match-card {
+    @apply w-full flex justify-between items-center p-4 bg-[#0f141a] hover:scale-[1.01] transition-all hover:bg-[#f75014] cursor-pointer mb-4 last:mb-0;
+    .match-card__logo {
+      @apply w-[10%] flex justify-center items-center;
+    }
+
+    .match-card__info {
+      @apply w-[85%] flex flex-col xl:flex-row justify-around items-center gap-4 text-[12px] md:text-base;
+      p {
+        @apply text-white;
+      }
+      .match-card__info--desc {
+        @apply w-full max-w-[320px] xl:max-w-none xl:w-[35%] flex justify-around items-center;
+      }
+
+      .match-card__info--teams {
+        @apply w-full max-w-[600px] xl:max-w-none xl:w-[55%] flex flex-col md:flex-row justify-around items-center;
+
+        .match-card__info--teams--item {
+          @apply flex  justify-center items-center gap-4 last:flex-row-reverse;
+          img {
+            @apply w-[32px] lg:w-[49px];
+          }
+        }
+      }
+    }
+
+    .match-card__view {
+      @apply w-[10%] flex justify-center items-center;
+    }
+  }
+
+  .tournament-card {
+    @apply flex justify-between items-center p-4 bg-[#0f141a] hover:scale-[1.01] transition-all hover:bg-[#f75014] cursor-pointer mb-4 last:mb-0 text-white;
+
+    .tournament-card__logo {
+      @apply w-[15%] flex justify-center items-center h-[68px];
+    }
+
+    .tournament-card__info {
+      @apply w-[80%] flex flex-col xl:flex-row justify-between items-center gap-2;
+      .tournament-card__info--name {
+        @apply w-full xl:w-[55%] sm:text-center line-clamp-1 text-[14px] sm:text-base font-bold lg:font-normal;
+      }
+
+      .tournament-card__info--type {
+        @apply w-full xl:w-[20%] sm:text-center line-clamp-1 text-[12px] md:text-base;
+      }
+
+      .tournament-card__info--time {
+        @apply w-full xl:w-[20%] sm:text-center line-clamp-1 text-[12px] md:text-base;
+      }
+    }
+  }
+
+  .lst-media-layout {
+    @apply grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
+  }
+
+  .media-card {
+    @apply hover:scale-105 transition-all hover:bg-[#f75014] cursor-pointer;
+    .media-card__banner {
+      @apply aspect-[273/151] relative mb-2;
+      .media-card__banner--img > img {
+        @apply aspect-[273/151] w-full object-cover;
+      }
+
+      .media-card__banner--overlay {
+        @apply absolute top-0 right-0 left-0 bottom-0 bg-[#00000099] flex justify-center items-center;
+      }
+    }
+
+    .media-card__title {
+      @apply w-full text-white line-clamp-2 p-2;
+    }
+  }
+}
+
+.text-white-extra {
+  @apply text-white mb-4;
 }

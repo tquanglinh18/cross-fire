@@ -234,7 +234,6 @@
   }
   #header {
     gap: 0.5rem;
-
     .search-bar {
       max-width: 320px;
     }
@@ -282,6 +281,11 @@
       max-width: 234px;
     }
   }
+
+  #header-mobile.header-mobile-active {
+    display: none !important;
+  }
+  
 }
 
 #left-menu {
@@ -509,7 +513,7 @@
   }
 }
 
-.active {
+.header-mobile-active {
   display: flex !important;
   flex-direction: column;
   justify-content: end;

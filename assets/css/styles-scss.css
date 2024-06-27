@@ -262,6 +262,9 @@
   #header .search-bar {
     max-width: 234px;
   }
+  #header-mobile.header-mobile-active {
+    display: none !important;
+  }
 }
 #left-menu {
   width: 64px;
@@ -475,7 +478,7 @@
   transform: scale(1.1);
 }
 
-.active {
+.header-mobile-active {
   display: flex !important;
   flex-direction: column;
   justify-content: end;
