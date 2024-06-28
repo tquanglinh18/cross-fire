@@ -32,7 +32,7 @@
     .tabs__header {
       @apply w-full flex items-center gap-4 overflow-x-auto p-0 mb-8;
       .tabs__header--items {
-        @apply first:pl-4 bg-[#0f141a] hover:bg-[#f75014] hover:text-white border-none min-w-[96px];
+        @apply first:pl-4 bg-[#0f141a] hover:text-white border-none min-w-[96px];
       }
 
       .tabs__header--active {
@@ -54,7 +54,7 @@
     @apply !grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
   }
   .news-card {
-    @apply flex flex-col bg-[#0f141a] hover:scale-[1.01] transition-all hover:bg-[#f75014] cursor-pointer;
+    @apply flex flex-col bg-[#0f141a] hover:scale-[1.01] transition-all cursor-pointer;
 
     .news-card__banner {
       @apply aspect-[348/132] w-full;
@@ -86,7 +86,7 @@
   }
 
   .match-card {
-    @apply w-full flex justify-between items-center p-4 bg-[#0f141a] hover:scale-[1.01] transition-all hover:bg-[#f75014] cursor-pointer mb-4 last:mb-0;
+    @apply w-full flex justify-between items-center gap-4 p-4 bg-[#0f141a] cursor-pointer mb-4 last:mb-0;
     .match-card__logo {
       @apply w-[10%] flex justify-center items-center;
     }
@@ -104,9 +104,12 @@
         @apply w-full max-w-[600px] xl:max-w-none xl:w-[55%] flex flex-col md:flex-row justify-around items-center;
 
         .match-card__info--teams--item {
-          @apply flex  justify-center items-center gap-4 last:flex-row-reverse;
+          @apply w-[45%] flex justify-center items-center gap-4 last:flex-row-reverse text-center lg:text-end lg:last:text-start;
           img {
             @apply w-[32px] lg:w-[49px];
+          }
+          p {
+            @apply w-full !text-ellipsis line-clamp-1;
           }
         }
       }
@@ -118,7 +121,7 @@
   }
 
   .tournament-card {
-    @apply flex justify-between items-center p-4 bg-[#0f141a] hover:scale-[1.01] transition-all hover:bg-[#f75014] cursor-pointer mb-4 last:mb-0 text-white;
+    @apply flex justify-between items-center p-4 bg-[#0f141a] hover:scale-[1.01] transition-all cursor-pointer mb-4 last:mb-0 text-white;
 
     .tournament-card__logo {
       @apply w-[15%] flex justify-center items-center h-[68px];
@@ -145,7 +148,7 @@
   }
 
   .media-card {
-    @apply hover:scale-105 transition-all hover:bg-[#f75014] cursor-pointer;
+    @apply hover:scale-105 transition-all cursor-pointer;
     .media-card__banner {
       @apply aspect-[273/151] relative mb-2;
       .media-card__banner--img > img {

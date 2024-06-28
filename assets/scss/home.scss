@@ -1,6 +1,9 @@
 @import "responsive";
 @import "base";
 
+$btn-color: #161e27;
+$btn-hover-color: #f75014;
+
 #header {
   background-color: #0f141a;
   @include flex-row-center;
@@ -12,6 +15,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
   position: -webkit-sticky;
   .logo-cf {
     transition: all 0.2s ease;
@@ -33,6 +37,7 @@
       position: relative;
       display: none;
       &:hover {
+        background: #f75014;
         .menu-item__child {
           @include flex-col-center;
           align-items: start;
@@ -42,6 +47,7 @@
           border-bottom: 2px solid #f75014;
           p {
             height: 12px;
+            font-size: 14px;
           }
         }
       }
@@ -76,6 +82,7 @@
         min-width: 200px;
         cursor: pointer;
         padding-right: 1rem;
+        z-index: 1;
 
         .sub-menu-item {
           width: 100%;
@@ -223,6 +230,10 @@
       gap: 0.5rem;
     }
   }
+
+  #left-menu {
+    display: block !important;
+  }
 }
 
 @include desktop {
@@ -241,6 +252,7 @@
     .btn-lst-tournaments {
       height: 64px;
       max-width: 192px;
+      min-width: 152px;
       width: 100%;
       @include flex-row-center;
       cursor: pointer;
@@ -285,19 +297,20 @@
   #header-mobile.header-mobile-active {
     display: none !important;
   }
-  
 }
 
 #left-menu {
   width: 64px;
-  height: 100%;
   height: calc(100vh - 64px);
   border-right: 1px solid #2c3944;
   background-color: #0f141a;
   position: sticky;
+  position: -webkit-sticky;
   top: 64px;
   left: 0;
   bottom: 0;
+  z-index: 999;
+  display: none;
   .lst-left-menu {
     @include flex-col-center;
 
@@ -324,7 +337,7 @@
 }
 
 .container-black-base {
-  background-color: #161e27;
+  background-color: #161e27 !important;
   padding: 0.5rem 1rem;
   &:hover {
     p {
@@ -338,7 +351,7 @@
 }
 
 .container-org-base {
-  background-color: #f75014;
+  background-color: #f75014 !important;
   padding: 0.5rem 1rem;
   &:hover {
     p {
@@ -518,4 +531,61 @@
   flex-direction: column;
   justify-content: end;
   align-items: end;
+}
+
+.btn-black-large {
+  $btn-color: #161e27;
+  $btn-hover-color: #f75014;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    background-color: $btn-color !important;
+  }
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0) rotate(50deg);
+    transform-origin: top left;
+    transition: all 0.35s;
+    background-color: $btn-hover-color !important;
+    z-index: -1;
+    content: "";
+  }
+  &:hover {
+    &::before {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.hover-animation {
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+
+  &::after {
+    background-color: #f75014;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.3s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  &:hover::after {
+    transform: translate(0, 0);
+  }
 }

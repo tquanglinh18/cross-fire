@@ -532,10 +532,6 @@ video {
       padding-left: 1rem;
     }
     .tabs__header--items:hover {
-      --tw-bg-opacity: 1;
-      background-color: rgb(247 80 20 / var(--tw-bg-opacity));
-    }
-    .tabs__header--items:hover {
       --tw-text-opacity: 1;
       color: rgb(255 255 255 / var(--tw-text-opacity));
     }
@@ -699,8 +695,6 @@ video {
   --tw-scale-x: 1.01;
   --tw-scale-y: 1.01;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 80 20 / var(--tw-bg-opacity));
 }
 
 .news-card {
@@ -789,24 +783,14 @@ video {
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(15 20 26 / var(--tw-bg-opacity));
   padding: 1rem;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .match-card:last-child {
   margin-bottom: 0px;
-}
-
-.match-card:hover {
-  --tw-scale-x: 1.01;
-  --tw-scale-y: 1.01;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 80 20 / var(--tw-bg-opacity));
 }
 
 .match-card {
@@ -922,6 +906,9 @@ video {
         display: flex;
       }
       .match-card__info--teams--item {
+        width: 45%;
+      }
+      .match-card__info--teams--item {
         align-items: center;
       }
       .match-card__info--teams--item {
@@ -930,8 +917,21 @@ video {
       .match-card__info--teams--item {
         gap: 1rem;
       }
+      .match-card__info--teams--item {
+        text-align: center;
+      }
       .match-card__info--teams--item:last-child {
         flex-direction: row-reverse;
+      }
+      @media (min-width: 1024px) {
+        .match-card__info--teams--item {
+          text-align: end;
+        }
+      }
+      @media (min-width: 1024px) {
+        .match-card__info--teams--item:last-child {
+          text-align: start;
+        }
       }
       .match-card__info--teams--item {
         img {
@@ -941,6 +941,18 @@ video {
           img {
             width: 49px;
           }
+        }
+        p {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+        }
+        p {
+          width: 100%;
+        }
+        p {
+          text-overflow: ellipsis !important;
         }
       }
     }
@@ -983,8 +995,6 @@ video {
   --tw-scale-x: 1.01;
   --tw-scale-y: 1.01;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 80 20 / var(--tw-bg-opacity));
 }
 
 .tournament-card {
@@ -1163,8 +1173,6 @@ video {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 80 20 / var(--tw-bg-opacity));
 }
 
 .media-card {
@@ -1299,8 +1307,16 @@ video {
   justify-content: center;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-\[0\.5rem\] {
   gap: 0.5rem;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .rounded {

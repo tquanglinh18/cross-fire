@@ -11,47 +11,252 @@
     <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
   </head>
   <body>
+    <header class="header" id="header">
+      <div class="lst-menu">
+        <a href="/" class="logo-cf">
+          <img src="./assets/images/logo_cf.png" alt="" />
+        </a>
+
+        <a href="" class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_home.png" alt="" />
+            <p>Trang chủ</p>
+          </div>
+        </a>
+
+        <div class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_news.png" alt="" />
+            <p>Tin tức</p>
+          </div>
+          <div class="menu-item__child">
+            <a href="" class="sub-menu-item">
+              <p>Tin tức trong nước</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>Tin tức quốc tế</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_tournaments.png" alt="" />
+            <p>Giải đấu</p>
+          </div>
+          <div class="menu-item__child">
+            <a href="" class="sub-menu-item">
+              <p>Tạo giải đấu</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>Giải đấu của tôi</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>Danh sách giải đấu</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_teams.png" alt="" />
+            <p>Đội tuyển</p>
+          </div>
+          <div class="menu-item__child">
+            <a href="" class="sub-menu-item">
+              <p>Tạo đội tuyển</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>Quản lý đội tuyển</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>Danh sách tuyển thủ</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_player.png" alt="" />
+            <p>Tuyển thủ</p>
+          </div>
+          <div class="menu-item__child">
+            <a href="" class="sub-menu-item">
+              <p>Trang cá nhân</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>Tuyển thủ trên trang</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_ranking.png" alt="" />
+            <p>Bảng xếp hạng</p>
+          </div>
+          <div class="menu-item__child">
+            <a href="" class="sub-menu-item">
+              <p>BXH tuyển thủ</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>BXH đội tuyển</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>BXH tổng</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_media.png" alt="" />
+            <p>Media</p>
+          </div>
+          <div class="menu-item__child">
+            <a href="" class="sub-menu-item">
+              <p>Clan War</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>CSC</p>
+            </a>
+            <div class="line-space-sub-menu">
+              <img src="./assets/images/line-space-sub-menu.png" alt="" />
+            </div>
+            <a href="" class="sub-menu-item">
+              <p>CFVL</p>
+            </a>
+          </div>
+        </div>
+
+        <a href="" class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_event.png" alt="" />
+            <p>Sự kiện</p>
+          </div>
+        </a>
+
+        <a href="" class="menu-item">
+          <div class="menu-item__parent">
+            <img src="./assets/images/ic_shop.png" alt="" />
+            <p>Cửa hàng</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm" />
+      </div> -->
+
+      <div class="flex gap-4 items-center">
+        <div class="notification">
+          <img src="./assets/images/ic_notify.png" alt="" />
+          <div class="notify-dot"></div>
+        </div>
+
+        <!-- <div class="logged">
+          <div class="container-org-base hover-animation" id="username">
+            <p>CrossFire</p>
+          </div>
+
+          <div class="container-black-base hover-animation" id="btn-logout">
+            <p>Thoát</p>
+          </div>
+        </div> -->
+
+        <div class="not-logged">
+          <div class="container-org-base hover-animation" id="btn-login">
+            <p>Đăng nhập</p>
+          </div>
+
+          <div class="container-black-base hover-animation" id="btn-register">
+            <p>Đăng ký</p>
+          </div>
+        </div>
+
+        <div
+          class="btn-lst-tournaments container-org-base hover-animation text-extra-bold"
+        >
+          <a href="" class="sub-menu-item">
+            <img src="./assets/images/ic_lst_tournaments.png" alt="" />
+          </a>
+          <p>Giải đấu</p>
+        </div>
+
+        <button class="" id="btn-menu-mobile">
+          <img src="./assets/images/ic_menu_mobile.png" alt="" />
+        </button>
+      </div>
+    </header>
+
     <section class="flex">
-      <!-- <div class="left-menu" id="left-menu">
+      <div class="left-menu" id="left-menu">
         <div class="lst-left-menu">
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_phone.png" alt="" />
             <p>Hỗ trợ</p>
           </a>
 
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_fb_fanpage.png" alt="" />
             <p>Fanpage</p>
           </a>
 
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_fb_fanpage.png" alt="" />
             <p>Đột Kích TV</p>
           </a>
 
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_fb_fanpage.png" alt="" />
             <p>Group</p>
           </a>
 
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_tiktok.png" alt="" />
             <p>Tiktok</p>
           </a>
 
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_youtube.png" alt="" />
             <p>Youtube</p>
           </a>
 
-          <a href="" class="left-menu-item">
+          <a href="" class="left-menu-item hover-animation">
             <img src="./assets/images/ic_discord.png" alt="" />
             <p>Discord</p>
           </a>
         </div>
-      </div> -->
-      <div class="container-page h-[100vh] w-full mx-auto">
-        <div id="new-feed" class="p-4 mb-[4%]">
+      </div>
+      <div class="container-page h-[100vh] w-full mx-auto overflow-auto">
+        <div id="new-feed" class="section-item">
           <div class="tabs__header text-extra-bold">
             <button
               id="local-news-header"
@@ -76,7 +281,7 @@
               class="tabs__contents--items tabs__contents--active"
             >
               <div class="lst-news-layout">
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTgP1SN8W3VZBf37sJbtI9jGg3RsF-pEkF9w&s"
@@ -102,7 +307,7 @@
                   </div>
                 </div>
 
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTgP1SN8W3VZBf37sJbtI9jGg3RsF-pEkF9w&s"
@@ -122,7 +327,7 @@
                   </div>
                 </div>
 
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img src="./assets/images/banner_news.png" alt="" />
                   </div>
@@ -139,7 +344,7 @@
                   </div>
                 </div>
 
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img src="./assets/images/banner_news.png" alt="" />
                   </div>
@@ -159,7 +364,7 @@
             </div>
             <div id="global-news-contents" class="tabs__contents--items">
               <div class="lst-news-layout">
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img src="./assets/images/banner_news.png" alt="" />
                   </div>
@@ -182,7 +387,7 @@
                   </div>
                 </div>
 
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img src="./assets/images/banner_news.png" alt="" />
                   </div>
@@ -199,7 +404,7 @@
                   </div>
                 </div>
 
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img src="./assets/images/banner_news.png" alt="" />
                   </div>
@@ -216,7 +421,7 @@
                   </div>
                 </div>
 
-                <div class="news-card">
+                <div class="news-card hover-animation">
                   <div class="news-card__banner">
                     <img src="./assets/images/banner_news.png" alt="" />
                   </div>
@@ -237,7 +442,7 @@
           </div>
         </div>
 
-        <div id="lst-match" class="p-4 mb-[4%]">
+        <div id="lst-match" class="section-item">
           <div class="tabs__header text-extra-bold">
             <button
               id="today-match-header"
@@ -289,7 +494,47 @@
                       Thứ 2 - Ngày 01-01-2024 - CFVL
                     </h3>
                     <div class="">
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
+                        <div class="match-card__logo">
+                          <img
+                            src="./assets/images/logo_tour_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="match-card__info">
+                          <div class="match-card__info--desc">
+                            <p>Round 1</p>
+                            <p>18:30</p>
+                            <p>BO3</p>
+                          </div>
+                          <div class="match-card__info--teams">
+                            <div class="match-card__info--teams--item">
+                              <p>
+                                CarahouseEsportsCarahouseEsportsCarahouseEsportsCarahouseEsports
+                              </p>
+                              <img
+                                src="./assets/images/logo_team_demo.png"
+                                alt=""
+                              />
+                            </div>
+                            <p>VS</p>
+                            <div class="match-card__info--teams--item">
+                              <p>CarahouseEsports</p>
+                              <img
+                                src="./assets/images/logo_team_demo.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="match-card__view">
+                          <img src="./assets/images/btn_play.png" alt="" />
+                        </div>
+                      </div>
+
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -327,7 +572,7 @@
                         </div>
                       </div>
 
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -365,45 +610,7 @@
                         </div>
                       </div>
 
-                      <div class="match-card">
-                        <div class="match-card__logo">
-                          <img
-                            src="./assets/images/logo_tour_demo.png"
-                            alt=""
-                          />
-                        </div>
-
-                        <div class="match-card__info">
-                          <div class="match-card__info--desc">
-                            <p>Round 1</p>
-                            <p>18:30</p>
-                            <p>BO3</p>
-                          </div>
-                          <div class="match-card__info--teams">
-                            <div class="match-card__info--teams--item">
-                              <p>CarahouseEsports</p>
-                              <img
-                                src="./assets/images/logo_team_demo.png"
-                                alt=""
-                              />
-                            </div>
-                            <p>VS</p>
-                            <div class="match-card__info--teams--item">
-                              <p>CarahouseEsports</p>
-                              <img
-                                src="./assets/images/logo_team_demo.png"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="match-card__view">
-                          <img src="./assets/images/btn_play.png" alt="" />
-                        </div>
-                      </div>
-
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -447,7 +654,7 @@
                       Thứ 2 - Ngày 01-01-2024 - CSC
                     </h3>
                     <div class="">
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -485,7 +692,7 @@
                         </div>
                       </div>
 
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -523,7 +730,7 @@
                         </div>
                       </div>
 
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -561,7 +768,7 @@
                         </div>
                       </div>
 
-                      <div class="match-card">
+                      <div class="match-card hover-animation">
                         <div class="match-card__logo">
                           <img
                             src="./assets/images/logo_tour_demo.png"
@@ -609,13 +816,11 @@
           </div>
         </div>
 
-        <div id="time-line-tournaments" class="p-4 mb-[4%]">
-          <h3 class="text-extra-bold text-white mb-4">
-            Lộ trình giải đấu 2024
-          </h3>
+        <div id="time-line-tournaments" class="section-item">
+          <h3 class="section-item__title">Lộ trình giải đấu 2024</h3>
 
           <div class="">
-            <div class="tournament-card">
+            <div class="tournament-card hover-animation">
               <div class="tournament-card__logo">
                 <img src="./assets/images/logo_tournaments_demo.png" alt="" />
               </div>
@@ -631,7 +836,7 @@
               </div>
             </div>
 
-            <div class="tournament-card">
+            <div class="tournament-card hover-animation">
               <div class="tournament-card__logo">
                 <img src="./assets/images/logo_tournaments_demo.png" alt="" />
               </div>
@@ -647,7 +852,7 @@
               </div>
             </div>
 
-            <div class="tournament-card">
+            <div class="tournament-card hover-animation">
               <div class="tournament-card__logo">
                 <img src="./assets/images/logo_tournaments_demo.png" alt="" />
               </div>
@@ -663,7 +868,7 @@
               </div>
             </div>
 
-            <div class="tournament-card">
+            <div class="tournament-card hover-animation">
               <div class="tournament-card__logo">
                 <img src="./assets/images/logo_tour_demo.png" alt="" />
               </div>
@@ -681,9 +886,10 @@
           </div>
         </div>
 
-        <div id="media" class="p-4 mb-[4%]">
+        <div id="media" class="section-item">
+          <h3 class="section-item__title">Media</h3>
           <div class="lst-media-layout">
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -704,7 +910,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -725,7 +931,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -746,7 +952,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -767,7 +973,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -788,7 +994,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -809,7 +1015,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -830,7 +1036,7 @@
               </div>
             </div>
 
-            <div class="media-card">
+            <div class="media-card hover-animation">
               <div class="media-card__banner">
                 <div class="media-card__banner--img">
                   <img
@@ -854,6 +1060,224 @@
         </div>
       </div>
     </section>
+
+    <div id="header-mobile">
+      <div class="header-mobile">
+        <div
+          class="flex flex-col justify-center items-center gap-[0.5rem] mb-4 md:hidden sticky top-0 bg-[#0f141a] p-4"
+        >
+          <!-- <div class="logged">
+            <div class="container-org-base hover-animation " id="username">
+              <p>CrossFire</p>
+            </div>
+
+            <div class="container-black-base hover-animation " id="btn-logout">
+              <p>Thoát</p>
+            </div>
+          </div> -->
+
+          <div class="not-logged flex">
+            <div class="container-org-base hover-animation" id="btn-login">
+              <p>Đăng nhập</p>
+            </div>
+
+            <div class="container-black-base hover-animation" id="btn-register">
+              <p>Đăng ký</p>
+            </div>
+          </div>
+          <a href="" class="container-org-base hover-animation">
+            <div class="sub-menu-item">
+              <img src="./assets/images/ic_lst_tournaments.png" alt="" />
+            </div>
+            <p>Giải đấu</p>
+          </a>
+        </div>
+        <div class="lst-menu">
+          <a href="" class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_home.png" alt="" />
+              <p>Trang chủ</p>
+            </div>
+          </a>
+
+          <div class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_news.png" alt="" />
+              <p>Tin tức</p>
+              <img
+                src="./assets/images/ic_down_arrow.png"
+                alt=""
+                class="ic-drop-down"
+              />
+            </div>
+            <div class="menu-item__child">
+              <a href="" class="sub-menu-item">
+                <p>Tin tức trong nước</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>Tin tức quốc tế</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_tournaments.png" alt="" />
+              <p>Giải đấu</p>
+              <img
+                src="./assets/images/ic_down_arrow.png"
+                alt=""
+                class="ic-drop-down"
+              />
+            </div>
+            <div class="menu-item__child">
+              <a href="" class="sub-menu-item">
+                <p>Tạo giải đấu</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>Giải đấu của tôi</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>Danh sách giải đấu</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_teams.png" alt="" />
+              <p>Đội tuyển</p>
+              <img
+                src="./assets/images/ic_down_arrow.png"
+                alt=""
+                class="ic-drop-down"
+              />
+            </div>
+            <div class="menu-item__child">
+              <a href="" class="sub-menu-item">
+                <p>Tạo đội tuyển</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>Quản lý đội tuyển</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>Danh sách tuyển thủ</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_player.png" alt="" />
+              <p>Tuyển thủ</p>
+              <img
+                src="./assets/images/ic_down_arrow.png"
+                alt=""
+                class="ic-drop-down"
+              />
+            </div>
+            <div class="menu-item__child">
+              <a href="" class="sub-menu-item">
+                <p>Trang cá nhân</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>Tuyển thủ trên trang</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_ranking.png" alt="" />
+              <p>Bảng xếp hạng</p>
+              <img
+                src="./assets/images/ic_down_arrow.png"
+                alt=""
+                class="ic-drop-down"
+              />
+            </div>
+            <div class="menu-item__child">
+              <a href="" class="sub-menu-item">
+                <p>BXH tuyển thủ</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>BXH đội tuyển</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>BXH tổng</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_media.png" alt="" />
+              <p>Media</p>
+              <img
+                src="./assets/images/ic_down_arrow.png"
+                alt=""
+                class="ic-drop-down"
+              />
+            </div>
+            <div class="menu-item__child">
+              <a href="" class="sub-menu-item">
+                <p>Clan War</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>CSC</p>
+              </a>
+              <div class="line-space-sub-menu">
+                <img src="./assets/images/line-space-sub-menu.png" alt="" />
+              </div>
+              <a href="" class="sub-menu-item">
+                <p>CFVL</p>
+              </a>
+            </div>
+          </div>
+
+          <a href="" class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_event.png" alt="" />
+              <p>Sự kiện</p>
+            </div>
+          </a>
+
+          <a href="" class="menu-item">
+            <div class="menu-item__parent">
+              <img src="./assets/images/ic_shop.png" alt="" />
+              <p>Cửa hàng</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
