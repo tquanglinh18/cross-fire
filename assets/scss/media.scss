@@ -1,0 +1,107 @@
+@import "responsive";
+@import "base";
+
+.mediaFilter {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  .filterItem {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    label {
+      width: 40%;
+      text-align: center;
+      color: $white-base;
+    }
+    select {
+      color: black;
+      width: 100%;
+      max-width: 200px;
+      padding: 0.5rem;
+      box-shadow: inset 0px 0px 32px $grey-b6;
+      font-weight: bold;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.mediaPageLayout {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@include tablet {
+  .mediaPageLayout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mediaFilter {
+    .filterItem {
+      select {
+        max-width: 244px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .mediaPageLayout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mediaFilter {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include desktop-large {
+  .mediaPageLayout {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .mediaFilter {
+    .filterItem {
+      flex-direction: row !important;
+    }
+  }
+}
+
+.mediaCardItem {
+  @include flex-col-center;
+  gap: 0.25rem;
+  &__header {
+    width: 100%;
+    border: 2px solid $border-card-item;
+    padding: 0.5rem;
+    color: $white-base;
+    text-align: center;
+  }
+
+  &__body {
+    width: 100%;
+    border: 2px solid $border-card-item;
+    img {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 314/177;
+    }
+
+    .btn-view {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      background-color: $org-base-color;
+
+      a {
+        width: 100%;
+        color: $white-base;
+        text-align: center;
+      }
+    }
+  }
+}

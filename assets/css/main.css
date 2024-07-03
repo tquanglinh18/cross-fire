@@ -43,6 +43,12 @@ body {
   background-color: #161d22;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box ;
+}
+
 .text-extra-bold {
   font-family: "SVN-Nolan Next Extra Bold";
   font-weight: bold;

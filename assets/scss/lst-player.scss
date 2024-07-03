@@ -1,0 +1,67 @@
+@import "responsive";
+@import "home";
+@import "base";
+
+#lst-player-page {
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+.filterPlayer {
+  @include flex-row-center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  &__item {
+    width: 100%;
+    max-width: 240px;
+    padding: 0.75rem 1rem;
+    background-color: $grey-353f48;
+    input,
+    select {
+      width: 100%;
+      background-color: transparent;
+      color: $white-base;
+    }
+  }
+}
+
+.searchBtn {
+  width: 100%;
+  max-width: 240px;
+  padding: 0.75rem 1rem;
+  background-color: $org-base-color;
+  color: $white-base;
+  text-align: center;
+}
+
+.tableLstPlayer {
+  width: 100%;
+  table {
+    width: 100%;
+    font-size: 14px;
+
+    th,
+    td {
+      text-align: center;
+      padding: 0.5rem 0.25rem;
+    }
+
+    thead {
+      color: #657383;
+    }
+
+    tbody {
+      color: $white-base;
+      tr {
+        border-bottom: 2px solid #161d22;
+        background-color: $grey-353f48;
+      }
+    }
+    .ic-captain {
+      @include flex-col-center;
+    }
+  }
+}

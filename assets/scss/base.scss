@@ -1,5 +1,17 @@
 @import "responsive";
 
+$white-base: #fff;
+$bg-card-item: #0d1217;
+$black-base: #000;
+$border-card-item: #253138;
+$org-base-color: #f75014;
+$grey-b6: #b6b6b6;
+$text-error-color: #ff0000;
+$text-success-color: #32be60;
+$grey-353f48: #353f48;
+$grey-161e27: #161e27;
+$black-0f141a: #0f141a;
+
 @mixin flex-row-center {
   display: flex;
   flex-direction: row;
@@ -12,4 +24,78 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.page {
+  &__header {
+    position: relative;
+    &--bg {
+      width: 100%;
+      height: calc(100vh / 3);
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &--name {
+      width: 100%;
+      font-weight: bold;
+      font-size: 32px;
+      padding: 1rem;
+      color: $white-base;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "SVN-Nolan Next Extra Bold";
+      letter-spacing: 0.25rem;
+      text-align: center;
+    }
+  }
+
+  &__contents {
+    width: 100%;
+    max-width: 1635px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem;
+  }
+}
+
+.btn-base {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  @include flex-row-center;
+  min-width: 170px;
+  color: $white-base;
+  cursor: pointer;
+  &--org {
+    color: $white-base;
+    background: $org-base-color;
+  }
+  &--black {
+    color: $white-base;
+    background: $black-0f141a;
+  }
+}
+
+@include tablet {
+  .page {
+    &__header {
+      &--name {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .page {
+    &__header {
+      &--name {
+        font-size: 50px;
+      }
+    }
+  }
 }

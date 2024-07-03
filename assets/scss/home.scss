@@ -16,7 +16,7 @@ $btn-hover-color: #f75014;
   right: 0;
   left: 0;
   z-index: 999;
-  position: -webkit-sticky;
+  margin: 0;
   .logo-cf {
     transition: all 0.2s ease;
     @include flex-row-center;

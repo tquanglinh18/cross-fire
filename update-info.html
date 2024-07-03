@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF-Update-Info</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles-scss.css" />
+    <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
+  </head>
+  <body>
+    <section>
+      <div class="page__header">
+        <div class="page__header--bg">
+          <img src="./assets/images/bg_header_page.png" alt="" />
+        </div>
+
+        <div class="page__header--name">Thông tin cá nhân</div>
+      </div>
+
+      <div class="page__contents" style="max-width: 1080px">
+        <div class="formInputLayout">
+          <div class="textFieldInfo">
+            <label for="fullName" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">1</div>
+              <p>Họ và tên</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="fullName" id="fullName" />
+            </div>
+            <span class="errorMessage"
+              >*Xin vui lòng click vào đây để cập nhật đầy đủ thông tin</span
+            >
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="dayOfBirth" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">2</div>
+              <p>Ngày sinh</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="date" name="dayOfBirth" id="dayOfBirth" />
+            </div>
+            <span class="errorMessage"
+              >*Xin vui lòng click vào đây để cập nhật đầy đủ thông tin</span
+            >
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="sex" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">3</div>
+              <p>Giới tính</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <select name="" id="">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+              </select>
+            </div>
+            <span class="errorMessage"
+              >*Xin vui lòng click vào đây để cập nhật đầy đủ thông tin</span
+            >
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="yearOfBirth" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">4</div>
+              <p>Năm sinh</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input
+                type="number"
+                maxlength="4"
+                minlength="0"
+                min="1900"
+                max="2024"
+                name="yearOfBirth"
+                id="yearOfBirth"
+              />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="email" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">5</div>
+              <p>Email</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="email" name="email" id="email" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="phoneNumber" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">6</div>
+              <p>Số điện thoại</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="number" name="phoneNumber" id="phoneNumber" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="facebook" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">7</div>
+              <p>Facebook</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="facebook" id="facebook" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="discord" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">8</div>
+              <p>Discord</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="discord" id="discord" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="district" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">9</div>
+              <p>Khu vực</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <select name="" id="district">
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+              </select>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="ingame" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">10</div>
+              <p>Tên thi đấu</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="ingame" id="ingame" />
+              <button type="button" id="btn-check" class="btn-check">
+                Kiểm tra
+              </button>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="forte-position" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">11</div>
+              <p>Vị trí sở trường</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <select name="" id="forte-position">
+                <option value="Attack">Attack</option>
+                <option value="Tanker">Tanker</option>
+              </select>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo--space"></div>
+
+          <div class="textFieldInfo">
+            <label
+              for="citizen-identification-card"
+              class="textFieldInfo__label"
+            >
+              <div class="dotNumericalOrder">12</div>
+              <p>CCCD</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="number" name="" id="citizen-identification-card" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label
+              for="front-citizen-identification-card"
+              class="textFieldInfo__label"
+            >
+              <div class="dotNumericalOrder">13</div>
+              <p>Mặt trước CCCD</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <p style="width: 100%"></p>
+              <label for="front-citizen-identification-card" class="btn-upload">
+                Tải lên
+              </label>
+              <input
+                type="file"
+                hidden
+                name="front-citizen-identification-card"
+                id="front-citizen-identification-card"
+              />
+            </div>
+            <span class="successMessage">*Upload thành công.</span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label
+              for="back-citizen-identification-card"
+              class="textFieldInfo__label"
+            >
+              <div class="dotNumericalOrder">14</div>
+              <p>Mặt sau CCCD</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <p style="width: 100%"></p>
+              <label for="back-citizen-identification-card" class="btn-upload">
+                Tải lên
+              </label>
+              <input
+                type="file"
+                hidden
+                name="back-citizen-identification-card"
+                id="back-citizen-identification-card"
+              />
+            </div>
+            <span class="successMessage">*Upload thành công.</span>
+          </div>
+        </div>
+
+        <div class="formUpdateAvt">
+          <div class="formUpdateAvt__upload">
+            <div class="formUpdateAvt__upload--img"></div>
+
+            <label for="formUpdateAvt__upload">
+              <div class="formUpdateAvt__upload--btn-upload">
+                <p>Tải ảnh đại diện</p>
+                <img src="./assets/images/ic_upload.png" alt="" />
+              </div>
+            </label>
+            <input
+              type="file"
+              hidden
+              name="formUpdateAvt__upload"
+              id="formUpdateAvt__upload"
+            />
+          </div>
+          <div class="formUpdateAvt__note">
+            <h3>Những lưu ý khi đăng tải ảnh đại diện:</h3>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>
+                Ảnh tải lên có kích thước tiêu chuẩn 1000x1000, dung lượng dưới
+                2MB.
+              </p>
+            </div>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>
+                Nghiêm cấm hình ảnh vi phạm thuần phong mỹ tục, khỏa thân, khiêu
+                dâm.
+              </p>
+            </div>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>
+                Việc không tuân thủ quy định về sử dụng ảnh. BQT có thể khóa tài
+                khoản trên trang của bạn.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="formAction">
+          <button type="button" class="btn-base btn-base--org btn-submit">
+            Xác nhận
+          </button>
+
+          <button type="button" class="btn-base btn-base--black btn-cancel">
+            Huỷ bỏ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

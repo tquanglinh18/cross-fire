@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF-List-Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles-scss.css" />
+    <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
+  </head>
+  <body>
+    <section id="lst-player-page">
+      <div class="filterPlayer">
+        <div class="filterPlayer__item">
+          <input type="text" placeholder="Tìm theo tên" />
+        </div>
+
+        <div class="filterPlayer__item">
+          <select name="" id="">
+            <option value="" selected disabled>Tìm theo vị trí</option>
+            <option value="Captain">1. Captain</option>
+            <option value="Attacker">2. Attacker</option>
+            <option value="Sniper">3. Sniper</option>
+            <option value="Backup">4. Backup</option>
+            <option value="Lurker">5. Lurker</option>
+            <option value="Manager">6. Manager</option>
+          </select>
+        </div>
+
+        <div class="filterPlayer__item">
+          <select name="" id="">
+            <option value="" selected disabled>Tìm theo khu vực</option>
+            <option value="Captain">1. Captain</option>
+            <option value="Attacker">2. Attacker</option>
+            <option value="Sniper">3. Sniper</option>
+            <option value="Backup">4. Backup</option>
+            <option value="Lurker">5. Lurker</option>
+            <option value="Manager">6. Manager</option>
+          </select>
+        </div>
+
+        <div class="filterPlayer__item">
+          <select name="" id="">
+            <option value="" selected disabled>Tìm theo trạng thái</option>
+            <option value="Captain">1. Captain</option>
+            <option value="Attacker">2. Attacker</option>
+            <option value="Sniper">3. Sniper</option>
+            <option value="Backup">4. Backup</option>
+            <option value="Lurker">5. Lurker</option>
+            <option value="Manager">6. Manager</option>
+          </select>
+        </div>
+
+        <button type="button" class="searchBtn">Tìm kiếm</button>
+      </div>
+
+      <div class="tableLstPlayer">
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th></th>
+              <th>Tên tuyển thủ</th>
+              <th>Tên thi đấu</th>
+              <th>Vị trí</th>
+              <th>Khu vực</th>
+              <th>Đội tuyển</th>
+              <th>Trạng thái</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="ic-captain">
+                <img src="./assets/images/ic_captain.png" alt="" />
+              </td>
+              <td>Linh DevLinh DevLinh DevLinh Dev</td>
+              <td>LinhTQ-DEV</td>
+              <td>Vị trí</td>
+              <td>Attacker</td>
+              <td>VTC-Online</td>
+              <td>Độc thân</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td class="ic-captain"></td>
+              <td>Linh Dev</td>
+              <td>LinhTQ-DEV</td>
+              <td>Vị trí</td>
+              <td>Attacker</td>
+              <td>VTC-Online</td>
+              <td>Độc thân</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td class="ic-captain"></td>
+              <td>Linh Dev</td>
+              <td>LinhTQ-DEV</td>
+              <td>Vị trí</td>
+              <td>Attacker</td>
+              <td>VTC-Online</td>
+              <td>Độc thân</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td class="ic-captain"></td>
+              <td>Linh Dev</td>
+              <td>LinhTQ-DEV</td>
+              <td>Vị trí</td>
+              <td>Attacker</td>
+              <td>VTC-Online</td>
+              <td>Độc thân</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
