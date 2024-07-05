@@ -38,6 +38,14 @@ $black-overlay-00000099: #00000099;
   @include flex-row-between;
 }
 
+.flex-col-center {
+  @include flex-col-center;
+}
+
+.flex-row-center {
+  @include flex-row-center;
+}
+
 .page-with-left-menu {
   width: 100vw;
   overflow: scroll;

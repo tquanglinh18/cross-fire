@@ -2,7 +2,6 @@ $(function () {
   $("#btn-menu-mobile").click(() => {
     $("#header-mobile").toggleClass("header-mobile-active");
   });
-
   $("#banner-slide").slick({
     dots: true,
     infinite: true,
@@ -56,3 +55,30 @@ function tabSubOpen(idSection, idHeaderSelected, idContentSelected) {
   $(idHeaderSelectedQuerry).addClass("tabs__subHeader--active");
   $(idContentSelectedQuerry).show().addClass("tabs__subContents--active");
 }
+
+function tabOpenHandle(idSection, idTabsActive) {
+  var tabHeaderElm = $(
+    "#".concat(idSection).concat(" .tabs__header--items:first-child")
+  );
+  console.log("🚀 ~ tabOpenHandle ~ tabHeaderElm:", tabHeaderElm);
+  var tabContentsElm = $(
+    "#".concat(idSection).concat(" .tabs__contents--items:first-child")
+  );
+
+  tabContentsElm.each((index, value) => {
+    $(value).hide().removeClass("tabs__contents--active");
+  });
+
+  tabHeaderElm.each((index, value) => {
+    $(value).removeClass("tabs__header--active");
+  });
+
+  $(
+    "#".concat(idSection).concat(" #").concat(idTabsActive).concat("-header")
+  ).addClass("tabs__header--active");
+  $("#".concat(idSection).concat(" #").concat(idTabsActive).concat("-contents"))
+    .show()
+    .addClass("tabs__contents--active");
+}
+
+const initialActionClickTab = () => {};
