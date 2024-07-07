@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF-Media</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles-scss.css" />
+    <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
+  </head>
+  <body>
+    <section>
+      <div class="page__header">
+        <div class="page__header--bg">
+          <img src="./assets/images/bg_header_page.png" alt="" />
+        </div>
+
+        <div class="page__header--name">Tin tức</div>
+      </div>
+
+      <div class="page__contents !max-w-[1440px]">
+        <div id="new-feed" class="section-item">
+          <div class="flex-row-between">
+            <div class="tabs__header text-extra-bold">
+              <button
+                id="local-news-header"
+                class="tabs__header--items tabs__header--active"
+                onclick="tabOpen('new-feed','local-news-header','local-news-contents')"
+              >
+                Tin tức trong nước
+              </button>
+
+              <button
+                id="global-news-header"
+                class="tabs__header--items"
+                onclick="tabOpen('new-feed','global-news-header','global-news-contents')"
+              >
+                Tin tức quốc tế
+              </button>
+            </div>
+
+            <div class="filterBox">
+              <select name="" id="">
+                <option value="all">Tất cả</option>
+                <option value="CFVL">CFVL</option>
+                <option value="CSC">CSC</option>
+                <option value="CFS">CFS</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="tabs__contents">
+            <div
+              id="local-news-contents"
+              class="tabs__contents--items tabs__contents--active"
+            >
+              <div class="lst-news-layout">
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan War 2024
+                      Season 3 Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan
+                      War 2024 Season 3 Mở đăng ký Clan War 2024 Season 3Mở đăng
+                      ký Clan War 2024 Season 3 Mở đăng ký Clan War 2024 Season
+                      3 Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan War
+                      2024 Season 3 Mở đăng ký Clan War 2024 Season 3Mở đăng ký
+                      Clan War 2024 Season 3 Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan War 2024
+                      Season 3 Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan
+                      War 2024 Season 3 Mở đăng ký Clan War 2024 Season 3Mở đăng
+                      ký Clan War 2024 Season 3 Mở đăng ký Clan War 2024 Season
+                      3 Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan War
+                      2024 Season 3 Mở đăng ký Clan War 2024 Season 3Mở đăng ký
+                      Clan War 2024 Season 3 Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img
+                      src="https://picture.dzogame.vn/img/dotkich-ngay-18-4_pp_008.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="global-news-contents" class="tabs__contents--items">
+              <div class="lst-news-layout">
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img src="./assets/images/banner_news.png" alt="" />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan War 2024
+                      Season 3 Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan
+                      War 2024 Season 3 Mở đăng ký Clan War 2024 Season 3Mở đăng
+                      ký Clan War 2024 Season 3 Mở đăng ký Clan War 2024 Season
+                      3 Mở đăng ký Clan War 2024 Season 3 Mở đăng ký Clan War
+                      2024 Season 3 Mở đăng ký Clan War 2024 Season 3Mở đăng ký
+                      Clan War 2024 Season 3 Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img src="./assets/images/banner_news.png" alt="" />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img src="./assets/images/banner_news.png" alt="" />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card hover-animation">
+                  <div class="news-card__banner">
+                    <img src="./assets/images/banner_news.png" alt="" />
+                  </div>
+
+                  <div class="news-card__contents">
+                    <p>Thông báo</p>
+                    <h3 class="text-extra-bold">
+                      Mở đăng ký Clan War 2024 Season 3
+                    </h3>
+                    <div class="news-card__contents--time">
+                      <img src="./assets/images/ic_clock.png" alt="" />
+                      <p>20-10-2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <div id="prev-action" class="pagination__item">
+              <a href=""> Trang đầu </a>
+              <a href=""> Quay lại </a>
+            </div>
+            <div id="lst-page-action" class="pagination__item">
+              <a href="">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <a href="">6</a>
+              <a href="">7</a>
+              <a href="">8</a>
+              <a href="">9</a>
+              <a href="">10</a>
+            </div>
+            <div id="next-action" class="pagination__item">
+              <a href=""> Tiếp theo </a>
+              <a href=""> Trang cuối </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

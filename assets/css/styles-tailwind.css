@@ -490,50 +490,6 @@ video {
   display: block;
 }
 
-.tabs__subHeader {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.tabs__subHeader--items {
-  min-width: 120px;
-  border-left-width: 2px;
-  --tw-border-opacity: 1;
-  border-left-color: rgb(44 57 68 / var(--tw-border-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.tabs__subHeader--items:first-child {
-  border-style: none;
-  padding-left: 0px;
-}
-
-.tabs__subHeader--items:hover {
-  --tw-text-opacity: 1;
-  color: rgb(247 80 20 / var(--tw-text-opacity));
-}
-
-.tabs__subHeader--active {
-  --tw-text-opacity: 1;
-  color: rgb(247 80 20 / var(--tw-text-opacity));
-}
-
-.tabs__subContents {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.tabs__subContents--items {
-  display: none;
-}
-
-.tabs__subContents--active {
-  display: block;
-}
-
 #lst-tournaments,
   #lst-tournaments-upcoming {
   .tabs__subHeader {
@@ -753,6 +709,10 @@ video {
 
 .max-w-\[540px\] {
   max-width: 540px;
+}
+
+.\!max-w-\[1440px\] {
+  max-width: 1440px !important;
 }
 
 .flex-col {

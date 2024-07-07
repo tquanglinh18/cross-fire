@@ -3,19 +3,20 @@
 
 #lst-player-page {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 1rem;
 }
 
 .filterPlayer {
-  @include flex-row-center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
   &__item {
     width: 100%;
-    max-width: 240px;
     padding: 0.75rem 1rem;
     background-color: $grey-353f48;
     input,
@@ -38,14 +39,19 @@
 
 .tableLstPlayer {
   width: 100%;
+  overflow: auto;
   table {
     width: 100%;
+    min-width: 1080px;
+    height: 100%;
+
     font-size: 14px;
 
     th,
     td {
       text-align: center;
       padding: 0.5rem 0.25rem;
+      min-height: 64px;
     }
 
     thead {
@@ -62,5 +68,73 @@
     .ic-captain {
       @include flex-col-center;
     }
+  }
+}
+
+@include tablet {
+  .filterPlayer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@include desktop {
+  .filterPlayer {
+    @include flex-row-center;
+    gap: 1rem;
+
+    &__items {
+      max-width: 240px;
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: $white-base;
+  padding: 1rem;
+
+  &__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      background-color: $black-0f141a;
+      border-radius: 0.25rem;
+      padding: 0.25rem 0.75rem;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s;
+      &:active,
+      &:hover:not(:active) {
+        background-color: $org-base-color;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.filterBox {
+  width: 100%;
+  max-width: 180px;
+  padding: 0.5rem 1rem;
+  box-shadow: inset 0px 0px 32px $grey-b6;
+  background-color: $white-base;
+
+  input,
+  select {
+    width: 100%;
+    background-color: transparent;
+    color: $black-0f141a;
+    font-weight: bold;
   }
 }

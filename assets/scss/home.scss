@@ -79,7 +79,8 @@
 .lst-news-layout {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
+  gap: 2rem 1.5rem;
+  transition: all 0.2s;
 }
 
 .news-card {

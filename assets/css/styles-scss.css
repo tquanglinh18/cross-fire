@@ -735,7 +735,8 @@
 .lst-news-layout {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
+  gap: 2rem 1.5rem;
+  transition: all 0.2s;
 }
 
 .news-card {
@@ -3358,23 +3359,21 @@ select:focus {
 
 #lst-player-page {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 1rem;
 }
 
 .filterPlayer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 .filterPlayer__item {
   width: 100%;
-  max-width: 240px;
   padding: 0.75rem 1rem;
   background-color: #353f48;
 }
@@ -3396,15 +3395,19 @@ select:focus {
 
 .tableLstPlayer {
   width: 100%;
+  overflow: auto;
 }
 .tableLstPlayer table {
   width: 100%;
+  min-width: 1080px;
+  height: 100%;
   font-size: 14px;
 }
 .tableLstPlayer table th,
 .tableLstPlayer table td {
   text-align: center;
   padding: 0.5rem 0.25rem;
+  min-height: 64px;
 }
 .tableLstPlayer table thead {
   color: #657383;
@@ -3421,4 +3424,68 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .filterPlayer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .filterPlayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .filterPlayer__items {
+    max-width: 240px;
+  }
+}
+.pagination {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  padding: 1rem;
+}
+.pagination__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pagination__item a {
+  background-color: #0f141a;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.pagination__item a:active, .pagination__item a:hover:not(:active) {
+  background-color: #f75014;
+  transform: scale(1.1);
+}
+
+.filterBox {
+  width: 100%;
+  max-width: 180px;
+  padding: 0.5rem 1rem;
+  box-shadow: inset 0px 0px 32px #b6b6b6;
+  background-color: #fff;
+}
+.filterBox input,
+.filterBox select {
+  width: 100%;
+  background-color: transparent;
+  color: #0f141a;
+  font-weight: bold;
 }

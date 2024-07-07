@@ -60,7 +60,6 @@ function tabOpenHandle(idSection, idTabsActive) {
   var tabHeaderElm = $(
     "#".concat(idSection).concat(" .tabs__header--items:first-child")
   );
-  console.log("🚀 ~ tabOpenHandle ~ tabHeaderElm:", tabHeaderElm);
   var tabContentsElm = $(
     "#".concat(idSection).concat(" .tabs__contents--items:first-child")
   );
