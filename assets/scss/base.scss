@@ -88,7 +88,7 @@ $black-overlay-00000099: #00000099;
     &--name {
       width: 100%;
       font-weight: bold;
-      font-size: 32px;
+      font-size: 24px;
       padding: 1rem;
       color: $white-base;
       text-transform: uppercase;
@@ -118,6 +118,7 @@ $black-overlay-00000099: #00000099;
   min-width: 170px;
   color: $white-base;
   cursor: pointer;
+  transition: all 0.3s;
   &--org {
     color: $white-base;
     background: $org-base-color;
@@ -125,6 +126,10 @@ $black-overlay-00000099: #00000099;
   &--black {
     color: $white-base;
     background: $black-0f141a;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 

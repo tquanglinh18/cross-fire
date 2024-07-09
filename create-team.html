@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF-Media</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles-scss.css" />
+    <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
+  </head>
+  <body>
+    <section>
+      <div class="page__header">
+        <div class="page__header--bg">
+          <img src="./assets/images/bg_header_page.png" alt="" />
+        </div>
+
+        <div class="page__header--name">Tạo đội tuyển</div>
+      </div>
+
+      <div class="page__contents max-w-[1200px] mx-auto">
+        <div class="formInputLayout">
+          <div class="textFieldInfo">
+            <label for="full-name" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">1</div>
+              <p>Tên đội tuyển</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="full-name" id="full-name" />
+              <button type="button" id="btn-check" class="btn-check">
+                Kiểm tra
+              </button>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="short-name" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">2</div>
+              <p>Tên viết tắt</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="short-name" id="short-name" />
+            </div>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="status" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">3</div>
+              <p>Tình trạng</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <select name="" id="">
+                <option value="private">Riêng tư</option>
+                <option value="public">Công khai</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="district" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">4</div>
+              <p>Khu vực</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <select name="" id="district">
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+              </select>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="facebook" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">5</div>
+              <p>Facebook</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="facebook" id="facebook" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="discord" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">6</div>
+              <p>Discord</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="discord" id="discord" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+        </div>
+
+        <div class="formUpdateAvt">
+          <div class="formUpdateAvt__upload">
+            <div class="formUpdateAvt__upload--img"></div>
+
+            <label for="formUpdateAvt__upload">
+              <div class="formUpdateAvt__upload--btn-upload">
+                <p>Tải ảnh đại diện</p>
+                <img src="./assets/images/ic_upload.png" alt="" />
+              </div>
+            </label>
+            <input
+              type="file"
+              hidden
+              name="formUpdateAvt__upload"
+              id="formUpdateAvt__upload"
+            />
+          </div>
+          <div class="formUpdateAvt__note">
+            <h3>Những lưu ý khi đăng tải logo đội tuyển::</h3>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>
+                Ảnh tải lên có kích thước tiêu chuẩn 1000x1000, dung lượng dưới
+                2MB.
+              </p>
+            </div>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>Ảnh tải lên là ảnh PNG không có nền.</p>
+            </div>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>
+                Nghiêm cấm hình ảnh vi phạm thuần phong mỹ tục, khỏa thân, khiêu
+                dâm.
+              </p>
+            </div>
+
+            <div class="formUpdateAvt__note--item">
+              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <p>
+                Việc không tuân thủ quy định về sử dụng ảnh. BQT có thể khóa tài
+                khoản trên trang của bạn.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="formUpdateInfo">
+          <h3 class="formUpdateInfo__title">Giới thiệu đội tuyển</h3>
+          <div class="formUpdateInfo__input">
+            <textarea
+              type="text"
+              placeholder="- Giới hạn 100 ký tự"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="formAction">
+          <button type="button" class="btn-base btn-base--org btn-submit">
+            Xác nhận
+          </button>
+
+          <button type="button" class="btn-base btn-base--black btn-cancel">
+            Huỷ bỏ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

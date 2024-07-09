@@ -37,6 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     input,
     select {
       width: 100%;
@@ -159,6 +160,42 @@ select:focus {
       color: $white-base;
       font-size: 14px;
       margin-bottom: 0.25rem;
+    }
+  }
+}
+
+.formUpdateInfo {
+  width: 100%;
+  background-color: $grey-161e27;
+  border: 2px solid $grey-353f48;
+  padding: 4% 6%;
+  @include flex-col-center;
+  gap: 2rem;
+  margin-bottom: 6%;
+
+  &__title {
+    text-align: center;
+    color: $org-base-color;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: #0b0f14;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: $white-base;
+    font-size: 14px;
+
+    textarea {
+      width: 100%;
+      background-color: transparent;
+      color: $white-base;
+      &:focus {
+        outline: none !important;
+      }
     }
   }
 }
