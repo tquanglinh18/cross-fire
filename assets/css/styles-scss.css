@@ -6793,3 +6793,592 @@ table th {
 .btn-more:hover {
   transform: scale(1.5);
 }
+
+.tournaments-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.tournaments-info__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tournaments-info__logo img {
+  min-width: 64px;
+}
+.tournaments-info__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #fff;
+  font-size: 14px;
+}
+.tournaments-info__name h3 {
+  font-size: 16px;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.tournaments-info__name--status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1f252b;
+  padding: 0.5rem 0.75rem;
+  max-width: fit-content;
+  font-size: 14px;
+}
+.tournaments-info__name--status img {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.tournaments-overview {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.tournaments-overview__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1f252b;
+  padding: 0.5rem 0.75rem;
+}
+.tournaments-overview__item--title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 14px;
+}
+.tournaments-overview__item--title img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  min-width: 13px;
+}
+.tournaments-overview__item--desc {
+  color: #f75014;
+  font-size: 20px;
+  font-weight: bold;
+  text-indent: 1rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.tournaments-detail .tabs__header {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  background-color: #1f252b;
+  color: #fff;
+  overflow: auto;
+  padding: 0;
+}
+.tournaments-detail .tabs__header--item {
+  min-width: fit-content;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.tournaments-detail .tabs__header--item:hover {
+  border-bottom: 2px solid #f75014;
+  color: #f75014;
+}
+.tournaments-detail .tabs__header--active {
+  border-bottom: 2px solid #f75014;
+}
+
+.lst-phares-tournaments {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.normal-part {
+  padding: 2% 0;
+}
+.normal-part__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+.normal-part__header img {
+  display: none;
+}
+.normal-part__header h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.grid-award-tournaments {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem 2rem;
+}
+.grid-award-tournaments .rank-award-item {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0.5rem;
+  border-bottom: 2px solid #1f252b;
+  background: linear-gradient(to top, #1a2126, transparent);
+}
+.grid-award-tournaments .rank-award-item:nth-child(1) {
+  border-bottom: 5px solid #dfaa0b;
+}
+.grid-award-tournaments .rank-award-item:nth-child(2) {
+  border-bottom: 5px solid #fff;
+}
+.grid-award-tournaments .rank-award-item:nth-child(3) {
+  border-bottom: 5px solid #f75014;
+}
+.grid-award-tournaments .rank-award-item--rank-order {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid-award-tournaments .rank-award-item--name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 100%;
+}
+.grid-award-tournaments .rank-award-item--name img {
+  width: 36px;
+  object-fit: cover;
+}
+.grid-award-tournaments .rank-award-item--prize-money {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lst-round-match {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 6%;
+}
+.lst-round-match .round-match-overview-card {
+  width: 100%;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to top, #f75014, #1f252b, #1f252b);
+  color: #fff;
+}
+.lst-round-match .round-match-overview-card--header {
+  border-bottom: 2px solid #929daa;
+  padding: 1rem;
+  background: #1f252b;
+}
+.lst-round-match .round-match-overview-card--header h3 {
+  color: #f75014;
+  font-size: 20px;
+}
+.lst-round-match .round-match-overview-card--header p {
+  color: #8c97a4;
+}
+.lst-round-match .round-match-overview-card--body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: #1f252b;
+  font-size: 14px;
+}
+.lst-round-match .round-match-overview-card--body > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lst-round-match .round-match-overview-card--footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #0f141a;
+  font-size: 14px;
+}
+.lst-round-match .round-match-overview-card--footer .tournaments-info__name--status {
+  min-width: 120px;
+}
+
+.lst-match-schedule__header {
+  margin-bottom: 2rem;
+}
+.lst-match-schedule__header h3 {
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  padding: 1rem;
+  border-bottom: 2px solid #929daa;
+  color: #fff;
+  font-size: 24px;
+}
+.lst-match-schedule__contents {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+.lst-match-schedule__contents .match-schedule-table {
+  background-color: #1f252b;
+}
+.lst-match-schedule__contents .match-schedule-table__round-name {
+  padding: 1rem;
+  color: #f75014;
+  font-size: 20px;
+  border-bottom: 1px solid #929daa;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+  background: transparent !important;
+  border-bottom: 1px solid #929daa;
+  margin-bottom: 0;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card:last-child {
+  border-bottom: none;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info {
+  width: 90%;
+  max-width: none;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--desc {
+  justify-content: space-evenly;
+  width: 100%;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams {
+  width: fit-content;
+  flex-direction: row;
+  gap: 1rem;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams p {
+  min-width: 32px;
+  text-align: center;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item {
+  gap: 0.5rem;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item img {
+  width: 24px;
+}
+.lst-match-schedule__contents .match-schedule-table__lst-match .match-card__view img {
+  min-width: 12px;
+}
+
+@media (min-width: 768px) {
+  .lst-match-schedule__header {
+    margin-bottom: 2rem;
+  }
+  .lst-match-schedule__header h3 {
+    font-family: "SVN-Nolan Next Bold";
+    font-weight: bold;
+    font-style: normal;
+    padding: 1rem;
+    border-bottom: 2px solid #929daa;
+    color: #fff;
+    font-size: 24px;
+  }
+  .lst-match-schedule__contents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .lst-match-schedule__contents .match-schedule-table {
+    background-color: #1f252b;
+  }
+  .lst-match-schedule__contents .match-schedule-table__round-name {
+    padding: 1rem;
+    color: #f75014;
+    font-size: 20px;
+    border-bottom: 1px solid #929daa;
+    font-family: "SVN-Nolan Next Bold";
+    font-weight: bold;
+    font-style: normal;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    background: transparent !important;
+    border-bottom: 1px solid #929daa;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info {
+    width: 90%;
+    max-width: none;
+    justify-content: space-around;
+    flex-direction: row !important;
+    font-size: 12px;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--desc {
+    width: 35%;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams {
+    width: fit-content;
+    gap: 1rem;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams p {
+    min-width: 32px;
+    text-align: center;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item {
+    gap: 0.5rem;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item img {
+    width: 24px;
+  }
+  .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__view img {
+    min-width: 12px;
+  }
+  .lst-round-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 6%;
+  }
+  .lst-round-match .round-match-overview-card--body {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    font-size: 16px;
+  }
+  .lst-round-match .round-match-overview-card--footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .lst-phares-tournaments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .normal-part__header img {
+    display: block;
+    width: 100%;
+  }
+  .normal-part__header h3 {
+    width: fit-content;
+    text-align: center;
+    margin: 0 2rem;
+  }
+  .grid-award-tournaments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+  }
+  .grid-award-tournaments .rank-award-item:nth-child(-n+3) {
+    grid-column: span 2/span 2;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+  }
+  .grid-award-tournaments .rank-award-item--name img {
+    width: 48px;
+    object-fit: cover;
+  }
+  .tournaments-info {
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .tournaments-info__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tournaments-info__logo img {
+    min-width: 64px;
+  }
+  .tournaments-info__name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: #fff;
+    font-size: 16px;
+  }
+  .tournaments-info__name h3 {
+    font-size: 24px;
+    font-family: "SVN-Nolan Next Bold";
+    font-weight: bold;
+    font-style: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .tournaments-info__name--status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #1f252b;
+    padding: 0.5rem 0.75rem;
+    max-width: fit-content;
+  }
+  .tournaments-info__name--status img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .tournaments-overview {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .tournaments-overview__item {
+    align-items: start;
+  }
+  .tournaments-overview__item--title {
+    font-size: 16px;
+  }
+  .tournaments-overview__item--desc {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .lst-match-schedule__header {
+    margin-bottom: 2rem;
+  }
+  .lst-match-schedule__header h3 {
+    font-family: "SVN-Nolan Next Bold";
+    font-weight: bold;
+    font-style: normal;
+    padding: 1rem;
+    border-bottom: 2px solid #929daa;
+    color: #fff;
+    font-size: 24px;
+  }
+  .lst-match-schedule__contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lst-round-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 6%;
+  }
+  .lst-round-match .round-match-overview-card {
+    width: 100%;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top, #f75014, #1f252b, #1f252b);
+    color: #fff;
+  }
+  .lst-round-match .round-match-overview-card--header {
+    border-bottom: 2px solid #929daa;
+    padding: 1rem;
+    background: #1f252b;
+  }
+  .lst-round-match .round-match-overview-card--header h3 {
+    color: #f75014;
+    font-size: 20px;
+  }
+  .lst-round-match .round-match-overview-card--header p {
+    color: #8c97a4;
+  }
+  .lst-round-match .round-match-overview-card--body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background: #1f252b;
+  }
+  .lst-round-match .round-match-overview-card--body > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .lst-round-match .round-match-overview-card--footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: #0f141a;
+    font-size: 14px;
+  }
+  .tournaments-detail .tabs__header {
+    justify-content: center;
+  }
+  .lst-phares-tournaments {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.phares-tournaments {
+  width: 100%;
+  padding: 1rem;
+  border-right: 2px solid #1f252b;
+  border-top: 2px solid #1f252b;
+  color: #fff;
+  margin: 2rem 0;
+  position: relative;
+  padding: 2rem 1rem;
+}
+.phares-tournaments__tag {
+  background-color: #1f252b;
+  width: fit-content;
+  padding: 0.5rem;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f75014;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  margin-right: 0.5rem;
+}
+.phares-tournaments__contents h3 {
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  color: #f75014;
+  margin-bottom: 0.25rem;
+}
+.phares-tournaments__contents p {
+  color: #8c97a4;
+}

@@ -12,6 +12,25 @@ $grey-353f48: #353f48;
 $grey-161e27: #161e27;
 $black-0f141a: #0f141a;
 $black-overlay-00000099: #00000099;
+$bg-grey-1f252b: #1f252b;
+$grey-8c97a4: #8c97a4;
+
+@mixin text-extra-bold {
+  font-family: "SVN-Nolan Next Extra Bold";
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin text-bold {
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin box-grey-1f252b {
+  background: $bg-grey-1f252b;
+  padding: 0.5rem 0.75rem;
+}
 
 @mixin flex-row-center {
   display: flex;

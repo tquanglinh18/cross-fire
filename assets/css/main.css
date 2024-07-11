@@ -24,6 +24,18 @@
 }
 
 @font-face {
+  font-family: "SVN-Nolan Next Bold";
+  src: url("../fonts/SVN-NolanNext-Bold.eot");
+  src: url("../fonts/SVN-NolanNext-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SVN-NolanNext-Bold.woff2") format("woff2"),
+    url("../fonts/SVN-NolanNext-Bold.woff") format("woff"),
+    url("../fonts/SVN-NolanNext-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "SVN-Nolan Next Extra Bold";
   src: url("../fonts/SVN-NolanNext-ExtraBold.eot");
   src: url("../fonts/SVN-NolanNext-ExtraBold.eot?#iefix")
@@ -46,7 +58,7 @@ body {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 .text-extra-bold {

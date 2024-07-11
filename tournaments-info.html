@@ -20,16 +20,16 @@
         <div class="page__header--name">Thông tin giải đấu</div>
       </div>
 
-      <div class="page__contents">
-        <div class="">
-          <div class="">
+      <div class="page__contents max-w-[1300px] mx-auto">
+        <div class="tournaments-info">
+          <div class="tournaments-info__logo">
             <img src="./assets/images/logo_tournaments_demo.png" alt="" />
           </div>
-          <div class="">
+          <div class="tournaments-info__name">
             <p>Giải đấu chuyên nghiệp</p>
             <h3>CROSSFIRE VIETNAM LEAGUE 2024 - SEASON 2</h3>
-            <div class="">
-              <img src="./assets/images/btn_play.png" alt="" />
+            <div class="tournaments-info__name--status">
+              <img src="./assets/images/ic_play_org.png" alt="" />
               <p>Sắp diễn ra</p>
             </div>
           </div>
@@ -38,34 +38,679 @@
         <div class="tournaments-overview">
           <div class="tournaments-overview__item">
             <div class="tournaments-overview__item--title">
-              <img src="./assets/images/ic_check_lst.png" alt="" />
+              <div class="">
+                <img src="./assets/images/ic_dola_org.png" alt="" />
+              </div>
               <p>Giải thưởng</p>
             </div>
-            <div class="tournaments-overview__item--desc">$100.000</div>
+            <div class="tournaments-overview__item--desc">$ 100.000</div>
           </div>
 
           <div class="tournaments-overview__item">
             <div class="tournaments-overview__item--title">
-              <img src="./assets/images/ic_check_lst.png" alt="" />
-              <p>Giải thưởng</p>
+              <div class="">
+                <img src="./assets/images/ic_clock_org.png" alt="" />
+              </div>
+              <p>Thời gian giải đấu</p>
             </div>
-            <div class="tournaments-overview__item--desc">$100.000</div>
+            <div class="tournaments-overview__item--desc">
+              01.07 - 01.08.2024
+            </div>
           </div>
 
           <div class="tournaments-overview__item">
             <div class="tournaments-overview__item--title">
-              <img src="./assets/images/ic_check_lst.png" alt="" />
-              <p>Giải thưởng</p>
+              <div class="">
+                <img src="./assets/images/ic_player_org.png" alt="" />
+              </div>
+              <p>Số đội tham gia</p>
             </div>
-            <div class="tournaments-overview__item--desc">$100.000</div>
+            <div class="tournaments-overview__item--desc">8</div>
           </div>
-
         </div>
 
-        <div class="tournaments-detail">
-            <div class="tabs-header">
-                <button type="button" class="tabs-header--item "></button>
+        <div id="tournaments-detail" class="tournaments-detail">
+          <div class="tabs__header">
+            <button
+              type="button"
+              class="tabs__header--item tabs__header--active"
+              id="overview-header"
+            >
+              Tổng quan
+            </button>
+
+            <button
+              type="button"
+              class="tabs__header--item"
+              id="tournaments-table-header"
+            >
+              Bảng đấu
+            </button>
+
+            <button
+              type="button"
+              class="tabs__header--item"
+              id="lst-teams-header"
+            >
+              Team tham dự
+            </button>
+
+            <button
+              type="button"
+              class="tabs__header--item"
+              id="competition-format-header"
+            >
+              Thể thức thi đấu
+            </button>
+
+            <button
+              type="button"
+              class="tabs__header--item"
+              id="ranking-header"
+            >
+              Xếp hạng
+            </button>
+          </div>
+
+          <div class="tabs__contents">
+            <div class="tabs__contents--items" id="overview-contents">
+              <div class="normal-part">
+                <div class="normal-part__header">
+                  <div class="">
+                    <img src="./assets/images/ic_line_left_title.png" alt="" />
+                  </div>
+                  <h3>Các giai đoạn của giải đấu</h3>
+                  <div class="">
+                    <img src="./assets/images/ic_line_right_title.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="normal-part__body">
+                  <div class="lst-phares-tournaments">
+                    <div class="phares-tournaments">
+                      <div class="phares-tournaments__tag">1</div>
+                      <div class="phares-tournaments__contents">
+                        <h3>Giai đoạn vòng bảng - Lượt đi</h3>
+                        <p>01.07 - 14.07.2024</p>
+                      </div>
+                    </div>
+
+                    <div class="phares-tournaments">
+                      <div class="phares-tournaments__tag">1</div>
+                      <div class="phares-tournaments__contents">
+                        <h3>Giai đoạn vòng bảng - Lượt đi</h3>
+                        <p>01.07 - 14.07.2024</p>
+                      </div>
+                    </div>
+
+                    <div class="phares-tournaments">
+                      <div class="phares-tournaments__tag">1</div>
+                      <div class="phares-tournaments__contents">
+                        <h3>Giai đoạn vòng bảng - Lượt đi</h3>
+                        <p>01.07 - 14.07.2024</p>
+                      </div>
+                    </div>
+
+                    <div class="phares-tournaments">
+                      <div class="phares-tournaments__tag">1</div>
+                      <div class="phares-tournaments__contents">
+                        <h3>
+                          Giai đoạn vòng bảng - Lượt đi Giai đoạn vòng bảng -
+                          Lượt đi Giai đoạn vòng bảng - Lượt đi Giai đoạn vòng
+                          bảng - Lượt đi 
+                        </h3>
+                        <p>01.07 - 14.07.2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="normal-part">
+                <div class="normal-part__header">
+                  <div class="">
+                    <img src="./assets/images/ic_line_left_title.png" alt="" />
+                  </div>
+                  <h3>Thứ hạng & Giải thưởng</h3>
+                  <div class="">
+                    <img src="./assets/images/ic_line_right_title.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="normal-part__body">
+                  <div class="grid-award-tournaments">
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+
+                    <div class="rank-award-item">
+                      <div class="rank-award-item--rank-order">1st</div>
+                      <div class="rank-award-item--name">
+                        <div class="">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                        <h1>Hello</h1>
+                      </div>
+                      <div class="rank-award-item--prize-money">
+                        <p>$ 100.000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div
+              class="tabs__contents--items tabs__contents--active"
+              id="tournaments-table-contents"
+            >
+              <div class="normal-part">
+                <div class="normal-part__header">
+                  <div class="">
+                    <img src="./assets/images/ic_line_left_title.png" alt="" />
+                  </div>
+                  <h3>Vòng đấu</h3>
+                  <div class="">
+                    <img src="./assets/images/ic_line_right_title.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="normal-part__body">
+                  <div class="lst-round-match">
+                    <div class="round-match-overview-card">
+                      <div class="round-match-overview-card--header">
+                        <h3>Vòng loại - Lượt đi</h3>
+                        <p>12:00 - 01.06.2024</p>
+                      </div>
+                      <div class="round-match-overview-card--body">
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>Đặt bomb</p>
+                        </div>
+
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>08 Team</p>
+                        </div>
+
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>BO2</p>
+                        </div>
+                      </div>
+                      <div class="round-match-overview-card--footer">
+                        <div class="tournaments-info__name--status">
+                          <img src="./assets/images/ic_play_org.png" alt="" />
+                          <p>Sắp diễn ra</p>
+                        </div>
+
+                        <p>08 team sẽ tiến vào vòng tiếp theo</p>
+                      </div>
+                    </div>
+
+                    <div class="round-match-overview-card">
+                      <div class="round-match-overview-card--header">
+                        <h3>Vòng loại - Lượt đi</h3>
+                        <p>12:00 - 01.06.2024</p>
+                      </div>
+                      <div class="round-match-overview-card--body">
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>Đặt bomb</p>
+                        </div>
+
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>08 Team</p>
+                        </div>
+
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>BO2</p>
+                        </div>
+                      </div>
+                      <div class="round-match-overview-card--footer">
+                        <div class="tournaments-info__name--status">
+                          <img src="./assets/images/ic_play_org.png" alt="" />
+                          <p>Sắp diễn ra</p>
+                        </div>
+
+                        <p>08 team sẽ tiến vào vòng tiếp theo</p>
+                      </div>
+                    </div>
+
+                    <div class="round-match-overview-card">
+                      <div class="round-match-overview-card--header">
+                        <h3>Vòng loại - Lượt đi</h3>
+                        <p>12:00 - 01.06.2024</p>
+                      </div>
+                      <div class="round-match-overview-card--body">
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>Đặt bomb</p>
+                        </div>
+
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>08 Team</p>
+                        </div>
+
+                        <div class="">
+                          <img src="./assets/images/ic_check_lst.png" alt="" />
+                          <p>BO2</p>
+                        </div>
+                      </div>
+                      <div class="round-match-overview-card--footer">
+                        <div class="tournaments-info__name--status">
+                          <img src="./assets/images/ic_play_org.png" alt="" />
+                          <p>Sắp diễn ra</p>
+                        </div>
+                        <p>08 team sẽ tiến vào vòng tiếp theo</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lst-match-schedule">
+                    <div class="lst-match-schedule__header">
+                      <h3>Lịch thi đấu</h3>
+                    </div>
+
+                    <div class="lst-match-schedule__contents">
+                      <div class="match-schedule-table">
+                        <div class="match-schedule-table__round-name">
+                          Round 1
+                        </div>
+                        <div class="match-schedule-table__lst-match">
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="match-schedule-table">
+                        <div class="match-schedule-table__round-name">
+                          Round 1
+                        </div>
+                        <div class="match-schedule-table__lst-match">
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="match-card hover-animation">
+                            <div class="match-card__info">
+                              <div class="match-card__info--desc">
+                                <p>Round 1</p>
+                                <p>18:30</p>
+                                <p>BO3</p>
+                              </div>
+                              <div class="match-card__info--teams">
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <p>1 <span>-</span> 1</p>
+                                <div class="match-card__info--teams--item">
+                                  <p>CRH.Esports</p>
+                                  <img
+                                    src="./assets/images/logo_team_demo.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="match-card__view">
+                              <img
+                                src="./assets/images/ic_drop_down.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs__contents--items" id="lst-teams-contents">
+              Team thamm dự competition-format
+            </div>
+
+            <div class="tabs__contents--items" id="competition-format-contents">
+              Thể thức thi đấu
+            </div>
+
+            <div class="tabs__contents--items" id="ranking-contents">
+              Bảng xếp hạng
+            </div>
+          </div>
         </div>
       </div>
     </section>

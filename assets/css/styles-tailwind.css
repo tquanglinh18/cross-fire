@@ -719,6 +719,10 @@ video {
   max-width: 1200px;
 }
 
+.max-w-\[1300px\] {
+  max-width: 1300px;
+}
+
 .max-w-\[540px\] {
   max-width: 540px;
 }
@@ -745,6 +749,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-\[\#0f141a\] {
