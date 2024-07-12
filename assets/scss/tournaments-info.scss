@@ -275,9 +275,8 @@
           background: transparent !important;
           border-bottom: 1px solid #929daa;
           margin-bottom: 0;
-          &:last-child {
-            border-bottom: none;
-          }
+          cursor: pointer;
+
           &__info {
             width: 90%;
             max-width: none;
@@ -287,6 +286,10 @@
             &--desc {
               justify-content: space-evenly;
               width: 100%;
+              gap: 0.5rem;
+              text-align: center;
+              img {
+              }
             }
             &--teams {
               width: fit-content;
@@ -307,6 +310,17 @@
           &__view {
             img {
               min-width: 12px;
+            }
+          }
+        }
+
+        .lst-map-detail {
+          background-color: $grey-2c3944;
+          // display: none;
+          .match-card {
+            cursor: default;
+            &:last-child {
+              border-bottom: none;
             }
           }
         }
