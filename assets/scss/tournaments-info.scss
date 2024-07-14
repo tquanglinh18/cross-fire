@@ -329,6 +329,86 @@
   }
 }
 
+.phares-tournaments {
+  width: 100%;
+  padding: 1rem;
+  border-right: 2px solid $bg-grey-1f252b;
+  border-top: 2px solid $bg-grey-1f252b;
+  color: $white-base;
+  margin: 2rem 0;
+  position: relative;
+  padding: 2rem 1rem;
+
+  &__tag {
+    background-color: $bg-grey-1f252b;
+    width: fit-content;
+    padding: 0.5rem;
+    min-width: 40px;
+    height: 40px;
+    @include flex-col-center;
+    color: $org-base-color;
+    @include text-bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    margin-right: 0.5rem;
+  }
+
+  &__contents {
+    h3 {
+      @include text-bold;
+      color: $org-base-color;
+      margin-bottom: 0.25rem;
+    }
+    p {
+      color: $grey-8c97a4;
+    }
+  }
+}
+
+.lst-participating-teams {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem;
+  .team-card {
+    @include flex-col-center;
+    width: 100%;
+    min-width: 168px;
+    aspect-ratio: 1/1;
+    border: 1px solid $grey-96a2af;
+    color: $white-base;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    &__logo {
+        width: 100%;
+        margin-bottom: 0, 5rem;
+      img {
+        width: 100%;
+        
+        object-fit: cover;
+      }
+    }
+    &__name {
+      @include text-bold;
+      font-size: 18px;
+    }
+
+    &__desc {
+      color: $grey-96a2af;
+    }
+
+    h3,
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+  }
+}
+
 @include tablet {
   .lst-match-schedule {
     &__header {
@@ -508,6 +588,22 @@
       }
     }
   }
+
+  .lst-participating-teams {
+  grid-template-columns: repeat(4, 1fr);
+
+    .team-card {
+      &__logo {
+        img {
+        }
+      }
+      &__name {
+      }
+
+      &__desc {
+      }
+    }
+  }
 }
 
 @include desktop {
@@ -594,42 +690,20 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
-}
 
-.phares-tournaments {
-  width: 100%;
-  padding: 1rem;
-  border-right: 2px solid $bg-grey-1f252b;
-  border-top: 2px solid $bg-grey-1f252b;
-  color: $white-base;
-  margin: 2rem 0;
-  position: relative;
-  padding: 2rem 1rem;
+  .lst-participating-teams {
+  grid-template-columns: repeat(6, 1fr);
 
-  &__tag {
-    background-color: $bg-grey-1f252b;
-    width: fit-content;
-    padding: 0.5rem;
-    min-width: 40px;
-    height: 40px;
-    @include flex-col-center;
-    color: $org-base-color;
-    @include text-bold;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-50%);
-    margin-right: 0.5rem;
-  }
+    .team-card {
+      &__logo {
+        img {
+        }
+      }
+      &__name {
+      }
 
-  &__contents {
-    h3 {
-      @include text-bold;
-      color: $org-base-color;
-      margin-bottom: 0.25rem;
-    }
-    p {
-      color: $grey-8c97a4;
+      &__desc {
+      }
     }
   }
 }

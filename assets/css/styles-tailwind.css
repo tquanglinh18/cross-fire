@@ -703,12 +703,12 @@ video {
   height: 6rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .\!w-full {
   width: 100% !important;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .\!max-w-\[1350px\] {

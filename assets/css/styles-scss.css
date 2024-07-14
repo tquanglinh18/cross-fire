@@ -7113,6 +7113,91 @@ table th {
   border-bottom: none;
 }
 
+.phares-tournaments {
+  width: 100%;
+  padding: 1rem;
+  border-right: 2px solid #1f252b;
+  border-top: 2px solid #1f252b;
+  color: #fff;
+  margin: 2rem 0;
+  position: relative;
+  padding: 2rem 1rem;
+}
+.phares-tournaments__tag {
+  background-color: #1f252b;
+  width: fit-content;
+  padding: 0.5rem;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f75014;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  margin-right: 0.5rem;
+}
+.phares-tournaments__contents h3 {
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  color: #f75014;
+  margin-bottom: 0.25rem;
+}
+.phares-tournaments__contents p {
+  color: #8c97a4;
+}
+
+.lst-participating-teams {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem;
+}
+.lst-participating-teams .team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 168px;
+  aspect-ratio: 1/1;
+  border: 1px solid #96a2af;
+  color: #fff;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+.lst-participating-teams .team-card__logo {
+  width: 100%;
+  margin-bottom: 0, 5rem;
+}
+.lst-participating-teams .team-card__logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.lst-participating-teams .team-card__name {
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+}
+.lst-participating-teams .team-card__desc {
+  color: #96a2af;
+}
+.lst-participating-teams .team-card h3,
+.lst-participating-teams .team-card p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 @media (min-width: 768px) {
   .lst-match-schedule__header {
     margin-bottom: 2rem;
@@ -7279,6 +7364,9 @@ table th {
   .tournaments-overview__item--desc {
     font-size: 24px;
   }
+  .lst-participating-teams {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media (min-width: 1024px) {
   .lst-match-schedule__header {
@@ -7350,44 +7438,7 @@ table th {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
-}
-.phares-tournaments {
-  width: 100%;
-  padding: 1rem;
-  border-right: 2px solid #1f252b;
-  border-top: 2px solid #1f252b;
-  color: #fff;
-  margin: 2rem 0;
-  position: relative;
-  padding: 2rem 1rem;
-}
-.phares-tournaments__tag {
-  background-color: #1f252b;
-  width: fit-content;
-  padding: 0.5rem;
-  min-width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #f75014;
-  font-family: "SVN-Nolan Next Bold";
-  font-weight: bold;
-  font-style: normal;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-50%);
-  margin-right: 0.5rem;
-}
-.phares-tournaments__contents h3 {
-  font-family: "SVN-Nolan Next Bold";
-  font-weight: bold;
-  font-style: normal;
-  color: #f75014;
-  margin-bottom: 0.25rem;
-}
-.phares-tournaments__contents p {
-  color: #8c97a4;
+  .lst-participating-teams {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
