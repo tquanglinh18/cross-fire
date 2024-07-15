@@ -490,51 +490,82 @@ video {
   display: block;
 }
 
+.tabs__header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.tabs__header--items {
+  min-width: 120px;
+  border-left-width: 2px;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(44 57 68 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.tabs__header--items:first-child {
+  border-style: none;
+  padding-left: 0px;
+}
+
+.tabs__header--items:hover {
+  --tw-text-opacity: 1;
+  color: rgb(247 80 20 / var(--tw-text-opacity));
+}
+
+.tabs__header--active {
+  --tw-text-opacity: 1;
+  color: rgb(247 80 20 / var(--tw-text-opacity));
+}
+
 #lst-tournaments,
   #lst-tournaments-upcoming {
-  .tabs__subHeader {
+  .tabs__header {
     margin-bottom: 2rem;
   }
-  .tabs__subHeader {
+  .tabs__header {
     display: flex;
   }
-  .tabs__subHeader {
+  .tabs__header {
     width: 100%;
   }
-  .tabs__subHeader {
+  .tabs__header {
     align-items: center;
   }
-  .tabs__subHeader {
+  .tabs__header {
     gap: 1rem;
   }
-  .tabs__subHeader {
+  .tabs__header {
     overflow-x: auto;
   }
-  .tabs__subHeader {
+  .tabs__header {
     padding: 0px;
   }
-  .tabs__subHeader--items {
+  .tabs__header--items {
     min-width: 96px;
   }
-  .tabs__subHeader--items {
+  .tabs__header--items {
     border-style: none;
   }
-  .tabs__subHeader--items {
+  .tabs__header--items {
     --tw-bg-opacity: 1;
     background-color: rgb(15 20 26 / var(--tw-bg-opacity));
   }
-  .tabs__subHeader--items:first-child {
+  .tabs__header--items:first-child {
     padding-left: 1rem;
   }
-  .tabs__subHeader--items:hover {
+  .tabs__header--items:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
-  .tabs__subHeader--active {
+  .tabs__header--active {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(247 80 20 / var(--tw-bg-opacity)) !important;
   }
-  .tabs__subHeader--active {
+  .tabs__header--active {
     --tw-text-opacity: 1 !important;
     color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
   }

@@ -2,6 +2,7 @@ $(function () {
   $("#btn-menu-mobile").click(() => {
     $("#header-mobile").toggleClass("header-mobile-active");
   });
+
   $("#banner-slide").slick({
     dots: true,
     infinite: true,
@@ -58,10 +59,10 @@ function tabSubOpen(idSection, idHeaderSelected, idContentSelected) {
 
 function tabOpenHandle(idSection, idTabsActive) {
   var tabHeaderElm = $(
-    "#".concat(idSection).concat(" .tabs__header--items:first-child")
+    "#".concat(idSection).concat(" > .tabs__header > .tabs__header--items")
   );
   var tabContentsElm = $(
-    "#".concat(idSection).concat(" .tabs__contents--items:first-child")
+    "#".concat(idSection).concat(" > .tabs__contents > .tabs__contents--items")
   );
 
   tabContentsElm.each((index, value) => {
@@ -73,9 +74,19 @@ function tabOpenHandle(idSection, idTabsActive) {
   });
 
   $(
-    "#".concat(idSection).concat(" #").concat(idTabsActive).concat("-header")
+    "#"
+      .concat(idSection)
+      .concat(" > .tabs__header #")
+      .concat(idTabsActive)
+      .concat("-header")
   ).addClass("tabs__header--active");
-  $("#".concat(idSection).concat(" #").concat(idTabsActive).concat("-contents"))
+  $(
+    "#"
+      .concat(idSection)
+      .concat(" > .tabs__contents #")
+      .concat(idTabsActive)
+      .concat("-contents")
+  )
     .show()
     .addClass("tabs__contents--active");
 }

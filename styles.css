@@ -26,15 +26,15 @@
     display: block;
   }
 
-  .tabs__subHeader {
+  .tabs__header {
     @apply py-4;
   }
 
-  .tabs__subHeader--items {
+  .tabs__header--items {
     @apply min-w-[120px] px-4 first:pl-0 text-white hover:text-[#f75014] border-l-[#2c3944] border-l-[2px] first:border-none;
   }
 
-  .tabs__subHeader--active {
+  .tabs__header--active {
     @apply text-[#f75014];
   }
 
@@ -52,15 +52,15 @@
 
   #lst-tournaments,
   #lst-tournaments-upcoming {
-    .tabs__subHeader {
+    .tabs__header {
       @apply w-full flex items-center gap-4 overflow-x-auto p-0 mb-8;
     }
 
-    .tabs__subHeader--items {
+    .tabs__header--items {
       @apply first:pl-4 bg-[#0f141a] hover:text-white border-none min-w-[96px];
     }
 
-    .tabs__subHeader--active {
+    .tabs__header--active {
       @apply !bg-[#f75014] !text-white;
     }
 

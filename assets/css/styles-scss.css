@@ -6912,6 +6912,7 @@ table th {
 
 .normal-part {
   padding: 2% 0;
+  color: #fff;
 }
 .normal-part__header {
   display: flex;
@@ -7198,7 +7199,89 @@ table th {
   -webkit-line-clamp: 1;
 }
 
+.competition-format-box-layout {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.competition-format-box-layout .competition-format-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #1f252b;
+}
+.competition-format-box-layout .competition-format-box__title {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.competition-format-box-layout .competition-format-box__title p {
+  color: #96a2af;
+}
+.competition-format-box-layout .competition-format-box__contents {
+  text-indent: 0.5rem;
+}
+.competition-format-box-layout .competition-format-box__contents p {
+  color: #fff;
+  font-weight: bold;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+#ranking-contents #table-total-rating {
+  overflow: auto;
+}
+#ranking-contents #table-total-rating table {
+  min-width: 700px;
+}
+#ranking-contents #table-total-rating table thead tr th {
+  background-color: #1f252b;
+  color: #96a2af;
+}
+#ranking-contents #table-total-rating table tbody tr {
+  background-color: #191f25;
+  border-left: #96a2af 2px solid;
+}
+#ranking-contents #table-total-rating table tbody tr:nth-child(-n+4) {
+  background-color: #1f252b;
+}
+#ranking-contents #table-total-rating table tbody tr td:nth-child(2) {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+#ranking-contents #table-total-rating table tbody tr td:nth-child(2) img {
+  width: 2.5rem;
+}
+#ranking-contents #table-total-rating table tbody tr td:not(:nth-child(2)) {
+  width: 9%;
+}
+#ranking-contents .time-update {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #96a2af;
+}
+
+.lst-source-video {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 2rem;
+}
 @media (min-width: 768px) {
+  .lst-source-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .competition-format-box-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .lst-match-schedule__header {
     margin-bottom: 2rem;
   }
@@ -7369,6 +7452,9 @@ table th {
   }
 }
 @media (min-width: 1024px) {
+  .competition-format-box-layout {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .lst-match-schedule__header {
     margin-bottom: 2rem;
   }

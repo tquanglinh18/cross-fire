@@ -117,6 +117,7 @@
 
 .normal-part {
   padding: 2% 0;
+  color: $white-base;
   &__header {
     @include flex-row-center;
     color: $white-base;
@@ -382,11 +383,11 @@
     gap: 0.25rem;
     padding: 0.5rem;
     &__logo {
-        width: 100%;
-        margin-bottom: 0, 5rem;
+      width: 100%;
+      margin-bottom: 0, 5rem;
       img {
         width: 100%;
-        
+
         object-fit: cover;
       }
     }
@@ -409,7 +410,113 @@
   }
 }
 
+.competition-format-box-layout {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  .competition-format-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: $bg-grey-1f252b;
+    &__title {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      p {
+        color: $grey-96a2af;
+      }
+    }
+
+    &__contents {
+      text-indent: 0.5rem;
+      p {
+        color: $white-base;
+        font-weight: bold;
+        @include text-bold;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+#ranking-contents {
+  #table-total-rating {
+    overflow: auto;
+    table {
+      min-width: 700px;
+      thead {
+        tr th {
+          background-color: $bg-grey-1f252b;
+          color: $grey-96a2af;
+        }
+      }
+
+      tbody {
+        tr {
+          background-color: $grey-191f25;
+          border-left: $grey-96a2af 2px solid;
+          &:nth-child(-n + 4) {
+            background-color: $bg-grey-1f252b;
+          }
+
+          td {
+            &:nth-child(2) {
+              width: 100%;
+              display: flex;
+              gap: 0.5rem;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 2.5rem;
+              }
+            }
+
+            &:not(:nth-child(2)) {
+              width: 9%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .time-update {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $grey-96a2af;
+  }
+}
+
+.lst-source-video {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 2rem;
+
+  .iframe-video {
+    
+  }
+}
+
 @include tablet {
+  .lst-source-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .competition-format-box-layout {
+    grid-template-columns: repeat(2, 1fr);
+    .competition-format-box {
+      &__title {
+      }
+
+      &__contents {
+      }
+    }
+  }
+
   .lst-match-schedule {
     &__header {
       margin-bottom: 2rem;
@@ -590,7 +697,7 @@
   }
 
   .lst-participating-teams {
-  grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     .team-card {
       &__logo {
@@ -607,6 +714,17 @@
 }
 
 @include desktop {
+  .competition-format-box-layout {
+    grid-template-columns: repeat(4, 1fr);
+    .competition-format-box {
+      &__title {
+      }
+
+      &__contents {
+      }
+    }
+  }
+
   .lst-match-schedule {
     &__header {
       margin-bottom: 2rem;
@@ -692,7 +810,7 @@
   }
 
   .lst-participating-teams {
-  grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
     .team-card {
       &__logo {
