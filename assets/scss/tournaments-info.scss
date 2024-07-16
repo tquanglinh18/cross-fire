@@ -493,10 +493,34 @@
 .lst-source-video {
   display: grid;
   grid-template-columns: 1;
-  gap: 2rem;
+  gap: 2.5rem;
 
   .iframe-video {
-    
+    padding: 1rem;
+    &__source {
+      width: 100%;
+      border: 2px solid $org-base-color;
+      aspect-ratio: 16/9;
+      margin-bottom: 0.75rem;
+      @include flex-col-center;
+      iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+
+      h3 {
+        color: $white-base;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 0.5rem;
+      }
+    }
+    &__name-platform {
+      width: 100%;
+      text-align: center;
+      color: $white-base;
+      font-size: 1rem;
+    }
   }
 }
 

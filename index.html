@@ -319,27 +319,27 @@
 
         <div class="container-page w-full mx-auto">
           <div id="new-feed" class="section-item">
-            <div class="flex-row-between">
-              <div class="tabs__header text-extra-bold">
-                <button
-                  id="local-news-header"
-                  class="tabs__header--items tabs__header--active"
-                  onclick="tabOpen('new-feed','local-news-header','local-news-contents')"
-                >
-                  Tin tức trong nước
-                </button>
+            <div class="tabs__header text-extra-bold">
+              <button
+                id="local-news-header"
+                class="tabs__header--items tabs__header--active"
+                onclick="tabOpenHandle('new-feed','local-news')"
+              >
+                Tin tức trong nước
+              </button>
 
-                <button
-                  id="global-news-header"
-                  class="tabs__header--items"
-                  onclick="tabOpen('new-feed','global-news-header','global-news-contents')"
-                >
-                  Tin tức quốc tế
-                </button>
-              </div>
+              <button
+                id="global-news-header"
+                class="tabs__header--items"
+                onclick="tabOpenHandle('new-feed','global-news')"
+              >
+                Tin tức quốc tế
+              </button>
 
-              <div class="btn-more">
-                <img src="./assets/images/ic_more.png" alt="" />
+              <div class="tabs__header--more">
+                <a href="/news.html" class="btn-more">
+                  <img src="./assets/images/ic_more.png" alt="" />
+                </a>
               </div>
             </div>
 

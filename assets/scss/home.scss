@@ -134,6 +134,24 @@
   }
 }
 
+#new-feed {
+  .tabs {
+    &__header {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &--more {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+
 .match-card {
   width: 100%;
   display: flex;

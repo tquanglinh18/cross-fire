@@ -64,6 +64,62 @@ $grey-191f25: #191f25;
   -ms-#{$atribute}: #{$params};
   -o-#{$atribute}: #{$params};
 }
+.pop-up--overlay {
+  width: 100vw;
+  height: 100vh;
+  @include flex-col-center;
+  padding: 1rem;
+}
+.pop-up-modal {
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../images/bg_pop_up_base.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  color: $white-base;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 3rem;
+  border: 2px solid $grey-96a2af;
+  &__header {
+    position: relative;
+    width: 100%;
+    &--title {
+      text-align: center;
+      font-size: 1.5rem;
+      @include text-bold;
+      text-transform: uppercase;
+      word-spacing: 0.5rem;
+    }
+    &--close-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.25rem;
+      color: $grey-96a2af;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.5);
+        color: $org-base-color;
+      }
+    }
+  }
+  &__body {
+    span {
+      color: $org-base-color;
+    }
+  }
+  &__footer {
+    @include flex-col-center;
+    gap: 1rem;
+  }
+}
 
 .flex-row-between {
   @include flex-row-between;
@@ -137,7 +193,7 @@ $grey-191f25: #191f25;
   padding: 0.5rem 1rem;
   text-align: center;
   @include flex-row-center;
-  min-width: 170px;
+  min-width: 140px;
   color: $white-base;
   cursor: pointer;
   transition: all 0.3s;
@@ -150,12 +206,29 @@ $grey-191f25: #191f25;
     background: $black-0f141a;
   }
 
+  &--grey-161e27 {
+    color: $white-base;
+    background-color: $grey-161e27;
+  }
+
   &:hover {
     transform: scale(1.1);
   }
 }
 
 @include tablet {
+  .pop-up-modal {
+    gap: 4rem;
+    background-size: 100% 100%;
+    &__header {
+    }
+    &__body {
+    }
+    &__footer {
+      flex-direction: row;
+    }
+  }
+
   .page-with-left-menu {
     width: calc(100vw - 64px);
   }
@@ -170,6 +243,17 @@ $grey-191f25: #191f25;
 }
 
 @include desktop {
+  .pop-up-modal {
+    background-size: 100% auto;
+    &__header {
+    }
+    &__body {
+    }
+    &__footer {
+      gap: 2rem;
+    }
+  }
+
   .page {
     &__header {
       &--name {
@@ -783,6 +867,7 @@ $grey-191f25: #191f25;
 .btn-more {
   cursor: pointer;
   transition: all 0.3s ease;
+  float: right;
 
   &:hover {
     transform: scale(1.5);
