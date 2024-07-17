@@ -484,3 +484,27 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+.tournaments-match-today {
+  &__name {
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    .slick-slide {
+      color: $white-base;
+      background-color: $grey-0f141a;
+      min-width: 120px;
+      max-width: fit-content;
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .slick-current {
+      background-color: $org-base-color;
+    }
+  }
+
+  &__detail {
+  }
+}

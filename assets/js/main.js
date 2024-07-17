@@ -3,25 +3,14 @@ $(function () {
     $("#header-mobile").toggleClass("header-mobile-active");
   });
 
-  // $("#banner-slide").slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 1,
-  //   adaptiveHeight: true,
-  //   arrows: false,
-  // });
-
   $(".match-box-parents").each((index, matchBox) => openMapDetail(index + 1));
 });
 
 function tabOpenHandle(idSection, idTabsActive) {
-  var tabHeaderElm = $(
-    "#".concat(idSection).concat(" > .tabs__header > .tabs__header--items")
-  );
+  var tabHeaderElm = $("#".concat(idSection).concat(" .tabs__header--items"));
 
   var tabContentsElm = $(
-    "#".concat(idSection).concat(" > .tabs__contents > .tabs__contents--items")
+    "#".concat(idSection).concat(" .tabs__contents--items")
   );
 
   tabContentsElm.each((index, value) => {
@@ -50,11 +39,9 @@ function tabOpenHandle(idSection, idTabsActive) {
 
 function openMapDetail(index) {
   var idMatchCardSel = "#match-card-".concat(index).concat(" > .match-card");
-  console.log("🚀 ~ openMapDetail ~ idMatchCardSel:", idMatchCardSel);
   var idMapDetailBoxSel = "#match-card-"
     .concat(index)
     .concat(" > #lst-map-detail");
-  console.log("🚀 ~ openMapDetail ~ idMapDetailBoxSel:", idMapDetailBoxSel);
   $(idMatchCardSel).click(() => {
     if ($(idMapDetailBoxSel).css("display") == "none") {
       $(idMapDetailBoxSel).show();

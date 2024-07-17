@@ -154,11 +154,20 @@ $grey-0f141a: #0f141a;
 .section-item {
   padding: 1rem;
   margin-bottom: 4%;
-  &__title {
-    color: white;
-    margin-bottom: 1.5rem;
-    font-family: "SVN-Nolan Next Extra Bold";
-    font-size: 20px;
+  &__header {
+    @include flex-row-between;
+    color: $white-base;
+    &--title {
+      margin-bottom: 1.5rem;
+      font-family: "SVN-Nolan Next Extra Bold";
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    &--action {
+      @include flex-row-center;
+      gap: 1rem;
+    }
   }
   &__contents {
     width: 100%;
