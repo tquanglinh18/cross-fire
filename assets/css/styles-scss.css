@@ -6,6 +6,11 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -28,6 +33,17 @@
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -1210,6 +1226,11 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -1232,6 +1253,17 @@
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -2068,6 +2100,11 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -2090,6 +2127,17 @@
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -3061,6 +3109,11 @@ select:focus {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -3083,6 +3136,17 @@ select:focus {
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -3960,6 +4024,11 @@ select:focus {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -3982,6 +4051,17 @@ select:focus {
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -4958,6 +5038,11 @@ table th {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -4980,6 +5065,17 @@ table th {
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -5903,6 +5999,11 @@ table th {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -5925,6 +6026,17 @@ table th {
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -6705,6 +6817,11 @@ table th {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .pop-up-modal {
@@ -6727,6 +6844,17 @@ table th {
 .pop-up-modal__header {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pop-up-modal__header h3 {
+  font-size: 1.25rem;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
 }
 .pop-up-modal__header--title {
   text-align: center;
@@ -7558,18 +7686,23 @@ table th {
   overflow: auto;
   padding: 0;
 }
-.tournaments-detail .tabs__header--item {
+.tournaments-detail .tabs__header--items {
   min-width: fit-content;
   padding: 1rem 2rem;
   transition: all 0.3s;
   border-bottom: 2px solid transparent;
+  border-left: none;
 }
-.tournaments-detail .tabs__header--item:hover {
+.tournaments-detail .tabs__header--items:first-child {
+  padding-left: 2rem;
+  border-bottom: 2px solid transparent;
+}
+.tournaments-detail .tabs__header--items:hover {
   border-bottom: 2px solid #f75014;
   color: #f75014;
 }
 .tournaments-detail .tabs__header--active {
-  border-bottom: 2px solid #f75014;
+  border-bottom: 2px solid #f75014 !important;
 }
 
 .lst-phares-tournaments {
@@ -7721,6 +7854,7 @@ table th {
 }
 .lst-match-schedule__contents .match-schedule-table {
   background-color: #1f252b;
+  height: fit-content;
 }
 .lst-match-schedule__contents .match-schedule-table__round-name {
   padding: 1rem;
@@ -7775,6 +7909,7 @@ table th {
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .lst-map-detail {
   background-color: #2c3944;
+  display: none;
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .lst-map-detail .match-card {
   cursor: default;
@@ -7971,6 +8106,66 @@ table th {
   text-align: center;
   color: #fff;
   font-size: 1rem;
+}
+
+#pop-up-teams-info .pop-up-modal {
+  background-image: none;
+  max-height: 90vh;
+  margin: auto;
+  overflow: auto;
+  padding: 0;
+  gap: 0;
+  background-color: #0f141a;
+}
+#pop-up-teams-info .pop-up-modal__header {
+  padding: 2rem;
+}
+#pop-up-teams-info .pop-up-modal__header--close-btn {
+  top: 1rem;
+  right: 1rem;
+}
+#pop-up-teams-info .pop-up-modal .team-card__logo {
+  width: 80%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg_header_pop-up_teams_info.png");
+}
+#pop-up-teams-info table {
+  min-width: unset !important;
+  justify-items: center;
+}
+#pop-up-teams-info table tr:nth-child(2n+1) {
+  background-color: #1d2229;
+}
+#pop-up-teams-info table tr:nth-child(2n) {
+  background-color: #0f141a;
+}
+#pop-up-teams-info table tr td {
+  padding: 0.5rem;
+}
+#pop-up-teams-info table tr td:first-child, #pop-up-teams-info table tr td:nth-child(2), #pop-up-teams-info table tr td:last-child {
+  width: 8%;
+}
+#pop-up-teams-info table tr td:nth-child(3) {
+  width: 20%;
+}
+#pop-up-teams-info table tr td img {
+  max-width: 2rem;
+}
+#pop-up-teams-info .btn-search-info-player {
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pop-up-teams-info .btn-search-info-player:hover {
+  transform: scale(1.3);
 }
 
 @media (min-width: 768px) {

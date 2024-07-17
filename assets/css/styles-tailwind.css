@@ -693,14 +693,6 @@ video {
   top: 0px;
 }
 
-.float-end {
-  float: inline-end;
-}
-
-.float-right {
-  float: right;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -720,10 +712,6 @@ video {
 
 .mt-\[50px\] {
   margin-top: 50px;
-}
-
-.block {
-  display: block;
 }
 
 .inline-block {

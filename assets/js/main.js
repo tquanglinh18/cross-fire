@@ -3,14 +3,16 @@ $(function () {
     $("#header-mobile").toggleClass("header-mobile-active");
   });
 
-  $("#banner-slide").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    arrows: false,
-  });
+  // $("#banner-slide").slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1,
+  //   adaptiveHeight: true,
+  //   arrows: false,
+  // });
+
+  $(".match-box-parents").each((index, matchBox) => openMapDetail(index + 1));
 });
 
 function tabOpenHandle(idSection, idTabsActive) {
@@ -30,7 +32,6 @@ function tabOpenHandle(idSection, idTabsActive) {
     $(value).removeClass("tabs__header--active");
   });
 
-
   var tabHeaderSel = "#"
     .concat(idSection)
     .concat(" #")
@@ -45,6 +46,22 @@ function tabOpenHandle(idSection, idTabsActive) {
 
   $(tabHeaderSel).addClass("tabs__header--active");
   $(tabContentsSel).show().addClass("tabs__contents--active");
+}
+
+function openMapDetail(index) {
+  var idMatchCardSel = "#match-card-".concat(index).concat(" > .match-card");
+  console.log("🚀 ~ openMapDetail ~ idMatchCardSel:", idMatchCardSel);
+  var idMapDetailBoxSel = "#match-card-"
+    .concat(index)
+    .concat(" > #lst-map-detail");
+  console.log("🚀 ~ openMapDetail ~ idMapDetailBoxSel:", idMapDetailBoxSel);
+  $(idMatchCardSel).click(() => {
+    if ($(idMapDetailBoxSel).css("display") == "none") {
+      $(idMapDetailBoxSel).show();
+    } else {
+      $(idMapDetailBoxSel).hide();
+    }
+  });
 }
 
 const initialActionClickTab = () => {};

@@ -91,18 +91,23 @@
       overflow: auto;
       padding: 0;
 
-      &--item {
+      &--items {
         min-width: fit-content;
         padding: 1rem 2rem;
         transition: all 0.3s;
         border-bottom: 2px solid transparent;
+        border-left: none;
+        &:first-child {
+          padding-left: 2rem;
+          border-bottom: 2px solid transparent;
+        }
         &:hover {
           border-bottom: 2px solid $org-base-color;
           color: $org-base-color;
         }
       }
       &--active {
-        border-bottom: 2px solid $org-base-color;
+        border-bottom: 2px solid $org-base-color !important;
       }
     }
   }
@@ -260,6 +265,7 @@
     gap: 2rem;
     .match-schedule-table {
       background-color: $bg-grey-1f252b;
+      height: fit-content;
 
       &__round-name {
         padding: 1rem;
@@ -317,7 +323,7 @@
 
         .lst-map-detail {
           background-color: $grey-2c3944;
-          // display: none;
+          display: none;
           .match-card {
             cursor: default;
             &:last-child {
@@ -524,6 +530,74 @@
   }
 }
 
+#pop-up-teams-info {
+  .pop-up-modal {
+    background-image: none;
+    max-height: 90vh;
+    margin: auto;
+    overflow: auto;
+    padding: 0;
+    gap: 0;
+    background-color: $grey-0f141a;
+    &__header {
+      padding: 2rem;
+
+      &--close-btn {
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+
+    .team-card {
+      &__logo {
+        width: 80%;
+        padding: 1rem;
+        @include flex-col-center;
+        background-image: url("../images/bg_header_pop-up_teams_info.png");
+      }
+    }
+  }
+
+  table {
+    min-width: unset !important;
+    justify-items: center;
+    tr {
+      &:nth-child(2n + 1) {
+        background-color: $grey-1d2229;
+      }
+
+      &:nth-child(2n) {
+        background-color: $grey-0f141a;
+      }
+
+      td {
+        padding: 0.5rem;
+        &:first-child,
+        &:nth-child(2),
+        &:last-child {
+          width: 8%;
+        }
+
+        &:nth-child(3) {
+          width: 20%;
+        }
+        img {
+          max-width: 2rem;
+        }
+      }
+    }
+  }
+
+  .btn-search-info-player {
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+    @include flex-col-center;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
 @include tablet {
   .lst-source-video {
     display: grid;

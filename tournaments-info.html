@@ -73,7 +73,7 @@
           <div class="tabs__header">
             <button
               type="button"
-              class="tabs__header--item tabs__header--active"
+              class="tabs__header--items tabs__header--active"
               id="overview-header"
             >
               Tổng quan
@@ -81,7 +81,7 @@
 
             <button
               type="button"
-              class="tabs__header--item"
+              class="tabs__header--items"
               id="tournaments-table-header"
             >
               Bảng đấu
@@ -89,7 +89,7 @@
 
             <button
               type="button"
-              class="tabs__header--item"
+              class="tabs__header--items"
               id="lst-teams-header"
             >
               Team tham dự
@@ -97,7 +97,7 @@
 
             <button
               type="button"
-              class="tabs__header--item"
+              class="tabs__header--items"
               id="competition-format-header"
             >
               Thể thức thi đấu
@@ -105,7 +105,7 @@
 
             <button
               type="button"
-              class="tabs__header--item"
+              class="tabs__header--items"
               id="ranking-header"
             >
               Xếp hạng
@@ -113,7 +113,7 @@
 
             <button
               type="button"
-              class="tabs__header--item"
+              class="tabs__header--items"
               id="livestream-header"
             >
               Livestream
@@ -421,42 +421,7 @@
                           Round 1
                         </div>
                         <div class="match-schedule-table__lst-match">
-                          <div class="">
-                            <div class="match-card hover-animation">
-                              <div class="match-card__info">
-                                <div class="match-card__info--desc">
-                                  <p>Round 1</p>
-                                  <p>18:30</p>
-                                  <p>BO3</p>
-                                </div>
-                                <div class="match-card__info--teams">
-                                  <div class="match-card__info--teams--item">
-                                    <p>CRH.Esports</p>
-                                    <img
-                                      src="./assets/images/logo_team_demo.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <p>1 <span>-</span> 1</p>
-                                  <div class="match-card__info--teams--item">
-                                    <p>CRH.Esports</p>
-                                    <img
-                                      src="./assets/images/logo_team_demo.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="match-card__view">
-                                <img
-                                  src="./assets/images/ic_drop_down.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="">
+                          <div id="match-card-1" class="match-box-parents">
                             <div class="match-card hover-animation">
                               <div class="match-card__info">
                                 <div class="match-card__info--desc">
@@ -491,7 +456,7 @@
                               </div>
                             </div>
 
-                            <div class="lst-map-detail">
+                            <div id="lst-map-detail" class="lst-map-detail">
                               <div class="match-card match-card--map-detail">
                                 <div class="match-card__info !w-full">
                                   <div class="match-card__info--desc">
@@ -621,7 +586,8 @@
                               </div>
                             </div>
                           </div>
-                          <div class="">
+
+                          <div id="match-card-2" class="match-box-parents">
                             <div class="match-card hover-animation">
                               <div class="match-card__info">
                                 <div class="match-card__info--desc">
@@ -655,8 +621,139 @@
                                 />
                               </div>
                             </div>
+
+                            <div id="lst-map-detail" class="lst-map-detail">
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="">
+
+                          <div id="match-card-3" class="match-box-parents">
                             <div class="match-card hover-animation">
                               <div class="match-card__info">
                                 <div class="match-card__info--desc">
@@ -688,6 +785,468 @@
                                   src="./assets/images/ic_drop_down.png"
                                   alt=""
                                 />
+                              </div>
+                            </div>
+
+                            <div id="lst-map-detail" class="lst-map-detail">
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="match-card-4" class="match-box-parents">
+                            <div class="match-card hover-animation">
+                              <div class="match-card__info">
+                                <div class="match-card__info--desc">
+                                  <p>Round 1</p>
+                                  <p>18:30</p>
+                                  <p>BO3</p>
+                                </div>
+                                <div class="match-card__info--teams">
+                                  <div class="match-card__info--teams--item">
+                                    <p>CRH.Esports</p>
+                                    <img
+                                      src="./assets/images/logo_team_demo.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <p>1 <span>-</span> 1</p>
+                                  <div class="match-card__info--teams--item">
+                                    <p>CRH.Esports</p>
+                                    <img
+                                      src="./assets/images/logo_team_demo.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card__view">
+                                <img
+                                  src="./assets/images/ic_drop_down.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+
+                            <div id="lst-map-detail" class="lst-map-detail">
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="match-card-5" class="match-box-parents">
+                            <div class="match-card hover-animation">
+                              <div class="match-card__info">
+                                <div class="match-card__info--desc">
+                                  <p>Round 1</p>
+                                  <p>18:30</p>
+                                  <p>BO3</p>
+                                </div>
+                                <div class="match-card__info--teams">
+                                  <div class="match-card__info--teams--item">
+                                    <p>CRH.Esports</p>
+                                    <img
+                                      src="./assets/images/logo_team_demo.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <p>1 <span>-</span> 1</p>
+                                  <div class="match-card__info--teams--item">
+                                    <p>CRH.Esports</p>
+                                    <img
+                                      src="./assets/images/logo_team_demo.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card__view">
+                                <img
+                                  src="./assets/images/ic_drop_down.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+
+                            <div id="lst-map-detail" class="lst-map-detail">
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="match-card match-card--map-detail">
+                                <div class="match-card__info !w-full">
+                                  <div class="match-card__info--desc">
+                                    <p>Map 1</p>
+                                    <p>
+                                      <img
+                                        src="./assets/images/img_map_thumbnail.png"
+                                        alt=""
+                                      />
+                                    </p>
+                                    <p>Trạm phát sóng</p>
+                                  </div>
+                                  <div class="match-card__info--teams">
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <p>1 <span>-</span> 1</p>
+                                    <div class="match-card__info--teams--item">
+                                      <p>CRH.Esports</p>
+                                      <img
+                                        src="./assets/images/logo_team_demo.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -846,7 +1405,10 @@
               </div>
             </div>
 
-            <div class="tabs__contents--items" id="lst-teams-contents">
+            <div
+              class="tabs__contents--items tabs__contents--active"
+              id="lst-teams-contents"
+            >
               <div class="normal-part">
                 <div class="normal-part__header">
                   <div class="">
@@ -1267,10 +1829,7 @@
               </div>
             </div>
 
-            <div
-              class="tabs__contents--items tabs__contents--active"
-              id="livestream-contents"
-            >
+            <div class="tabs__contents--items" id="livestream-contents">
               <div class="lst-source-video">
                 <div class="normal-part">
                   <div class="normal-part__header">
@@ -1341,5 +1900,31 @@
 
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      $(function () {
+        var lstTabOfTournamentDetail = [
+          "overview",
+          "tournaments-table",
+          "lst-teams",
+          "competition-format",
+          "ranking",
+          "livestream",
+        ];
+        var lstTabHeader = $(
+          "#tournaments-detail > .tabs__header > .tabs__header--items"
+        );
+
+        lstTabHeader.each((index, tabItem) => {
+          $(tabItem).click(() => {
+            console.log(lstTabOfTournamentDetail[index]);
+
+            tabOpenHandle(
+              "tournaments-detail",
+              lstTabOfTournamentDetail[index]
+            );
+          });
+        });
+      });
+    </script>
   </body>
 </html>

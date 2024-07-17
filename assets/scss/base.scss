@@ -17,6 +17,8 @@ $grey-8c97a4: #8c97a4;
 $grey-2c3944: #2c3944;
 $grey-96a2af: #96a2af;
 $grey-191f25: #191f25;
+$grey-1d2229: #1d2229;
+$grey-0f141a: #0f141a;
 
 @mixin text-extra-bold {
   font-family: "SVN-Nolan Next Extra Bold";
@@ -69,6 +71,11 @@ $grey-191f25: #191f25;
   height: 100vh;
   @include flex-col-center;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .pop-up-modal {
   width: 100%;
@@ -89,6 +96,12 @@ $grey-191f25: #191f25;
   &__header {
     position: relative;
     width: 100%;
+    @include flex-col-center;
+    gap: 0.5rem;
+    h3 {
+      font-size: 1.25rem;
+      @include text-bold;
+    }
     &--title {
       text-align: center;
       font-size: 1.5rem;
