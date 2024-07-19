@@ -706,12 +706,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-\[4\%\] {
-  margin-bottom: 4%;
-}
-
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -784,6 +784,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-\[\#0f141a\] {

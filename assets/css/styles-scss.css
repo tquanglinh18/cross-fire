@@ -1239,8 +1239,6 @@
 .tournaments-match-today__name .slick-slide {
   color: #fff;
   background-color: #0f141a;
-  min-width: 120px;
-  max-width: fit-content;
   margin-right: 1rem;
 }
 .tournaments-match-today__name .slick-slide:last-child {
@@ -1249,6 +1247,37 @@
 .tournaments-match-today__name .slick-current {
   background-color: #f75014;
 }
+#today-match-contents .tabs-ratio__header {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#today-match-contents .tabs-ratio__header--items {
+  min-width: 84px;
+  padding: 0.25rem 1rem;
+  background-color: #0f141a;
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  cursor: pointer;
+}
+#today-match-contents .tabs-ratio__header--active {
+  background-color: #f75014 !important;
+}
+#today-match-contents input {
+  display: none;
+}
+#today-match-contents .tabs-ratio__contents {
+  display: none;
+}
+#today-match-contents input:checked + .tabs-ratio__contents {
+  display: block;
+}
+
 .pop-up--overlay {
   width: 100vw;
   height: 100vh;

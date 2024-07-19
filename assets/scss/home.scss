@@ -493,8 +493,6 @@
     .slick-slide {
       color: $white-base;
       background-color: $grey-0f141a;
-      min-width: 120px;
-      max-width: fit-content;
       margin-right: 1rem;
       &:last-child {
         margin-right: 0;
@@ -506,5 +504,43 @@
   }
 
   &__detail {
+  }
+}
+
+#today-match-contents {
+  .tabs-ratio {
+    &__header {
+      color: $white-base;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      &--items {
+        min-width: 84px;
+        padding: 0.25rem 1rem;
+        background-color: $black-0f141a;
+        @include text-bold;
+        cursor: pointer;
+      }
+
+      &--active {
+        background-color: $org-base-color !important;
+      }
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  .tabs-ratio__contents {
+    display: none;
+  }
+
+  input:checked + .tabs-ratio__contents {
+    display: block;
   }
 }
