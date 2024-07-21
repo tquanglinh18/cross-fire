@@ -11,7 +11,7 @@
   }
 }
 
-.playerInfo {
+.player-info {
   @include flex-col-center;
   gap: 1.5rem;
   &__avt {
@@ -21,7 +21,8 @@
     aspect-ratio: 337/380;
     @include flex-row-center;
     box-shadow: inset 0 0 1.5rem 1.5rem #0b0e12;
-    background-color: $black-0f141a;
+    background-color: $grey-0f141a;
+
     img {
       width: 100%;
       object-fit: cover;
@@ -47,8 +48,13 @@
       //   background-position: center bottom;
       border-bottom: 1px solid $grey-b6;
       padding: 0.75rem 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
       &:last-child {
         border-bottom: none;
+        padding-bottom: 0;
       }
       p {
         color: $white-base;
@@ -142,7 +148,7 @@ table {
     gap: 0.5rem;
 
     .player {
-      background-color: $black-0f141a;
+      background-color: $grey-0f141a;
       border-radius: 100%;
       width: 32px;
       aspect-ratio: 1/1;
@@ -164,7 +170,7 @@ table {
     }
   }
 
-  .playerInfo {
+  .player-info {
     &__detail {
       &--item {
         flex-direction: row;
@@ -182,7 +188,7 @@ table {
 }
 
 @include desktop {
-  .playerInfo {
+  .player-info {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;

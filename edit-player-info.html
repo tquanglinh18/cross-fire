@@ -20,65 +20,102 @@
         <div class="page__header--name">Hồ sơ tuyển thủ</div>
       </div>
 
-      <div id="player-info" class="page__contents !max-w-[1350px]">
+      <div id="edit-player-info" class="page__contents !max-w-[1350px]">
         <div class="section-item">
           <div class="section-item__header">
             <h3 class="section-item__header--title">Thông tin chung</h3>
-            <div class="section-item__header--action">jksdlhgkjd</div>
+            <div class="section-item__header--action">
+              <div class="btn-base btn-base--org">Cập nhật</div>
+              <div class="btn-base btn-base--black">Huỷ bỏ</div>
+            </div>
           </div>
           <div class="section-item__contents">
-            <div class="playerInfo">
-              <div class="playerInfo__avt">
-                <img src="./assets/images/logo_team_demo.png" alt="" />
+            <div class="player-info">
+              <div class="form-update-avt">
+                <div class="form-update-avt__upload">
+                  <div class="form-update-avt__upload--img">
+                    <img src="./assets/images/logo_team_demo.png" alt="">
+                  </div>
+                  <label for="form-update-avt__upload">
+                    <div class="form-update-avt__upload--btn-upload">
+                      <p>Tải ảnh đại diện</p>
+                      <img src="./assets/images/ic_upload.png" alt="" />
+                    </div>
+                  </label>
+                  <input
+                    type="file"
+                    hidden
+                    name="form-update-avt__upload"
+                    id="form-update-avt__upload"
+                  />
+                </div>
               </div>
-              <div class="playerInfo__detail">
-                <div class="playerInfo__detail--item">
-                  <p>Tên đội tuyển</p>
-                  <p>Hello</p>
+              <div class="player-info__detail">
+                <div class="player-info__detail--item">
+                  <p>Tên thi đấu</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây"/>
+                  </div>
                 </div>
 
-                <div class="playerInfo__detail--item">
-                  <p>Tên rút gọn</p>
-                  <p>Hello</p>
+                <div class="player-info__detail--item">
+                  <p>họ và tên</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây"/>
+                  </div>
                 </div>
 
-                <div class="playerInfo__detail--item">
-                  <p>Ngày thành lập</p>
-                  <p>Hello</p>
+                <div class="player-info__detail--item">
+                  <p>Ngày sinh</p>
+                  <div class="input-modal">
+                    <input type="date" />
+                  </div>
                 </div>
 
-                <div class="playerInfo__detail--item">
+                <div class="player-info__detail--item">
                   <p>Khu vực</p>
-                  <p>Hello</p>
+                  <div class="input-modal">
+                    <select type="text">
+                      <option value="">Hehe</option>
+                      <option value="">Huhu</option>
+                      <option value="">Haha</option>
+                    </select>
+                  </div>
                 </div>
 
-                <div class="playerInfo__detail--item">
-                  <p>Mô tả</p>
+                <div class="player-info__detail--item">
+                  <p>Đội tuyển đang thi đấu</p>
                   <p>Hacker lỏ</p>
                 </div>
 
-                <div class="playerInfo__detail--item">
+                <div class="player-info__detail--item">
+                  <p>Vị trí thi đấu</p>
+                  <div class="input-modal">
+                    <select type="text">
+                      <option value="">Hehe</option>
+                      <option value="">Huhu</option>
+                      <option value="">Haha</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="player-info__detail--item">
                   <p>Discord</p>
-                  <div class="container-org-base !py-1">
-                    <p>Đến trang</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây"/>
                   </div>
                 </div>
 
-                <div class="playerInfo__detail--item">
+                <div class="player-info__detail--item">
                   <p>Facebook</p>
-                  <div class="container-org-base !py-1">
-                    <p>Đến trang</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây"/>
                   </div>
                 </div>
 
-                <div class="playerInfo__detail--item">
-                  <p>Tình trạng</p>
-                  <p>Công khai</p>
-                </div>
-
-                <div class="playerInfo__detail--item">
-                  <p>Thành viên</p>
-                  <p>05/07</p>
+                <div class="player-info__detail--item">
+                  <p>Số điện thoại</p>
+                  <a href="">Vui lòng cập nhật trên goPlay</a>
                 </div>
               </div>
             </div>
