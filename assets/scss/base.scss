@@ -18,6 +18,7 @@ $grey-96a2af: #96a2af;
 $grey-191f25: #191f25;
 $grey-1d2229: #1d2229;
 $grey-0f141a: #0f141a;
+$grey-31404e: #31404e;
 
 @mixin text-extra-bold {
   font-family: "SVN-Nolan Next Extra Bold";
@@ -453,6 +454,11 @@ $grey-0f141a: #0f141a;
   &--grey-161e27 {
     color: $white-base;
     background-color: $grey-161e27 !important;
+  }
+
+  &--grey-353f48 {
+    color: $white-base;
+    background-color: $grey-353f48 !important;
   }
 
   &:hover {

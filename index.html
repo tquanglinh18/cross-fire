@@ -1322,24 +1322,7 @@
         arrows: false,
       });
 
-      $(".tournaments-match-today__detail").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".tournaments-match-today__name",
-        infinite: false,
-      });
-      $(".tournaments-match-today__name").slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        asNavFor: ".tournaments-match-today__detail",
-        focusOnSelect: true,
-        centerMode: true,
-        infinite: false,
-      });
-
-      var lstHeader = $(".tabs-ratio__header--items hover-ltr");
+      var lstHeader = $(".tabs-ratio__header--items");
       lstHeader.each((index, headerItem) => {
         $(headerItem).click((e) => {
           lstHeader.each((idx, headerItemDup) => {
