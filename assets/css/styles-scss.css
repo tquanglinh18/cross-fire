@@ -850,6 +850,30 @@
   background-position: left bottom;
 }
 
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
+}
+
 #banner-slide {
   width: 100%;
   height: 50vh;
@@ -1364,6 +1388,64 @@
   color: #fff !important;
 }
 
+#tournaments-pop-up {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+#tournaments-pop-up .layout-tournaments-pop-up {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+#tournaments-pop-up h3 {
+  font-family: "SVN-Nolan Next Bold";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+#tournaments-pop-up .tournaments-item h3 {
+  margin-bottom: 1rem;
+}
+#tournaments-pop-up .tournaments-item__seasion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#tournaments-pop-up .tournaments-item__seasion--box {
+  padding: 0.25rem 1rem;
+  border: 1px solid #0f141a;
+  margin-bottom: 0.5rem;
+  min-width: 160px;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+#tournaments-pop-up .slick-next {
+  top: 50%;
+  right: 10%;
+}
+#tournaments-pop-up .slick-next::before {
+  content: ">";
+  color: black;
+  line-height: 1;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+#tournaments-pop-up .slick-prev {
+  top: 50%;
+  left: 10%;
+}
+#tournaments-pop-up .slick-prev::before {
+  content: "<";
+  color: black;
+  line-height: 1;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
 .pop-up--overlay {
   width: 100vw;
   height: 100vh;
@@ -2216,6 +2298,30 @@
   background-position: left bottom;
 }
 
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
+}
+
 .pop-up--overlay {
   width: 100vw;
   height: 100vh;
@@ -3068,24 +3174,48 @@
   background-position: left bottom;
 }
 
-.mediaFilter {
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
+}
+
+.media-filter {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
-.mediaFilter .filterItem {
+.media-filter .filter-item {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
 }
-.mediaFilter .filterItem label {
+.media-filter .filter-item label {
   width: 40%;
   text-align: center;
   color: #fff;
 }
-.mediaFilter .filterItem select {
+.media-filter .filter-item select {
   color: black;
   width: 100%;
   max-width: 200px;
@@ -3095,7 +3225,7 @@
   border-radius: 0.25rem;
 }
 
-.mediaPageLayout {
+.media-page-layout {
   width: 100%;
   display: grid;
   gap: 1rem;
@@ -3103,58 +3233,58 @@
 }
 
 @media (min-width: 768px) {
-  .mediaPageLayout {
+  .media-page-layout {
     grid-template-columns: repeat(2, 1fr);
   }
-  .mediaFilter .filterItem select {
+  .media-filter .filter-item select {
     max-width: 244px;
   }
 }
 @media (min-width: 1024px) {
-  .mediaPageLayout {
+  .media-page-layout {
     grid-template-columns: repeat(3, 1fr);
   }
-  .mediaFilter {
+  .media-filter {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1480px) {
-  .mediaPageLayout {
+  .media-page-layout {
     grid-template-columns: repeat(5, 1fr);
   }
-  .mediaFilter .filterItem {
+  .media-filter .filter-item {
     flex-direction: row !important;
   }
 }
-.mediaCardItem {
+.media-card-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
 }
-.mediaCardItem__header {
+.media-card-item__header {
   width: 100%;
   border: 2px solid #253138;
   padding: 0.5rem;
   color: #fff;
   text-align: center;
 }
-.mediaCardItem__body {
+.media-card-item__body {
   width: 100%;
   border: 2px solid #253138;
 }
-.mediaCardItem__body img {
+.media-card-item__body img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 314/177;
 }
-.mediaCardItem__body .btn-view {
+.media-card-item__body .btn-view {
   margin: 0.5rem;
   padding: 0.5rem;
   background-color: #f75014;
 }
-.mediaCardItem__body .btn-view a {
+.media-card-item__body .btn-view a {
   width: 100%;
   color: #fff;
   text-align: center;
@@ -4010,6 +4140,30 @@
 }
 .hover-ltr:hover {
   background-position: left bottom;
+}
+
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
 }
 
 .textFieldInfo {
@@ -5091,6 +5245,30 @@ select:focus {
   background-position: left bottom;
 }
 
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
+}
+
 #lst-player-page {
   width: 100%;
   max-width: 1400px;
@@ -6076,123 +6254,6 @@ select:focus {
   background-position: left bottom;
 }
 
-#team-info .section-item__title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 16px;
-}
-
-.teamsInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-.teamsInfo__avt {
-  width: 100%;
-  height: 100%;
-  max-width: 337px;
-  aspect-ratio: 337/380;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 1.5rem 1.5rem #0b0e12;
-  background-color: #0f141a;
-}
-.teamsInfo__avt img {
-  width: 100%;
-  object-fit: cover;
-}
-.teamsInfo__detail {
-  width: 100%;
-  max-width: none;
-  padding: 1rem 2rem;
-  background-color: #1f252b;
-  background-image: url("../images/logo_cf_bg_table_info.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.teamsInfo__detail--item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-  border-bottom: 1px solid #b6b6b6;
-  padding: 0.75rem 0;
-}
-.teamsInfo__detail--item:last-child {
-  border-bottom: none;
-}
-.teamsInfo__detail--item p {
-  color: #fff;
-  font-size: 14px;
-  width: 100%;
-  text-align: end;
-}
-.teamsInfo__detail--item p:first-child {
-  text-align: start;
-  font-size: 16px;
-}
-.teamsInfo__detail--item .container-org-base {
-  cursor: pointer;
-}
-.teamsInfo__detail--item .container-org-base p {
-  font-size: 14px !important;
-}
-
-.lst-player {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem 1.5rem;
-}
-
-.playerCard__avt {
-  width: 100%;
-  aspect-ratio: 257/324;
-  background-color: #0f141a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.playerCard__avt img {
-  width: 100%;
-  object-fit: cover;
-}
-.playerCard__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-.playerCard__info--nickName {
-  width: 100%;
-  padding: 0.75rem 0.5rem;
-  text-align: center;
-  background-color: #0f141a;
-  color: #f75014;
-  font-weight: bold;
-  font-family: "SVN-Nolan Next Extra Bold";
-}
-.playerCard__info--fullName, .playerCard__info--fortePosition {
-  width: 100%;
-  padding: 0.75rem 0.5rem;
-  text-align: center;
-  background-color: #0f141a;
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 14px;
-}
-
 .container-table-overflow {
   width: 100%;
   overflow: auto;
@@ -6215,6 +6276,123 @@ table th {
   padding: 0.75rem 0.5rem;
   border: 1px solid #161e27;
   text-align: center;
+}
+
+#team-info .section-item__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.teams-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.teams-info__avt {
+  width: 100%;
+  height: 100%;
+  max-width: 337px;
+  aspect-ratio: 337/380;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 1.5rem 1.5rem #0b0e12;
+  background-color: #0f141a;
+}
+.teams-info__avt img {
+  width: 100%;
+  object-fit: cover;
+}
+.teams-info__detail {
+  width: 100%;
+  max-width: none;
+  padding: 1rem 2rem;
+  background-color: #1f252b;
+  background-image: url("../images/logo_cf_bg_table_info.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.teams-info__detail--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #b6b6b6;
+  padding: 0.75rem 0;
+}
+.teams-info__detail--item:last-child {
+  border-bottom: none;
+}
+.teams-info__detail--item p {
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  text-align: end;
+}
+.teams-info__detail--item p:first-child {
+  text-align: start;
+  font-size: 16px;
+}
+.teams-info__detail--item .container-org-base {
+  cursor: pointer;
+}
+.teams-info__detail--item .container-org-base p {
+  font-size: 14px !important;
+}
+
+.lst-player {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+.player-card__avt {
+  width: 100%;
+  aspect-ratio: 257/324;
+  background-color: #0f141a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.player-card__avt img {
+  width: 100%;
+  object-fit: cover;
+}
+.player-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.player-card__info--nick-name {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  background-color: #0f141a;
+  color: #f75014;
+  font-weight: bold;
+  font-family: "SVN-Nolan Next Extra Bold";
+}
+.player-card__info--full-name, .player-card__info--forte-position {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  background-color: #0f141a;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
 }
 
 #team-statistical table td:first-child, #team-statistical table td:nth-child(n+4),
@@ -6270,11 +6448,11 @@ table th {
   #team-info .section-item__title {
     font-size: 20px;
   }
-  .teamsInfo__detail--item {
+  .teams-info__detail--item {
     flex-direction: row;
     gap: 2rem;
   }
-  .teamsInfo__detail--item p {
+  .teams-info__detail--item p {
     font-size: 16px;
   }
   .lst-player {
@@ -6282,26 +6460,26 @@ table th {
   }
 }
 @media (min-width: 1024px) {
-  .teamsInfo {
+  .teams-info {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
-  .teamsInfo__avt {
+  .teams-info__avt {
     max-width: 25%;
   }
-  .teamsInfo__detail {
+  .teams-info__detail {
     max-width: 70%;
   }
-  .teamsInfo__detail--item {
+  .teams-info__detail--item {
     flex-direction: row;
     gap: 2rem;
   }
-  .teamsInfo__detail--item p {
+  .teams-info__detail--item p {
     text-align: end;
     font-size: 14px;
   }
-  .teamsInfo__detail--item p:first-child {
+  .teams-info__detail--item p:first-child {
     text-align: start;
   }
   .lst-player {
@@ -7158,6 +7336,30 @@ table th {
 }
 .hover-ltr:hover {
   background-position: left bottom;
+}
+
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
 }
 
 #player-info .section-item__title {
@@ -8195,6 +8397,30 @@ table th {
   background-position: left bottom;
 }
 
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
+}
+
 .formUpdateInfo {
   width: 100%;
   background-color: #161e27;
@@ -9081,6 +9307,30 @@ table th {
 }
 .hover-ltr:hover {
   background-position: left bottom;
+}
+
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
 }
 
 .tournaments-info {
@@ -10766,6 +11016,30 @@ table th {
   background-position: left bottom;
 }
 
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
+}
+
 #edit-player-info .input-modal {
   width: 100%;
   padding: 0.25rem 0.75rem;
@@ -11682,6 +11956,30 @@ table th {
 }
 .hover-ltr:hover {
   background-position: left bottom;
+}
+
+.container-table-overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 1200px;
+  color: #fff;
+  border-collapse: collapse;
+  background-color: #1f252b;
+  font-size: 15px;
+}
+table thead {
+  background-color: #f75014;
+  font-size: 16px;
+}
+table td,
+table th {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #161e27;
+  text-align: center;
 }
 
 #notify-page {

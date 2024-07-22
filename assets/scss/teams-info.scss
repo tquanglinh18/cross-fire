@@ -11,7 +11,7 @@
   }
 }
 
-.teamsInfo {
+.teams-info {
   @include flex-col-center;
   gap: 1.5rem;
   &__avt {
@@ -78,7 +78,7 @@
   gap: 2rem 1.5rem;
 }
 
-.playerCard {
+.player-card {
   &__avt {
     width: 100%;
     aspect-ratio: 257/324;
@@ -95,7 +95,7 @@
     @include flex-col-center;
     gap: 0.5rem;
 
-    &--nickName {
+    &--nick-name {
       width: 100%;
       padding: 0.75rem 0.5rem;
       text-align: center;
@@ -105,8 +105,8 @@
       font-family: "SVN-Nolan Next Extra Bold";
     }
 
-    &--fullName,
-    &--fortePosition {
+    &--full-name,
+    &--forte-position {
       width: 100%;
       padding: 0.75rem 0.5rem;
       text-align: center;
@@ -116,31 +116,6 @@
       gap: 0.5rem;
       font-size: 14px;
     }
-  }
-}
-
-.container-table-overflow {
-  width: 100%;
-  overflow: auto;
-}
-
-table {
-  width: 100%;
-  min-width: 1200px;
-  color: $white-base;
-  border-collapse: collapse;
-  background-color: #1f252b;
-  font-size: 15px;
-  thead {
-    background-color: $org-base-color;
-    font-size: 16px;
-  }
-
-  td,
-  th {
-    padding: 0.75rem 0.5rem;
-    border: 1px solid $grey-161e27;
-    text-align: center;
   }
 }
 
@@ -211,7 +186,7 @@ table {
     }
   }
 
-  .teamsInfo {
+  .teams-info {
     &__detail {
       &--item {
         flex-direction: row;
@@ -229,7 +204,7 @@ table {
 }
 
 @include desktop {
-  .teamsInfo {
+  .teams-info {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;

@@ -1,13 +1,13 @@
 @import "responsive";
 @import "base";
 
-.mediaFilter {
+.media-filter {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   margin-bottom: 1.5rem;
 
-  .filterItem {
+  .filter-item {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
@@ -29,7 +29,7 @@
   }
 }
 
-.mediaPageLayout {
+.media-page-layout {
   width: 100%;
   display: grid;
   gap: 1rem;
@@ -37,12 +37,12 @@
 }
 
 @include tablet {
-  .mediaPageLayout {
+  .media-page-layout {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .mediaFilter {
-    .filterItem {
+  .media-filter {
+    .filter-item {
       select {
         max-width: 244px;
       }
@@ -51,28 +51,28 @@
 }
 
 @include desktop {
-  .mediaPageLayout {
+  .media-page-layout {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .mediaFilter {
+  .media-filter {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @include desktop-large {
-  .mediaPageLayout {
+  .media-page-layout {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .mediaFilter {
-    .filterItem {
+  .media-filter {
+    .filter-item {
       flex-direction: row !important;
     }
   }
 }
 
-.mediaCardItem {
+.media-card-item {
   @include flex-col-center;
   gap: 0.25rem;
   &__header {
