@@ -974,22 +974,22 @@ $grey-31404e: #31404e;
   overflow: auto;
 }
 
-table {
-  width: 100%;
-  min-width: 1200px;
-  color: $white-base;
-  border-collapse: collapse;
-  background-color: #1f252b;
-  font-size: 15px;
-  thead {
-    background-color: $org-base-color;
-    font-size: 16px;
-  }
+// table {
+//   width: 100%;
+//   min-width: 1200px;
+//   color: $white-base;
+//   border-collapse: collapse;
+//   background-color: #1f252b;
+//   font-size: 15px;
+//   thead {
+//     background-color: $org-base-color;
+//     font-size: 16px;
+//   }
 
-  td,
-  th {
-    padding: 0.75rem 0.5rem;
-    border: 1px solid $grey-161e27;
-    text-align: center;
-  }
-}
+//   td,
+//   th {
+//     padding: 0.75rem 0.5rem;
+//     border: 1px solid $grey-161e27;
+//     text-align: center;
+//   }
+// }

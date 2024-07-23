@@ -23,8 +23,21 @@
       <div class="page__contents" style="max-width: 1080px">
         <div class="formInputLayout">
           <div class="textFieldInfo">
-            <label for="full-name" class="textFieldInfo__label">
+            <label for="ingame" class="textFieldInfo__label">
               <div class="dotNumericalOrder">1</div>
+              <p>Tên thi đấu</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="text" name="ingame" id="ingame" />
+              <button type="button" id="btn-check" class="btn-check">
+                Kiểm tra
+              </button>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+          <div class="textFieldInfo">
+            <label for="full-name" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">2</div>
               <p>Họ và tên</p>
             </label>
             <div class="textFieldInfo__input">
@@ -37,7 +50,7 @@
 
           <div class="textFieldInfo">
             <label for="dayOfBirth" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">2</div>
+              <div class="dotNumericalOrder">3</div>
               <p>Ngày sinh</p>
             </label>
             <div class="textFieldInfo__input">
@@ -50,7 +63,7 @@
 
           <div class="textFieldInfo">
             <label for="sex" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">3</div>
+              <div class="dotNumericalOrder">4</div>
               <p>Giới tính</p>
             </label>
             <div class="textFieldInfo__input">
@@ -64,7 +77,7 @@
             >
           </div>
 
-          <div class="textFieldInfo">
+          <!-- <div class="textFieldInfo">
             <label for="yearOfBirth" class="textFieldInfo__label">
               <div class="dotNumericalOrder">4</div>
               <p>Năm sinh</p>
@@ -81,22 +94,11 @@
               />
             </div>
             <span class="successMessage"></span>
-          </div>
-
-          <div class="textFieldInfo">
-            <label for="email" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">5</div>
-              <p>Email</p>
-            </label>
-            <div class="textFieldInfo__input">
-              <input type="email" name="email" id="email" />
-            </div>
-            <span class="successMessage"></span>
-          </div>
+          </div> -->
 
           <div class="textFieldInfo">
             <label for="phoneNumber" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">6</div>
+              <div class="dotNumericalOrder">5</div>
               <p>Số điện thoại</p>
             </label>
             <div class="textFieldInfo__input">
@@ -106,8 +108,33 @@
           </div>
 
           <div class="textFieldInfo">
-            <label for="facebook" class="textFieldInfo__label">
+            <label for="email" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">6</div>
+              <p>Email</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <input type="email" name="email" id="email" />
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="forte-position" class="textFieldInfo__label">
               <div class="dotNumericalOrder">7</div>
+              <p>Vị trí sở trường</p>
+            </label>
+            <div class="textFieldInfo__input">
+              <select name="" id="forte-position">
+                <option value="Attack">Attack</option>
+                <option value="Tanker">Tanker</option>
+              </select>
+            </div>
+            <span class="successMessage"></span>
+          </div>
+
+          <div class="textFieldInfo">
+            <label for="facebook" class="textFieldInfo__label">
+              <div class="dotNumericalOrder">8</div>
               <p>Facebook</p>
             </label>
             <div class="textFieldInfo__input">
@@ -118,7 +145,7 @@
 
           <div class="textFieldInfo">
             <label for="discord" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">8</div>
+              <div class="dotNumericalOrder">9</div>
               <p>Discord</p>
             </label>
             <div class="textFieldInfo__input">
@@ -129,7 +156,7 @@
 
           <div class="textFieldInfo">
             <label for="district" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">9</div>
+              <div class="dotNumericalOrder">10</div>
               <p>Khu vực</p>
             </label>
             <div class="textFieldInfo__input">
@@ -142,41 +169,11 @@
           </div>
 
           <div class="textFieldInfo">
-            <label for="ingame" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">10</div>
-              <p>Tên thi đấu</p>
-            </label>
-            <div class="textFieldInfo__input">
-              <input type="text" name="ingame" id="ingame" />
-              <button type="button" id="btn-check" class="btn-check">
-                Kiểm tra
-              </button>
-            </div>
-            <span class="successMessage"></span>
-          </div>
-
-          <div class="textFieldInfo">
-            <label for="forte-position" class="textFieldInfo__label">
-              <div class="dotNumericalOrder">11</div>
-              <p>Vị trí sở trường</p>
-            </label>
-            <div class="textFieldInfo__input">
-              <select name="" id="forte-position">
-                <option value="Attack">Attack</option>
-                <option value="Tanker">Tanker</option>
-              </select>
-            </div>
-            <span class="successMessage"></span>
-          </div>
-
-          <div class="textFieldInfo--space"></div>
-
-          <div class="textFieldInfo">
             <label
               for="citizen-identification-card"
               class="textFieldInfo__label"
             >
-              <div class="dotNumericalOrder">12</div>
+              <div class="dotNumericalOrder">11</div>
               <p>CCCD</p>
             </label>
             <div class="textFieldInfo__input">
@@ -190,7 +187,7 @@
               for="front-citizen-identification-card"
               class="textFieldInfo__label"
             >
-              <div class="dotNumericalOrder">13</div>
+              <div class="dotNumericalOrder">12</div>
               <p>Mặt trước CCCD</p>
             </label>
             <div class="textFieldInfo__input">
@@ -213,7 +210,7 @@
               for="back-citizen-identification-card"
               class="textFieldInfo__label"
             >
-              <div class="dotNumericalOrder">14</div>
+              <div class="dotNumericalOrder">13</div>
               <p>Mặt sau CCCD</p>
             </label>
             <div class="textFieldInfo__input">
