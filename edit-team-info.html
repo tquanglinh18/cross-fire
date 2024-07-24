@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF-Media</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles-scss.css" />
+    <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
+  </head>
+  <body>
+    <section>
+      <div class="page__header">
+        <div class="page__header--bg">
+          <img src="./assets/images/bg_header_page.png" alt="" />
+        </div>
+
+        <div class="page__header--name">Hồ sơ đội tuyển</div>
+      </div>
+
+      <div id="edit-team-info" class="page__contents !max-w-[1350px]">
+        <div class="section-item">
+          <div class="section-item__header">
+            <h3 class="section-item__header--title">Thông tin chung</h3>
+
+            <div class="section-item__header--action">
+              <button class="btn-base btn-base--org">Cập nhật</button>
+              <button class="btn-base btn-base--grey-353f48">Huỷ bỏ</button>
+            </div>
+          </div>
+          <div class="section-item__contents">
+            <div class="teams-info">
+              <div class="form-update-avt">
+                <div class="form-update-avt__upload">
+                  <div class="form-update-avt__upload--img">
+                    <img src="./assets/images/logo_team_demo.png" alt="" />
+                  </div>
+                  <label for="form-update-avt__upload">
+                    <div class="form-update-avt__upload--btn-upload">
+                      <p>Tải ảnh đại diện</p>
+                      <img src="./assets/images/ic_upload.png" alt="" />
+                    </div>
+                  </label>
+                  <input
+                    type="file"
+                    hidden
+                    name="form-update-avt__upload"
+                    id="form-update-avt__upload"
+                  />
+                </div>
+              </div>
+              <div class="teams-info__detail">
+                <div class="teams-info__detail--item">
+                  <p>Tên đội tuyển</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây" />
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Tên rút gọn</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây" />
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Ngày thành lập</p>
+                  <p>27.06.2023</p>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Khu vực</p>
+                  <div class="input-modal">
+                    <select type="text">
+                      <option value="">Hehe</option>
+                      <option value="">Huhu</option>
+                      <option value="">Haha</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Mô tả</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây" />
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Discord</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây" />
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Facebook</p>
+                  <div class="input-modal">
+                    <input type="text" placeholder="Điền tại đây" />
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Tình trạng</p>
+                  <div class="input-modal">
+                    <select type="text">
+                      <option value="">Hehe</option>
+                      <option value="">Huhu</option>
+                      <option value="">Haha</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="teams-info__detail--item">
+                  <p>Thành viên</p>
+                  <p>05/07</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-item">
+          <div class="section-item__header">
+            <h3 class="section-item__header--title">Thành viên</h3>
+          </div>
+          <div class="section-item__contents">
+            <div class="lst-player">
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img src="./assets/images/logo_cf_bg_table_info.png" alt="" />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">Shady</div>
+                  <div class="player-card__info--full-name">
+                    Mai Thanh Phong
+                  </div>
+
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+                </div>
+
+                <div class="player-card__edit-mode">
+                  <button>
+                    <img src="./assets/images/ic_change_captain.png" alt="" />
+                  </button>
+
+                  <button>
+                    <img src="./assets/images/ic_kick.png" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYneNWbqa3Rb5oiOzS-KSQOk78yAbIP5kRwdXwNyp6dbtpLmB_"
+                    alt=""
+                  />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">CRH_Jack</div>
+                  <div class="player-card__info--full-name">
+                    Trịnh Trần Phương Tuấn
+                  </div>
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+
+                  <div class="player-card__edit-mode">
+                    <button>
+                      <img src="./assets/images/ic_change_captain.png" alt="" />
+                    </button>
+
+                    <button>
+                      <img src="./assets/images/ic_kick.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYneNWbqa3Rb5oiOzS-KSQOk78yAbIP5kRwdXwNyp6dbtpLmB_"
+                    alt=""
+                  />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">CRH_Jack</div>
+                  <div class="player-card__info--full-name">
+                    Trịnh Trần Phương Tuấn
+                  </div>
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+
+                  <div class="player-card__edit-mode">
+                    <button>
+                      <img src="./assets/images/ic_change_captain.png" alt="" />
+                    </button>
+
+                    <button>
+                      <img src="./assets/images/ic_kick.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYneNWbqa3Rb5oiOzS-KSQOk78yAbIP5kRwdXwNyp6dbtpLmB_"
+                    alt=""
+                  />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">CRH_Jack</div>
+                  <div class="player-card__info--full-name">
+                    Trịnh Trần Phương Tuấn
+                  </div>
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+
+                  <div class="player-card__edit-mode">
+                    <button>
+                      <img src="./assets/images/ic_change_captain.png" alt="" />
+                    </button>
+
+                    <button>
+                      <img src="./assets/images/ic_kick.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYneNWbqa3Rb5oiOzS-KSQOk78yAbIP5kRwdXwNyp6dbtpLmB_"
+                    alt=""
+                  />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">CRH_Jack</div>
+                  <div class="player-card__info--full-name">
+                    Trịnh Trần Phương Tuấn
+                  </div>
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+
+                  <div class="player-card__edit-mode">
+                    <button>
+                      <img src="./assets/images/ic_change_captain.png" alt="" />
+                    </button>
+
+                    <button>
+                      <img src="./assets/images/ic_kick.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYneNWbqa3Rb5oiOzS-KSQOk78yAbIP5kRwdXwNyp6dbtpLmB_"
+                    alt=""
+                  />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">CRH_Jack</div>
+                  <div class="player-card__info--full-name">
+                    Trịnh Trần Phương Tuấn
+                  </div>
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+
+                  <div class="player-card__edit-mode">
+                    <button>
+                      <img src="./assets/images/ic_change_captain.png" alt="" />
+                    </button>
+
+                    <button>
+                      <img src="./assets/images/ic_kick.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-card">
+                <div class="player-card__avt">
+                  <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYneNWbqa3Rb5oiOzS-KSQOk78yAbIP5kRwdXwNyp6dbtpLmB_"
+                    alt=""
+                  />
+                </div>
+
+                <div class="player-card__info">
+                  <div class="player-card__info--nick-name">CRH_Jack</div>
+                  <div class="player-card__info--full-name">
+                    Trịnh Trần Phương Tuấn
+                  </div>
+                  <div class="player-card__info--forte-position">
+                    <img
+                      src="./assets/images/ic_captain_player_card.png"
+                      alt=""
+                    />
+                    <p>Captian/Attcker</p>
+                  </div>
+
+                  <div class="player-card__edit-mode">
+                    <button>
+                      <img src="./assets/images/ic_change_captain.png" alt="" />
+                    </button>
+
+                    <button>
+                      <img src="./assets/images/ic_kick.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-item">
+          <div class="section-item__header">
+            <h3 class="section-item__header--title">Chỉ số của đội tuyển</h3>
+          </div>
+          <div class="section-item__contents">
+            <div id="team-statistical" class="container-table-overflow">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Năm</th>
+                    <th>Đội tuyển</th>
+                    <th>Giải đấu</th>
+                    <th>K/D</th>
+                    <th>K/R</th>
+                    <th>H/K</th>
+                    <th>S/R</th>
+                    <th>AP</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>2024</td>
+                    <td>Wolf Empire</td>
+                    <td>CrossFire Vietnam League 2024 Season 1</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                  </tr>
+
+                  <tr>
+                    <td>2024</td>
+                    <td>Wolf Empire</td>
+                    <td>CrossFire Vietnam League 2024 Season 1</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                  </tr>
+
+                  <tr>
+                    <td>2024</td>
+                    <td>Wolf Empire</td>
+                    <td>CrossFire Vietnam League 2024 Season 1</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-item">
+          <div class="section-item__header">
+            <h3 class="section-item__header--title">
+              Hoạt động và thành tích của đội tuyển
+            </h3>
+          </div>
+          <div class="section-item__contents">
+            <div
+              id="team-activities-achievements"
+              class="container-table-overflow"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>Năm</th>
+                    <th>Logo</th>
+                    <th>Đội tuyển</th>
+                    <th>Đội hình</th>
+                    <th>Giải đấu</th>
+                    <th>Thứ hạng</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>2024</td>
+                    <td>TBD</td>
+                    <td>Wolf Empire</td>
+                    <td>
+                      <div class="lst-player-in-season">
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </td>
+                    <td>CrossFire Vietnam League 2024 Season 1</td>
+                    <td>TBD</td>
+                  </tr>
+
+                  <tr>
+                    <td>2024</td>
+                    <td>TBD</td>
+                    <td>Wolf Empire</td>
+                    <td>
+                      <div class="lst-player-in-season">
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </td>
+                    <td>CrossFire Vietnam League 2024 Season 1</td>
+                    <td>TBD</td>
+                  </tr>
+
+                  <tr>
+                    <td>2024</td>
+                    <td>TBD</td>
+                    <td>Wolf Empire</td>
+                    <td>
+                      <div class="lst-player-in-season">
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="player">
+                          <img
+                            src="./assets/images/logo_team_demo.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </td>
+                    <td>CrossFire Vietnam League 2024 Season 1</td>
+                    <td>TBD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
