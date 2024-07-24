@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.relative {
-  position: relative;
-}
-
 .sticky {
   position: sticky;
 }

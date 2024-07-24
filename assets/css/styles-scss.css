@@ -5228,13 +5228,17 @@ select:focus {
 }
 .tableLstPlayer table thead {
   color: #657383;
+  background-color: transparent !important;
 }
 .tableLstPlayer table tbody {
   color: #fff;
 }
 .tableLstPlayer table tbody tr {
-  border-bottom: 2px solid #161d22;
+  border: 1px solid #161e27;
   background-color: #353f48;
+}
+.tableLstPlayer table tbody tr td:nth-child(2) {
+  border: none;
 }
 .tableLstPlayer table .ic-captain {
   display: flex;

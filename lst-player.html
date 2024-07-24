@@ -11,140 +11,151 @@
     <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
   </head>
   <body>
-    <section id="lst-player-page">
-      <div class="filterPlayer">
-        <div class="filterPlayer__item">
-          <input type="text" placeholder="Tìm theo tên" />
+    <section>
+      <div class="page__header">
+        <div class="page__header--bg">
+          <img src="./assets/images/bg_header_page.png" alt="" />
         </div>
 
-        <div class="filterPlayer__item">
-          <select name="" id="">
-            <option value="" selected disabled>Tìm theo vị trí</option>
-            <option value="Captain">1. Captain</option>
-            <option value="Attacker">2. Attacker</option>
-            <option value="Sniper">3. Sniper</option>
-            <option value="Backup">4. Backup</option>
-            <option value="Lurker">5. Lurker</option>
-            <option value="Manager">6. Manager</option>
-          </select>
-        </div>
-
-        <div class="filterPlayer__item">
-          <select name="" id="">
-            <option value="" selected disabled>Tìm theo khu vực</option>
-            <option value="Captain">1. Captain</option>
-            <option value="Attacker">2. Attacker</option>
-            <option value="Sniper">3. Sniper</option>
-            <option value="Backup">4. Backup</option>
-            <option value="Lurker">5. Lurker</option>
-            <option value="Manager">6. Manager</option>
-          </select>
-        </div>
-
-        <div class="filterPlayer__item">
-          <select name="" id="">
-            <option value="" selected disabled>Tìm theo trạng thái</option>
-            <option value="Captain">1. Captain</option>
-            <option value="Attacker">2. Attacker</option>
-            <option value="Sniper">3. Sniper</option>
-            <option value="Backup">4. Backup</option>
-            <option value="Lurker">5. Lurker</option>
-            <option value="Manager">6. Manager</option>
-          </select>
-        </div>
-
-        <button type="button" class="searchBtn">Tìm kiếm</button>
+        <div class="page__header--name">Danh sách tuyển thủ</div>
       </div>
+      <div class="page__contents">
+        <div id="lst-player-page">
+          <div class="filterPlayer">
+            <div class="filterPlayer__item">
+              <input type="text" placeholder="Tìm theo tên" />
+            </div>
 
-      <div class="tableLstPlayer">
-        <table>
-          <thead>
-            <tr>
-              <th>STT</th>
-              <th></th>
-              <th>Tên tuyển thủ</th>
-              <th>Tên thi đấu</th>
-              <th>Vị trí</th>
-              <th>Khu vực</th>
-              <th>Đội tuyển</th>
-              <th>Trạng thái</th>
-            </tr>
-          </thead>
+            <div class="filterPlayer__item">
+              <select name="" id="">
+                <option value="" selected disabled>Tìm theo vị trí</option>
+                <option value="Captain">1. Captain</option>
+                <option value="Attacker">2. Attacker</option>
+                <option value="Sniper">3. Sniper</option>
+                <option value="Backup">4. Backup</option>
+                <option value="Lurker">5. Lurker</option>
+                <option value="Manager">6. Manager</option>
+              </select>
+            </div>
 
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td class="ic-captain">
-                <img src="./assets/images/ic_captain.png" alt="" />
-              </td>
-              <td>Linh Dev Linh Dev Linh Dev Linh Dev</td>
-              <td>LinhTQ-DEV</td>
-              <td>Vị trí</td>
-              <td>Attacker</td>
-              <td>VTC-Online</td>
-              <td>Độc thân</td>
-            </tr>
+            <div class="filterPlayer__item">
+              <select name="" id="">
+                <option value="" selected disabled>Tìm theo khu vực</option>
+                <option value="Captain">1. Captain</option>
+                <option value="Attacker">2. Attacker</option>
+                <option value="Sniper">3. Sniper</option>
+                <option value="Backup">4. Backup</option>
+                <option value="Lurker">5. Lurker</option>
+                <option value="Manager">6. Manager</option>
+              </select>
+            </div>
 
-            <tr>
-              <td>2</td>
-              <td class="ic-captain"></td>
-              <td>Linh Dev</td>
-              <td>LinhTQ-DEV</td>
-              <td>Vị trí</td>
-              <td>Attacker</td>
-              <td>VTC-Online</td>
-              <td>Độc thân</td>
-            </tr>
+            <div class="filterPlayer__item">
+              <select name="" id="">
+                <option value="" selected disabled>Tìm theo trạng thái</option>
+                <option value="Captain">1. Captain</option>
+                <option value="Attacker">2. Attacker</option>
+                <option value="Sniper">3. Sniper</option>
+                <option value="Backup">4. Backup</option>
+                <option value="Lurker">5. Lurker</option>
+                <option value="Manager">6. Manager</option>
+              </select>
+            </div>
 
-            <tr>
-              <td>3</td>
-              <td class="ic-captain"></td>
-              <td>Linh Dev</td>
-              <td>LinhTQ-DEV</td>
-              <td>Vị trí</td>
-              <td>Attacker</td>
-              <td>VTC-Online</td>
-              <td>Độc thân</td>
-            </tr>
+            <button type="button" class="searchBtn">Tìm kiếm</button>
+          </div>
 
-            <tr>
-              <td>4</td>
-              <td class="ic-captain"></td>
-              <td>Linh Dev</td>
-              <td>LinhTQ-DEV</td>
-              <td>Vị trí</td>
-              <td>Attacker</td>
-              <td>VTC-Online</td>
-              <td>
-                <button type="button" class="container-org-base">
-                  <p>Xin vào đội</p>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+          <div class="tableLstPlayer">
+            <table>
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th></th>
+                  <th>Tên tuyển thủ</th>
+                  <th>Tên thi đấu</th>
+                  <th>Vị trí</th>
+                  <th>Khu vực</th>
+                  <th>Đội tuyển</th>
+                  <th>Trạng thái</th>
+                </tr>
+              </thead>
 
-      <div class="pagination">
-        <div id="prev-action" class="pagination__item">
-          <a href=""> Trang đầu </a>
-          <a href=""> Quay lại </a>
-        </div>
-        <div id="lst-page-action" class="pagination__item">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a href="">4</a>
-          <a href="">5</a>
-          <a href="">6</a>
-          <a href="">7</a>
-          <a href="">8</a>
-          <a href="">9</a>
-          <a href="">10</a>
-        </div>
-        <div id="next-action" class="pagination__item">
-          <a href=""> Tiếp theo </a>
-          <a href=""> Trang cuối </a>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="ic-captain">
+                    <img src="./assets/images/ic_captain.png" alt="" />
+                  </td>
+                  <td>Linh Dev Linh Dev Linh Dev Linh Dev</td>
+                  <td>LinhTQ-DEV</td>
+                  <td>Vị trí</td>
+                  <td>Attacker</td>
+                  <td>VTC-Online</td>
+                  <td>Đã có đội</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td class="ic-captain"></td>
+                  <td>Linh Dev</td>
+                  <td>LinhTQ-DEV</td>
+                  <td>Vị trí</td>
+                  <td>Attacker</td>
+                  <td>VTC-Online</td>
+                  <td>Đã có đội</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td class="ic-captain"></td>
+                  <td>Linh Dev</td>
+                  <td>LinhTQ-DEV</td>
+                  <td>Vị trí</td>
+                  <td>Attacker</td>
+                  <td>VTC-Online</td>
+                  <td>Đã có đội</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+                  <td class="ic-captain"></td>
+                  <td>Linh Dev</td>
+                  <td>LinhTQ-DEV</td>
+                  <td>Vị trí</td>
+                  <td>Attacker</td>
+                  <td>VTC-Online</td>
+                  <td>
+                    <button type="button" class="container-org-base">
+                      <p>Xin vào đội</p>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="pagination">
+            <div id="prev-action" class="pagination__item">
+              <a href=""> Trang đầu </a>
+              <a href=""> Quay lại </a>
+            </div>
+            <div id="lst-page-action" class="pagination__item">
+              <a href="">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <a href="">6</a>
+              <a href="">7</a>
+              <a href="">8</a>
+              <a href="">9</a>
+              <a href="">10</a>
+            </div>
+            <div id="next-action" class="pagination__item">
+              <a href=""> Tiếp theo </a>
+              <a href=""> Trang cuối </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
