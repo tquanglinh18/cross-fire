@@ -6404,12 +6404,16 @@ select:focus {
   color: #0f141a;
 }
 #edit-team-info .input-modal input,
-#edit-team-info .input-modal select,
-#edit-team-info .input-modal option {
+#edit-team-info .input-modal select
+ {
   width: 100%;
   background-color: transparent;
   color: #000;
 }
+
+#edit-team-info .input-modal option {
+  }
+  
 #edit-team-info a {
   width: 100%;
   text-align: end;
