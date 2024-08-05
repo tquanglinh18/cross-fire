@@ -1,1 +1,739 @@
 @import "responsive";
+
+$main-color: #63f7c9;
+$bg-main-color: #121212;
+$bg-body-color: #020202;
+$org-color: #fa673c;
+$yellow-color: #fcdf16;
+$blue-color: #0f2dd1;
+$white-color: #fff;
+$text-desc-color: #929292;
+
+body {
+  background-color: $bg-body-color;
+  color: $white-color;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin flex-row-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin flex-col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-bg-img {
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  height: 92px;
+  background-color: $bg-main-color;
+  @include flex-row-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  &__logo {
+    width: 100%;
+    max-width: 233px;
+    padding: 0 2rem 0 0;
+    transition: all 0.2s;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__action {
+    display: none;
+    &--item {
+      text-transform: uppercase;
+      color: $white-color;
+      font-weight: bold;
+      padding: 0 0.75rem;
+      transition: all 0.2s;
+      &:hover {
+        border-left: 4px solid transparent !important;
+        transform: scale(1.1);
+      }
+    }
+
+    .buy-combo,
+    .recharge-go {
+      border-left: 4px solid $main-color;
+      &:hover {
+        color: $main-color !important;
+      }
+    }
+
+    .archive-combo {
+      border-left: 4px solid $org-color;
+      &:hover {
+        color: $org-color !important;
+      }
+    }
+
+    .friend-pass {
+      border-left: 4px solid $yellow-color;
+      &:hover {
+        color: $yellow-color !important;
+      }
+    }
+
+    .summer-puzzle {
+      border-left: 4px solid $blue-color;
+      &:hover {
+        color: $blue-color !important;
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+  }
+
+  &__menu-mobile {
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    &__action {
+      @include flex-row-start;
+      flex-basis: 100%;
+      gap: 2rem;
+    }
+
+    &__btn {
+      @include flex-row-center;
+      &--item {
+        width: 100%;
+        transition: all 0.3s;
+        img {
+          width: 100%;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__menu-mobile {
+      display: none;
+    }
+  }
+}
+
+.main-banner {
+  position: relative;
+  width: 100%;
+  margin-top: 92px;
+  &__bg {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__contents {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 3rem;
+    .main-action {
+      width: 100%;
+      @include flex-row-center;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      &--item {
+        animation: infinityBrightness 1s infinite ease;
+        &:hover {
+          img {
+            animation: rotateScale 0.4s ease;
+            transform: scale(1.1);
+          }
+        }
+        img {
+          width: 100%;
+          max-width: 160px;
+        }
+      }
+    }
+
+    .main-title {
+      width: 100%;
+      @include flex-col-center;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 100%;
+        animation: infinityBrightness 2s infinite ease;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .main-banner {
+    &__contents {
+      .main-action {
+        img {
+          max-width: 200px;
+        }
+      }
+      .main-title {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .main-banner {
+    &__contents {
+      padding: 2rem 3rem;
+      .main-action {
+        img {
+          max-width: 260px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop-xl {
+  .main-banner {
+    &__contents {
+      padding: 2rem 3rem;
+      .main-action {
+        img {
+          max-width: unset;
+        }
+      }
+      .main-title {
+        .main-title {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes infinityBrightness {
+  from {
+    filter: brightness(1);
+  }
+
+  15% {
+    filter: brightness(0.75);
+  }
+
+  30% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.75);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+
+@keyframes rotateScale {
+  from {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(4deg);
+  }
+  15% {
+    transform: rotate(2deg);
+  }
+
+  45% {
+    transform: rotate(4deg);
+  }
+  55% {
+    transform: rotate(2deg);
+  }
+
+  60% {
+    transform: rotate(-4deg);
+  }
+  65% {
+    transform: rotate(-2deg);
+  }
+
+  85% {
+    transform: rotate(-4deg);
+  }
+  95% {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.section-item {
+  width: 100%;
+  padding: 4rem 2rem;
+  max-width: 1232px;
+  margin-right: auto;
+  margin-left: auto;
+  &__header {
+    border-left: 4px solid $main-color;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+  }
+  &__body {
+    height: 100%;
+    .lst-combo {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem;
+    }
+  }
+}
+
+.combo-card {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid $main-color;
+  position: relative;
+  @include flex-col-between;
+  max-width: 390px;
+  margin: 0 auto;
+  &__body {
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    &--img {
+      width: 100%;
+      @include flex-row-center;
+      aspect-ratio: 1/1;
+    }
+
+    &--detail {
+      margin-bottom: 1.5rem;
+      h3 {
+        border-left: 4px solid $main-color;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+      }
+      p {
+        @include flex-row-start;
+        gap: 0.5rem;
+        color: $text-desc-color;
+        font-size: 12px;
+      }
+    }
+    &--price {
+      width: 100%;
+      @include flex-row-center;
+      margin-bottom: 1.5rem;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__footer {
+    @include flex-row-center;
+  }
+
+  &__over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-0.25rem, -0.25rem);
+  }
+}
+
+.btn-base-img {
+  position: relative;
+  max-width: 240px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    p {
+      transition: all 0.5s ease;
+      transform: scale(1.25);
+    }
+  }
+  &__bg {
+    width: 100%;
+    background-color: black;
+    img {
+      width: 100%;
+      animation: infinityBrightness 0.75s infinite ease-in-out;
+    }
+  }
+  &__title {
+    width: 100%;
+    padding: 0.25rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: $bg-main-color;
+  }
+}
+
+@include tablet {
+  .section-item {
+    &__header {
+      font-size: 1.5rem;
+    }
+    &__body {
+      .lst-combo {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .combo-card {
+    &__body {
+      &--detail {
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          @include flex-row-start;
+          gap: 0.5rem;
+          color: $text-desc-color;
+          font-size: 14px;
+        }
+      }
+      &--price {
+        width: 100%;
+        @include flex-row-center;
+        margin-bottom: 1.5rem;
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .btn-base-img {
+    position: relative;
+    max-width: unset;
+    &__bg {
+      width: 100%;
+      background-color: black;
+      img {
+        width: 100%;
+      }
+    }
+    &__title {
+      width: 100%;
+      padding: 0.25rem 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
+
+@include desktop {
+  .section-item {
+    &__header {
+      font-size: 1.75rem;
+    }
+    &__body {
+      .lst-combo {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+#tournaments-info {
+  .tournaments-info {
+    width: 100%;
+    @include flex-col-center;
+    gap: 2rem;
+    &__item {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  #tournaments-info {
+    .tournaments-info {
+      width: 100%;
+      @include flex-row-center;
+      gap: 2rem;
+
+      &__item {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+#menu-mobile {
+  height: calc(100vh - 92px);
+  width: 100vw;
+  display: none;
+  position: fixed;
+  top: 92px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(18, 18, 18, 0.5);
+  .header {
+    @include flex-col-between;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    max-width: 360px;
+    float: right;
+    &__action {
+      @include flex-col-center;
+      gap: 2.5rem;
+      &--item {
+        width: 100%;
+        font-size: 24px;
+      }
+    }
+
+    &__btn {
+      @include flex-col-center;
+    }
+  }
+}
+
+@include desktop {
+  #menu-mobile {
+    display: none !important;
+  }
+}
+
+.text-main-color {
+  color: $main-color;
+}
+
+.table-template {
+  width: 100%;
+  font-size: 1rem;
+  tbody {
+    tr {
+      td {
+        padding: 0.75rem 1rem;
+        &:first-child {
+          text-align: start;
+          width: 40%;
+        }
+
+        &:last-child {
+          text-align: end;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.5rem;
+          max-width: 360px;
+          font-size: 1rem;
+          text-align: end;
+          &::placeholder {
+            font-size: 14px;
+            color: #ccc;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 164px;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+#btn-action {
+  @include flex-row-center;
+  justify-content: end;
+  margin-bottom: 10%;
+  .btn-base-img {
+    max-width: 280px;
+  }
+}
+
+@include tablet {
+  .table-template {
+    font-size: 1.5rem;
+  }
+}
+
+.lst-gift-in-combo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  .gift-item {
+    width: 100%;
+    img {
+      width: 100%;
+      aspect-ratio: 245/139;
+      object-fit: cover;
+    }
+  }
+}
+
+@include tablet {
+  .lst-gift-in-combo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include desktop {
+  .lst-gift-in-combo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lst-combo-bought {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 10%;
+}
+
+.combo-bought {
+  width: 100%;
+  margin: 0 auto;
+  &__body {
+    width: 100%;
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+  }
+
+  &__footer {
+    @include flex-col-center;
+  }
+}
+
+@include tablet {
+  .lst-combo-bought {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .combo-bought {
+    max-width: unset;
+  }
+
+  .table-template {
+    width: 100%;
+    font-size: 1.25rem;
+    tbody {
+      tr {
+        td {
+          input {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            max-width: 360px;
+            font-size: 1.25rem;
+            text-align: end;
+            &::placeholder {
+              font-size: 16px;
+              color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .lst-combo-bought {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

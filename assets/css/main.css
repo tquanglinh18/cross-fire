@@ -11,53 +11,50 @@
 }
 
 @font-face {
-  font-family: "SVN-Nolan Next";
-  src: url("../fonts/SVN-NolanNext-Medium.eot");
-  src: url("../fonts/SVN-NolanNext-Medium.eot?#iefix")
+  font-family: "SVN-BebasNeueProSemiExp-Bold";
+  src: url("../fonts/SVN-BebasNeueProSemiExp-Bold.eot");
+  src: url("../fonts/SVN-BebasNeueProSemiExp-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-Medium.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-Medium.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-Medium.ttf") format("truetype");
+    url("../fonts/SVN-BebasNeueProSemiExp-Bold.woff2") format("woff2"),
+    url("../fonts/SVN-BebasNeueProSemiExp-Bold.woff") format("woff"),
+    url("../fonts/SVN-BebasNeueProSemiExp-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SVN-Nolan Next Bold";
-  src: url("../fonts/SVN-NolanNext-Bold.eot");
-  src: url("../fonts/SVN-NolanNext-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-Bold.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-Bold.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SVN-Nolan Next Extra Bold";
-  src: url("../fonts/SVN-NolanNext-ExtraBold.eot");
-  src: url("../fonts/SVN-NolanNext-ExtraBold.eot?#iefix")
+  font-family: "SVN-BebasNeueProExp-ExtraBold";
+  src: url("../fonts/SVN-BebasNeueProExp-ExtraBold.eot");
+  src: url("../fonts/SVN-BebasNeueProExp-ExtraBold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-ExtraBold.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-ExtraBold.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-ExtraBold.ttf") format("truetype");
+    url("../fonts/SVN-BebasNeueProExp-ExtraBold.woff2") format("woff2"),
+    url("../fonts/SVN-BebasNeueProExp-ExtraBold.woff") format("woff"),
+    url("../fonts/SVN-BebasNeueProExp-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "SVN-Nolan Next";
-  font-weight: normal;
-  font-style: normal;
+  font-family: "SVN-BebasNeueProSemiExp-Bold";
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "SVN-BebasNeueProSemiExp-Bold";
+  font-weight: 700;
+  font-style: normal;
+  border: none;
 }
 
 .container-page {
@@ -67,3 +64,27 @@ body {
   margin-left: auto;
 }
 
+.text-extra-bold {
+  font-family: "SVN-Nolan Next Extra Bold";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-medium {
+  font-family: "SVN-Nolan Next Medium";
+  font-weight: bold;
+  font-style: normal;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #63f7c9;
+  border-radius: 1rem;
+}
