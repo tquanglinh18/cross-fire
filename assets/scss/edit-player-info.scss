@@ -2,13 +2,6 @@
 @import "base";
 
 #edit-player-info {
-  .section-item {
-    &__header {
-      &--action {
-      }
-    }
-  }
-
   .input-modal {
     width: 100%;
     padding: 0.25rem 0.75rem;
@@ -43,7 +36,7 @@
     text-decoration: underline;
   }
 
-  .form-update-avt {
+  .formUpdateAvt {
     width: 100%;
     background-color: transparent;
     border: none;

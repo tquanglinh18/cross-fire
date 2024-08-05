@@ -12,23 +12,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   padding: 1rem;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-}
-.pop-up--layout {
-  height: 100%;
-  max-height: 90vh;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 .pop-up-modal {
@@ -55,7 +44,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
 }
 .pop-up-modal__header h3 {
@@ -91,11 +79,9 @@
 }
 .pop-up-modal__footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -105,7 +91,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   justify-content: space-between;
   gap: 1rem;
   height: 64px;
@@ -123,7 +108,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   width: 64px;
   padding: 0 1rem;
 }
@@ -140,7 +124,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 #header .lst-menu .menu-item {
   position: relative;
@@ -151,7 +134,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   align-items: start;
 }
 #header .lst-menu .menu-item:hover .menu-item__parent {
@@ -168,7 +150,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
 }
 #header .lst-menu .menu-item__parent:hover {
@@ -312,7 +293,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .flex-col-center {
@@ -320,7 +300,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .flex-row-center {
@@ -328,7 +307,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .page-with-left-menu {
@@ -345,7 +323,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   flex-wrap: wrap;
   color: #fff;
   margin-bottom: 1.5rem;
@@ -361,12 +338,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1rem;
-}
-.section-item__header--action .btn-base {
-  padding: 0.25rem 0.5rem;
-  min-width: 120px;
 }
 .section-item__contents {
   width: 100%;
@@ -380,10 +352,8 @@
   height: 33.3333333333vh;
 }
 .page__header--bg img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
 }
 .page__header--name {
   width: 100%;
@@ -415,7 +385,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
   min-width: 140px;
   color: #fff;
@@ -466,7 +435,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     gap: 1rem;
   }
   #header .not-logged {
@@ -474,7 +442,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     gap: 1rem;
   }
   #header .btn-lst-tournaments {
@@ -486,7 +453,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     cursor: pointer;
     gap: 1rem;
   }
@@ -577,14 +543,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 #left-menu .lst-left-menu .left-menu-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
   width: 100%;
   cursor: pointer;
@@ -637,7 +601,6 @@
   top: 64px;
   right: 0;
   bottom: 0;
-  z-index: 99;
 }
 #header-mobile .header-mobile {
   background-color: #0f141a;
@@ -735,7 +698,6 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  gap: 0.5rem;
 }
 #header-mobile .header-mobile .logged .container-black-base,
 #header-mobile .header-mobile .logged .container-org-base {
@@ -760,7 +722,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
 }
 #header-mobile .header-mobile .container-black-base,
@@ -953,11 +914,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 #edit-player-info .formUpdateAvt__upload--img img {
   width: 100%;
-  max-width: 337px;
   aspect-ratio: 337/380;
   object-fit: cover;
 }
@@ -978,7 +937,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 2rem;
   margin-bottom: 6%;
 }
@@ -1171,7 +1129,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 .match-card__logo img {
   min-width: 2rem;
@@ -1183,7 +1140,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1rem;
   font-size: 12px;
 }
@@ -1212,7 +1168,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1rem;
   text-align: center;
 }
@@ -1236,7 +1191,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 .match-card__view img {
   min-width: 32px;
@@ -1266,7 +1220,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   height: 68px;
 }
 .tournament-card__info {
@@ -1323,7 +1276,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -1654,7 +1606,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.25rem;
 }
 .media-card-item__header {
@@ -1732,7 +1683,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
   }
   #notify-page .notify-item__title {
     width: 60%;
@@ -1756,7 +1706,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1.5rem;
 }
 .player-info__avt {
@@ -1768,14 +1717,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   box-shadow: inset 0 0 1.5rem 1.5rem #0b0e12;
   background-color: #0f141a;
 }
 .player-info__avt img {
   width: 100%;
-  max-width: 337px;
-  aspect-ratio: 337/380;
   object-fit: cover;
 }
 .player-info__detail {
@@ -1880,7 +1826,6 @@ table th {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  gap: 0.5rem;
 }
 #team-activities-achievements .lst-player-in-season .player {
   background-color: #0f141a;
@@ -1914,6 +1859,9 @@ table th {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+  }
+  .player-info__avt {
+    max-width: 25%;
   }
   .player-info__detail {
     max-width: 70%;
@@ -1949,15 +1897,14 @@ table th {
   font-size: 16px;
 }
 
-.teamsInfo {
+.teams-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1.5rem;
 }
-.teamsInfo__avt {
+.teams-info__avt {
   width: 100%;
   height: 100%;
   max-width: 337px;
@@ -1966,17 +1913,14 @@ table th {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   box-shadow: inset 0 0 1.5rem 1.5rem #0b0e12;
   background-color: #0f141a;
 }
-.teamsInfo__avt img {
+.teams-info__avt img {
   width: 100%;
   object-fit: cover;
-  max-width: 337px;
-  aspect-ratio: 337/380;
 }
-.teamsInfo__detail {
+.teams-info__detail {
   width: 100%;
   max-width: none;
   padding: 1rem 2rem;
@@ -1985,7 +1929,7 @@ table th {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.teamsInfo__detail--item {
+.teams-info__detail--item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1994,23 +1938,23 @@ table th {
   border-bottom: 1px solid #b6b6b6;
   padding: 0.75rem 0;
 }
-.teamsInfo__detail--item:last-child {
+.teams-info__detail--item:last-child {
   border-bottom: none;
 }
-.teamsInfo__detail--item p {
+.teams-info__detail--item p {
   color: #fff;
   font-size: 14px;
   width: 100%;
   text-align: end;
 }
-.teamsInfo__detail--item p:first-child {
+.teams-info__detail--item p:first-child {
   text-align: start;
   font-size: 16px;
 }
-.teamsInfo__detail--item .container-org-base {
+.teams-info__detail--item .container-org-base {
   cursor: pointer;
 }
-.teamsInfo__detail--item .container-org-base p {
+.teams-info__detail--item .container-org-base p {
   font-size: 14px !important;
 }
 
@@ -2031,7 +1975,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   margin-bottom: 1rem;
 }
 .player-card__avt img {
@@ -2043,7 +1986,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
 }
 .player-card__info--nick-name {
@@ -2066,7 +2008,6 @@ table th {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  gap: 0.5rem;
   font-size: 14px;
 }
 .player-card__edit-mode {
@@ -2074,7 +2015,6 @@ table th {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
@@ -2099,14 +2039,6 @@ table th {
 #team-activities-achievements table th {
   width: 8.3333333333%;
 }
-#team-activities-achievements table td:nth-child(2) img,
-#team-activities-achievements table th:nth-child(2) img {
-  width: 100%;
-  max-width: 48px;
-  aspect-ratio: 1/1;
-  margin: auto;
-  object-fit: contain;
-}
 #team-activities-achievements table td:nth-child(3),
 #team-activities-achievements table th:nth-child(3) {
   width: 15%;
@@ -2115,16 +2047,11 @@ table th {
 #team-activities-achievements table th:nth-child(4) {
   width: 25%;
 }
-#team-activities-achievements table td:nth-child(4) img,
-#team-activities-achievements table th:nth-child(4) img {
-  border-radius: 100%;
-}
 #team-activities-achievements .lst-player-in-season {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
 }
 #team-activities-achievements .lst-player-in-season .player {
@@ -2143,11 +2070,11 @@ table th {
   #team-info .section-item__title {
     font-size: 20px;
   }
-  .teamsInfo__detail--item {
+  .teams-info__detail--item {
     flex-direction: row;
     gap: 2rem;
   }
-  .teamsInfo__detail--item p {
+  .teams-info__detail--item p {
     font-size: 16px;
   }
   .lst-player {
@@ -2155,26 +2082,26 @@ table th {
   }
 }
 @media (min-width: 1024px) {
-  .teamsInfo {
+  .teams-info {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
-  .teamsInfo__avt {
+  .teams-info__avt {
     max-width: 25%;
   }
-  .teamsInfo__detail {
+  .teams-info__detail {
     max-width: 70%;
   }
-  .teamsInfo__detail--item {
+  .teams-info__detail--item {
     flex-direction: row;
     gap: 2rem;
   }
-  .teamsInfo__detail--item p {
+  .teams-info__detail--item p {
     text-align: end;
     font-size: 14px;
   }
-  .teamsInfo__detail--item p:first-child {
+  .teams-info__detail--item p:first-child {
     text-align: start;
   }
   .lst-player {
@@ -2233,7 +2160,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 #edit-team-info .formUpdateAvt__upload--img img {
   width: 100%;
@@ -2260,15 +2186,9 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  height: 100%;
-  aspect-ratio: 1/1;
-  max-height: 96px;
 }
 .tournaments-info__logo img {
-  width: 100%;
-  object-fit: contain;
-  aspect-ratio: 1/1;
+  min-width: 64px;
 }
 .tournaments-info__name {
   display: flex;
@@ -2376,7 +2296,7 @@ table th {
 }
 
 .normal-part {
-  padding: 4rem 0;
+  padding: 2% 0;
   color: #fff;
 }
 .normal-part__header {
@@ -2384,7 +2304,6 @@ table th {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   color: #fff;
   font-size: 20px;
   margin-bottom: 2rem;
@@ -2412,19 +2331,15 @@ table th {
   padding: 0.5rem;
   border-bottom: 2px solid #1f252b;
   background: linear-gradient(to top, #1a2126, transparent);
-  font-size: 14px;
 }
 .grid-award-tournaments .rank-award-item:nth-child(1) {
   border-bottom: 5px solid #dfaa0b;
-  font-size: 17px;
 }
 .grid-award-tournaments .rank-award-item:nth-child(2) {
   border-bottom: 5px solid #fff;
-  font-size: 16px;
 }
 .grid-award-tournaments .rank-award-item:nth-child(3) {
   border-bottom: 5px solid #f75014;
-  font-size: 15px;
 }
 .grid-award-tournaments .rank-award-item--rank-order {
   width: 10%;
@@ -2432,7 +2347,6 @@ table th {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 .grid-award-tournaments .rank-award-item--name {
   display: flex;
@@ -2442,13 +2356,14 @@ table th {
 }
 .grid-award-tournaments .rank-award-item--name img {
   width: 36px;
-  aspect-ratio: 1/1;
-  object-fit: contain;
+  object-fit: cover;
 }
 .grid-award-tournaments .rank-award-item--prize-money {
-  width: fit-content;
-  min-width: 30%;
-  text-align: end;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .lst-round-match {
@@ -2495,7 +2410,6 @@ table th {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   gap: 1rem;
   background: #0f141a;
   font-size: 14px;
@@ -2539,16 +2453,12 @@ table th {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   padding: 1rem 0.5rem;
   gap: 1rem;
   background: transparent !important;
   border-bottom: 1px solid #929daa;
   margin-bottom: 0;
   cursor: pointer;
-}
-.lst-match-schedule__contents .match-schedule-table__lst-match .match-card:last-child {
-  border-bottom: none;
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info {
   width: 90%;
@@ -2568,7 +2478,7 @@ table th {
   gap: 1rem;
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams p {
-  min-width: 52px;
+  min-width: 32px;
   text-align: center;
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item {
@@ -2576,8 +2486,6 @@ table th {
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item img {
   width: 24px;
-  aspect-ratio: 1/1;
-  object-fit: contain;
 }
 .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__view img {
   min-width: 12px;
@@ -2613,7 +2521,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   color: #f75014;
   font-family: "SVN-Nolan Next Bold";
   font-weight: bold;
@@ -2640,15 +2547,15 @@ table th {
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 2rem;
-  justify-items: center;
 }
 .lst-participating-teams .team-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   width: 100%;
+  min-width: 168px;
+  aspect-ratio: 1/1;
   border: 1px solid #96a2af;
   color: #fff;
   gap: 0.25rem;
@@ -2656,14 +2563,11 @@ table th {
 }
 .lst-participating-teams .team-card__logo {
   width: 100%;
-  aspect-ratio: 1/1;
-  margin-bottom: 0.5rem;
-  max-width: 132px;
+  margin-bottom: 0, 5rem;
 }
 .lst-participating-teams .team-card__logo img {
   width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: contain;
+  object-fit: cover;
 }
 .lst-participating-teams .team-card__name {
   font-family: "SVN-Nolan Next Bold";
@@ -2673,7 +2577,6 @@ table th {
 }
 .lst-participating-teams .team-card__desc {
   color: #96a2af;
-  font-size: 14px;
 }
 .lst-participating-teams .team-card h3,
 .lst-participating-teams .team-card p {
@@ -2770,7 +2673,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 .lst-source-video .iframe-video__source iframe {
   width: 100%;
@@ -2812,7 +2714,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   background-image: url("../images/bg_header_pop-up_teams_info.png");
 }
 #pop-up-teams-info table {
@@ -2845,7 +2746,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 #pop-up-teams-info .btn-search-info-player:hover {
   transform: scale(1.3);
@@ -2893,7 +2793,6 @@ table th {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
     padding: 1rem 0.5rem;
     gap: 1rem;
     background: transparent !important;
@@ -2914,7 +2813,7 @@ table th {
     gap: 1rem;
   }
   .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams p {
-    min-width: 52px;
+    min-width: 32px;
     text-align: center;
   }
   .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item {
@@ -2922,8 +2821,6 @@ table th {
   }
   .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__info--teams--item img {
     width: 24px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
   }
   .lst-match-schedule__contents .match-schedule-table__lst-match .match-card__view img {
     min-width: 12px;
@@ -2944,7 +2841,6 @@ table th {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     text-align: center;
   }
   .lst-phares-tournaments {
@@ -2954,10 +2850,8 @@ table th {
     display: block;
     width: 100%;
   }
-  .normal-part__header--line {
-    width: 100%;
-  }
   .normal-part__header h3 {
+    width: fit-content;
     text-align: center;
     margin: 0 2rem;
   }
@@ -2966,17 +2860,13 @@ table th {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 2rem;
   }
-  .grid-award-tournaments .rank-award-item {
-    font-size: 16px;
-  }
   .grid-award-tournaments .rank-award-item:nth-child(-n+3) {
     grid-column: span 2/span 2;
-    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
   }
   .grid-award-tournaments .rank-award-item--name img {
     width: 48px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
+    object-fit: cover;
   }
   .tournaments-info {
     flex-direction: row;
@@ -2988,8 +2878,9 @@ table th {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    aspect-ratio: 1/1;
+  }
+  .tournaments-info__logo img {
+    min-width: 64px;
   }
   .tournaments-info__name {
     display: flex;
@@ -3099,7 +2990,6 @@ table th {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
     gap: 1rem;
     background: #0f141a;
     font-size: 14px;
@@ -3142,7 +3032,6 @@ table th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   padding: 0.25rem;
   font-size: 12px;
 }
@@ -3171,7 +3060,6 @@ table th {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   text-align: center;
 }
 .textFieldInfo .errorMessage {
@@ -3229,7 +3117,6 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1.5rem;
 }
 .formUpdateAvt__upload--img {
@@ -3251,7 +3138,6 @@ select:focus {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 0.5rem;
   text-align: center;
   color: #fff;
@@ -3288,7 +3174,6 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 2rem;
   margin-bottom: 6%;
 }
@@ -3321,7 +3206,6 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   gap: 1rem;
 }
 
@@ -3337,7 +3221,6 @@ select:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     gap: 2rem;
   }
 }
@@ -3348,148 +3231,4 @@ select:focus {
   .textFieldInfo--space {
     display: block;
   }
-}
-#lst-player-page {
-  width: 100%;
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1rem;
-}
-
-.filterPlayer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-.filterPlayer__item {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background-color: #353f48;
-}
-.filterPlayer__item input,
-.filterPlayer__item select {
-  width: 100%;
-  background-color: transparent;
-  color: #fff;
-}
-.filterPlayer__item option {
-  color: black !important;
-}
-
-.searchBtn {
-  width: 100%;
-  max-width: 240px;
-  padding: 0.75rem 1rem;
-  background-color: #f75014;
-  color: #fff;
-  text-align: center;
-}
-
-.tableLstPlayer {
-  width: 100%;
-  overflow: auto;
-}
-.tableLstPlayer table {
-  width: 100%;
-  min-width: 1080px;
-  height: 100%;
-  font-size: 14px;
-}
-.tableLstPlayer table th,
-.tableLstPlayer table td {
-  text-align: center;
-  padding: 0.5rem 0.25rem;
-  min-height: 64px;
-}
-.tableLstPlayer table thead {
-  color: #657383;
-  background-color: transparent !important;
-}
-.tableLstPlayer table tbody {
-  color: #fff;
-}
-.tableLstPlayer table tbody tr {
-  border: 1px solid #161e27;
-  background-color: #353f48;
-}
-.tableLstPlayer table tbody tr td:nth-child(2) {
-  border: none;
-}
-.tableLstPlayer table .ic-captain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .filterPlayer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .filterPlayer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    gap: 1rem;
-  }
-  .filterPlayer__items {
-    max-width: 240px;
-  }
-}
-.pagination {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  color: #fff;
-  padding: 1rem;
-}
-.pagination__item {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.pagination__item a,
-.pagination__item button {
-  background-color: #0f141a;
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.75rem;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.2s;
-}
-.pagination__item a:active, .pagination__item a:hover:not(:active),
-.pagination__item button:active,
-.pagination__item button:hover:not(:active) {
-  background-color: #f75014;
-  transform: scale(1.1);
-}
-
-.filterBox {
-  width: 100%;
-  max-width: 180px;
-  padding: 0.5rem 1rem;
-  box-shadow: inset 0px 0px 32px #b6b6b6;
-  background-color: #fff;
-}
-.filterBox input,
-.filterBox select {
-  width: 100%;
-  background-color: transparent;
-  color: #0f141a;
-  font-weight: bold;
 }

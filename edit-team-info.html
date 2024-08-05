@@ -9,6 +9,74 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/styles-scss.css" />
     <link rel="stylesheet" href="./assets/css/styles-tailwind.css" />
+    <style>
+      #edit-team-info .input-modal {
+        width: 100%;
+        padding: 0.25rem 0.75rem;
+        box-shadow: inset 0px 0px 32px #b6b6b6;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: 200px;
+      }
+      #edit-team-info .input-modal ::placeholder {
+        color: #0f141a;
+        opacity: 0.7;
+      }
+      #edit-team-info .input-modal ::-ms-input-placeholder {
+        color: #0f141a;
+      }
+      #edit-team-info .input-modal input,
+      #edit-team-info .input-modal select,
+      #edit-team-info .input-modal option {
+        width: 100%;
+        background-color: transparent;
+        color: #000;
+      }
+
+      #edit-team-info a {
+        width: 100%;
+        text-align: end;
+        color: #fff;
+        text-decoration: underline;
+      }
+      #edit-team-info .formUpdateAvt {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        max-width: 337px;
+        padding: 0;
+      }
+      #edit-team-info .formUpdateAvt__upload {
+        width: 100%;
+        gap: 0;
+      }
+      #edit-team-info .formUpdateAvt__upload--img {
+        width: 100%;
+        max-width: 337px;
+        aspect-ratio: 337/380;
+        box-shadow: inset 0 0 1.5rem 1.5rem #0b0e12;
+        background-color: #0f141a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #edit-team-info .formUpdateAvt__upload--img img {
+        width: 100%;
+        aspect-ratio: 337/380;
+        object-fit: cover;
+      }
+      #edit-team-info .formUpdateAvt__upload--btn-upload {
+        width: 100%;
+        min-width: unset;
+      }
+      #edit-team-info .formUpdateAvt__upload label {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <section>
@@ -31,14 +99,14 @@
             </div>
           </div>
           <div class="section-item__contents">
-            <div class="teams-info">
-              <div class="form-update-avt">
-                <div class="form-update-avt__upload">
-                  <div class="form-update-avt__upload--img">
+            <div class="teamsInfo">
+              <div class="formUpdateAvt">
+                <div class="formUpdateAvt__upload">
+                  <div class="formUpdateAvt__upload--img">
                     <img src="./assets/images/logo_team_demo.png" alt="" />
                   </div>
-                  <label for="form-update-avt__upload">
-                    <div class="form-update-avt__upload--btn-upload">
+                  <label for="formUpdateAvt__upload">
+                    <div class="formUpdateAvt__upload--btn-upload">
                       <p>Tải ảnh đại diện</p>
                       <img src="./assets/images/ic_upload.png" alt="" />
                     </div>
@@ -46,32 +114,32 @@
                   <input
                     type="file"
                     hidden
-                    name="form-update-avt__upload"
-                    id="form-update-avt__upload"
+                    name="formUpdateAvt__upload"
+                    id="formUpdateAvt__upload"
                   />
                 </div>
               </div>
-              <div class="teams-info__detail">
-                <div class="teams-info__detail--item">
+              <div class="teamsInfo__detail">
+                <div class="teamsInfo__detail--item">
                   <p>Tên đội tuyển</p>
                   <div class="input-modal">
                     <input type="text" placeholder="Điền tại đây" />
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Tên rút gọn</p>
                   <div class="input-modal">
                     <input type="text" placeholder="Điền tại đây" />
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Ngày thành lập</p>
                   <p>27.06.2023</p>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Khu vực</p>
                   <div class="input-modal">
                     <select type="text">
@@ -82,28 +150,28 @@
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Mô tả</p>
                   <div class="input-modal">
                     <input type="text" placeholder="Điền tại đây" />
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Discord</p>
                   <div class="input-modal">
                     <input type="text" placeholder="Điền tại đây" />
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Facebook</p>
                   <div class="input-modal">
                     <input type="text" placeholder="Điền tại đây" />
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Tình trạng</p>
                   <div class="input-modal">
                     <select type="text">
@@ -114,7 +182,7 @@
                   </div>
                 </div>
 
-                <div class="teams-info__detail--item">
+                <div class="teamsInfo__detail--item">
                   <p>Thành viên</p>
                   <p>05/07</p>
                 </div>

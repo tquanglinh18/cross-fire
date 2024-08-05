@@ -67,6 +67,13 @@ $grey-31404e: #31404e;
   -o-#{$atribute}: #{$params};
 }
 
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .pop-up--overlay {
   width: 100vw;
   height: 100vh;

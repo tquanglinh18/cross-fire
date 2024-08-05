@@ -102,7 +102,7 @@ select:focus {
   }
 }
 
-.form-update-avt {
+.formUpdateAvt {
   width: 100%;
   background-color: $grey-161e27;
   border: 2px solid $grey-353f48;
@@ -210,7 +210,7 @@ select:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .form-update-avt {
+  .formUpdateAvt {
     flex-direction: row;
   }
 

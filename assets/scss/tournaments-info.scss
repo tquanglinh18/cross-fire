@@ -606,13 +606,6 @@
 
   .competition-format-box-layout {
     grid-template-columns: repeat(2, 1fr);
-    .competition-format-box {
-      &__title {
-      }
-
-      &__contents {
-      }
-    }
   }
 
   .lst-match-schedule {
@@ -796,31 +789,12 @@
 
   .lst-participating-teams {
     grid-template-columns: repeat(4, 1fr);
-
-    .team-card {
-      &__logo {
-        img {
-        }
-      }
-      &__name {
-      }
-
-      &__desc {
-      }
-    }
   }
 }
 
 @include desktop {
   .competition-format-box-layout {
     grid-template-columns: repeat(4, 1fr);
-    .competition-format-box {
-      &__title {
-      }
-
-      &__contents {
-      }
-    }
   }
 
   .lst-match-schedule {
@@ -909,17 +883,5 @@
 
   .lst-participating-teams {
     grid-template-columns: repeat(6, 1fr);
-
-    .team-card {
-      &__logo {
-        img {
-        }
-      }
-      &__name {
-      }
-
-      &__desc {
-      }
-    }
   }
 }
