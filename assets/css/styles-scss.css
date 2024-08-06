@@ -1,8 +1,3 @@
-body {
-  background-color: #020202;
-  color: #fff;
-}
-
 .btn-bg-img {
   position: relative;
 }
@@ -30,7 +25,7 @@ body {
 }
 .header__logo {
   width: 100%;
-  max-width: 233px;
+  max-width: 180px;
   padding: 0 2rem 0 0;
   transition: all 0.2s;
   cursor: pointer;
@@ -88,12 +83,20 @@ body {
   display: block;
   cursor: pointer;
   transition: all 0.3s;
+  width: 36px;
 }
 .header__menu-mobile:hover {
   transform: scale(1.2);
 }
+.header__menu-mobile img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 
 @media (min-width: 1024px) {
+  .header__logo {
+    max-width: 233px;
+  }
   .header__action {
     display: flex;
     justify-content: start;
@@ -139,6 +142,7 @@ body {
   position: absolute;
   bottom: 0;
   padding: 1rem 3rem;
+  z-index: 2;
 }
 .main-banner__contents .main-action {
   width: 100%;
@@ -256,10 +260,12 @@ body {
 }
 .section-item {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 4rem 2.5rem;
   max-width: 1232px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  z-index: 2;
 }
 .section-item__header {
   border-left: 4px solid #63f7c9;
@@ -274,7 +280,7 @@ body {
 .section-item__body .lst-combo {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .combo-card {
@@ -287,7 +293,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  max-width: 390px;
+  max-width: 280px;
   margin: 0 auto;
 }
 .combo-card__body {
@@ -313,7 +319,7 @@ body {
 .combo-card__body--detail h3 {
   border-left: 4px solid #63f7c9;
   text-transform: uppercase;
-  padding: 0 1rem;
+  padding-left: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
 }
@@ -344,6 +350,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  z-index: 999;
 }
 .combo-card__over {
   position: absolute;
@@ -390,6 +397,9 @@ body {
   }
   .section-item__body .lst-combo {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .combo-card {
+    max-width: 360px;
   }
   .combo-card__body--detail h3 {
     font-size: 1.5rem;
@@ -519,7 +529,7 @@ body {
 }
 #menu-mobile .header__action--item {
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
 }
 #menu-mobile .header__btn {
   display: flex;
@@ -527,6 +537,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+#menu-mobile .header__btn img {
+  max-width: 180px;
 }
 
 @media (min-width: 1024px) {
@@ -536,6 +549,10 @@ body {
 }
 .text-main-color {
   color: #63f7c9;
+}
+
+.text-org-color {
+  color: #fa673c;
 }
 
 .table-template {
@@ -577,7 +594,7 @@ body {
   align-items: center;
   gap: 1rem;
   justify-content: end;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
 }
 #btn-action .btn-base-img {
   max-width: 280px;
@@ -665,5 +682,177 @@ body {
 @media (min-width: 1024px) {
   .lst-combo-bought {
     grid-template-columns: repeat(5, 1fr);
+  }
+}
+#modal-pop-up {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 18, 18, 0.5);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+#modal-pop-up .modal {
+  width: 100%;
+  max-width: 900px;
+  min-height: 360px;
+  max-height: 75vh;
+  padding: 2rem 1rem;
+  border: 1px solid #63f7c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+#modal-pop-up .modal__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#modal-pop-up .modal__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: auto;
+  flex-basis: 100%;
+  text-align: center;
+}
+#modal-pop-up .modal__body::-webkit-scrollbar {
+  width: 2px;
+}
+#modal-pop-up .modal__body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+#modal-pop-up .modal__body::-webkit-scrollbar-thumb {
+  background-color: #63f7c9;
+  border-radius: 1rem;
+}
+#modal-pop-up .modal__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-base {
+  padding: 0.5rem 1rem;
+  min-width: 136px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.btn-base:hover p {
+  transition: all 0.2s ease-in;
+  transform: scale(1.2);
+}
+.btn-base--main {
+  background-color: #63f7c9;
+}
+.btn-base--org {
+  background-color: #fa673c;
+}
+
+.decorate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+.decorate__more {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.decorate__more img {
+  width: 100%;
+}
+.decorate__left {
+  padding-left: 1rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.decorate__left {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  padding-left: 0.75rem;
+}
+.decorate__left img {
+  animation: loopInfiTextDecorDown 25s infinite linear;
+  width: 18px;
+}
+.decorate__right {
+  padding-left: 1rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0 !important;
+  padding-right: 0.75em;
+}
+.decorate__right img {
+  animation: loopInfiTextDecorUp 25s infinite linear;
+  width: 18px;
+}
+
+@media (min-width: 1024px) {
+  .decorate__left img, .decorate__right img {
+    width: 1.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .decorate__left, .decorate__right {
+    padding: 1rem;
+  }
+  .decorate__left img, .decorate__right img {
+    width: fit-content;
+  }
+}
+@keyframes loopInfiTextDecorUp {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes loopInfiTextDecorDown {
+  from {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
   }
 }

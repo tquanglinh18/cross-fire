@@ -38,6 +38,8 @@
 
 body {
   font-family: "SVN-BebasNeueProSemiExp-Bold";
+  background-color: #020202;
+  color: #fff;
 }
 
 * {
@@ -87,4 +89,12 @@ button {
 *::-webkit-scrollbar-thumb {
   background-color: #63f7c9;
   border-radius: 1rem;
+}
+
+section {
+  /* background-image: url("../images/img_decorate_full.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100% auto; */
+  position: relative;
 }

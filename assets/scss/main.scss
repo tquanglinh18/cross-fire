@@ -9,11 +9,6 @@ $blue-color: #0f2dd1;
 $white-color: #fff;
 $text-desc-color: #929292;
 
-body {
-  background-color: $bg-body-color;
-  color: $white-color;
-}
-
 @mixin flex-row-between {
   display: flex;
   justify-content: space-between;
@@ -75,7 +70,7 @@ body {
   z-index: 999;
   &__logo {
     width: 100%;
-    max-width: 233px;
+    max-width: 180px;
     padding: 0 2rem 0 0;
     transition: all 0.2s;
     cursor: pointer;
@@ -139,14 +134,22 @@ body {
     display: block;
     cursor: pointer;
     transition: all 0.3s;
+    width: 36px;
     &:hover {
       transform: scale(1.2);
+    }
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
     }
   }
 }
 
 @include desktop {
   .header {
+    &__logo {
+      max-width: 233px;
+    }
     &__action {
       @include flex-row-start;
       flex-basis: 100%;
@@ -190,6 +193,7 @@ body {
     position: absolute;
     bottom: 0;
     padding: 1rem 3rem;
+    z-index: 2;
     .main-action {
       width: 100%;
       @include flex-row-center;
@@ -329,10 +333,12 @@ body {
 
 .section-item {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 4rem 2.5rem;
   max-width: 1232px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  z-index: 2;
   &__header {
     border-left: 4px solid $main-color;
     text-transform: uppercase;
@@ -345,7 +351,7 @@ body {
     .lst-combo {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 2.5rem;
+      gap: 2rem;
     }
   }
 }
@@ -356,7 +362,7 @@ body {
   border: 1px solid $main-color;
   position: relative;
   @include flex-col-between;
-  max-width: 390px;
+  max-width: 280px;
   margin: 0 auto;
   &__body {
     width: 100%;
@@ -376,7 +382,7 @@ body {
       h3 {
         border-left: 4px solid $main-color;
         text-transform: uppercase;
-        padding: 0 1rem;
+        padding-left: 0.5rem;
         margin-bottom: 0.5rem;
         font-size: 1.25rem;
       }
@@ -399,6 +405,7 @@ body {
 
   &__footer {
     @include flex-row-center;
+    z-index: 999;
   }
 
   &__over {
@@ -456,6 +463,7 @@ body {
   }
 
   .combo-card {
+    max-width: 360px;
     &__body {
       &--detail {
         h3 {
@@ -576,12 +584,15 @@ body {
       gap: 2.5rem;
       &--item {
         width: 100%;
-        font-size: 24px;
+        font-size: 20px;
       }
     }
 
     &__btn {
       @include flex-col-center;
+      img {
+        max-width: 180px;
+      }
     }
   }
 }
@@ -594,6 +605,10 @@ body {
 
 .text-main-color {
   color: $main-color;
+}
+
+.text-org-color {
+  color: $org-color;
 }
 
 .table-template {
@@ -638,7 +653,7 @@ body {
 #btn-action {
   @include flex-row-center;
   justify-content: end;
-  margin-bottom: 10%;
+  padding-bottom: 10%;
   .btn-base-img {
     max-width: 280px;
   }
@@ -735,5 +750,183 @@ body {
 @include desktop {
   .lst-combo-bought {
     grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+#modal-pop-up {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 18, 18, 0.5);
+  position: fixed;
+  inset: 0;
+  @include flex-col-center;
+  padding: 1rem;
+
+  .modal {
+    width: 100%;
+    max-width: 900px;
+    min-height: 360px;
+    max-height: 75vh;
+    padding: 2rem 1rem;
+    border: 1px solid $main-color;
+    @include flex-col-between;
+    gap: 2rem;
+    &__header {
+      width: 100%;
+      @include flex-col-center;
+    }
+
+    &__body {
+      width: 100%;
+      @include flex-col-center;
+      overflow: auto;
+      flex-basis: 100%;
+      text-align: center;
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #63f7c9;
+        border-radius: 1rem;
+      }
+    }
+
+    &__footer {
+      width: 100%;
+      @include flex-row-center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.btn-base {
+  padding: 0.5rem 1rem;
+  min-width: 136px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  &:hover {
+    p {
+      transition: all 0.2s ease-in;
+      transform: scale(1.2);
+    }
+  }
+  &--main {
+    background-color: $main-color;
+  }
+
+  &--org {
+    background-color: $org-color;
+  }
+}
+
+.decorate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  &__more {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    img {
+      width: 100%;
+    }
+  }
+  &__left {
+    padding-left: 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  &__left {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    padding-left: 0.75rem;
+    img {
+      animation: loopInfiTextDecorDown 25s infinite linear;
+      width: 18px;
+    }
+  }
+
+  &__right {
+    padding-left: 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0 !important;
+    padding-right: 0.75em;
+    img {
+      animation: loopInfiTextDecorUp 25s infinite linear;
+      width: 18px;
+    }
+  }
+}
+
+@include desktop {
+  .decorate {
+    &__left,
+    &__right {
+      img {
+        width: 1.25rem;
+      }
+    }
+  }
+}
+
+@include desktop-xl {
+  .decorate {
+    &__left,
+    &__right {
+      padding: 1rem;
+      img {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@keyframes loopInfiTextDecorUp {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loopInfiTextDecorDown {
+  from {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-50%);
   }
 }
