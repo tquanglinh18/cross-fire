@@ -771,6 +771,7 @@ $text-desc-color: #929292;
     border: 1px solid $main-color;
     @include flex-col-between;
     gap: 2rem;
+    background: url("../images/bg_pop_up.png") 100% 100% no-repeat;
     &__header {
       width: 100%;
       @include flex-col-center;
@@ -782,6 +783,9 @@ $text-desc-color: #929292;
       overflow: auto;
       flex-basis: 100%;
       text-align: center;
+      p {
+        margin-bottom: 0.5rem;
+      }
       &::-webkit-scrollbar {
         width: 2px;
       }
@@ -833,50 +837,56 @@ $text-desc-color: #929292;
   width: 100%;
   z-index: 0;
   overflow: hidden;
+
   &__more {
+    display: none;
     position: absolute;
     inset: 0;
     z-index: 0;
+    height: 100%;
+    background-image: url("../images/img_decorate_more.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
     img {
       width: 100%;
     }
   }
-  &__left {
-    padding-left: 1rem;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
 
   &__left {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
+    height: 750vh;
+    margin-left: 0.75rem;
+    overflow-y: hidden;
     position: absolute;
     left: 0;
     z-index: 1;
-    padding-left: 0.75rem;
-    img {
-      animation: loopInfiTextDecorDown 25s infinite linear;
-      width: 18px;
-    }
+    // height: 100%;
+    background-image: url("../images/text_decorate_left.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    width: 18px;
+    animation: loopInfiTextDecorDown 60s infinite linear;
   }
 
   &__right {
-    padding-left: 1rem;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0 !important;
-    padding-right: 0.75em;
-    img {
-      animation: loopInfiTextDecorUp 25s infinite linear;
+    &::after,
+    &::before {
+      background-image: url("../images/text_decorate_right.png");
+      background-repeat: repeat-y;
+      background-size: 100% auto;
       width: 18px;
     }
+    height: 750vh;
+    margin-right: 0.75rem;
+    overflow-y: hidden;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    // height: 100%;
+    background-image: url("../images/text_decorate_right.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    width: 18px;
+    animation: loopInfiTextDecorUp 60s infinite linear;
   }
 }
 
@@ -884,9 +894,11 @@ $text-desc-color: #929292;
   .decorate {
     &__left,
     &__right {
-      img {
-        width: 1.25rem;
-      }
+      width: 32px;
+    }
+
+    &__more {
+      display: block;
     }
   }
 }
@@ -895,10 +907,7 @@ $text-desc-color: #929292;
   .decorate {
     &__left,
     &__right {
-      padding: 1rem;
-      img {
-        width: fit-content;
-      }
+      width: 36px;
     }
   }
 }

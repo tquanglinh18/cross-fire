@@ -710,6 +710,7 @@
   align-items: center;
   gap: 1rem;
   gap: 2rem;
+  background: url("../images/bg_pop_up.png") 100% 100% no-repeat;
 }
 #modal-pop-up .modal__header {
   width: 100%;
@@ -729,6 +730,9 @@
   overflow: auto;
   flex-basis: 100%;
   text-align: center;
+}
+#modal-pop-up .modal__body p {
+  margin-bottom: 0.5rem;
 }
 #modal-pop-up .modal__body::-webkit-scrollbar {
   width: 2px;
@@ -778,60 +782,62 @@
   overflow: hidden;
 }
 .decorate__more {
+  display: none;
   position: absolute;
   inset: 0;
   z-index: 0;
+  height: 100%;
+  background-image: url("../images/img_decorate_more.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
 }
 .decorate__more img {
   width: 100%;
 }
 .decorate__left {
-  padding-left: 1rem;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-.decorate__left {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
+  height: 750vh;
+  margin-left: 0.75rem;
+  overflow-y: hidden;
   position: absolute;
   left: 0;
   z-index: 1;
-  padding-left: 0.75rem;
-}
-.decorate__left img {
-  animation: loopInfiTextDecorDown 25s infinite linear;
+  background-image: url("../images/text_decorate_left.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   width: 18px;
+  animation: loopInfiTextDecorDown 60s infinite linear;
 }
 .decorate__right {
-  padding-left: 1rem;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
+  height: 750vh;
+  margin-right: 0.75rem;
+  overflow-y: hidden;
   position: absolute;
-  right: 0 !important;
-  padding-right: 0.75em;
+  right: 0;
+  z-index: 1;
+  background-image: url("../images/text_decorate_right.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  width: 18px;
+  animation: loopInfiTextDecorUp 60s infinite linear;
 }
-.decorate__right img {
-  animation: loopInfiTextDecorUp 25s infinite linear;
+.decorate__right::after, .decorate__right::before {
+  background-image: url("../images/text_decorate_right.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   width: 18px;
 }
 
 @media (min-width: 1024px) {
-  .decorate__left img, .decorate__right img {
-    width: 1.25rem;
+  .decorate__left, .decorate__right {
+    width: 32px;
+  }
+  .decorate__more {
+    display: block;
   }
 }
 @media (min-width: 1440px) {
   .decorate__left, .decorate__right {
-    padding: 1rem;
-  }
-  .decorate__left img, .decorate__right img {
-    width: fit-content;
+    width: 36px;
   }
 }
 @keyframes loopInfiTextDecorUp {
