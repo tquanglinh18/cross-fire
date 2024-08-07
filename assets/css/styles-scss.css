@@ -1,0 +1,246 @@
+.decorate {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.decorate img {
+  scale: 1.1;
+  width: 100%;
+  object-fit: cover;
+  animation: upDownAnimation 2s infinite linear;
+}
+
+@keyframes upDownAnimation {
+  from {
+    transform: translate(0rem, 1rem);
+  }
+  50% {
+    transform: translate(0rem, 0rem);
+  }
+  to {
+    transform: translate(0rem, 1rem);
+  }
+}
+section {
+  background-image: url("../images/bg_main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  position: relative;
+}
+
+.btn-bg-img {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-bg-img:hover .btn-bg-img__title p {
+  transition: all 0.3s;
+  scale: 1.3;
+}
+.btn-bg-img__bg {
+  position: relative;
+}
+.btn-bg-img__bg img {
+  width: 100%;
+}
+.btn-bg-img__title {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.btn-bg-img__title p {
+  width: 100%;
+}
+.btn-bg-img--active img {
+  animation: infinityBrightness 1s infinite ease;
+}
+
+.section-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.section-contents__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-contents__header--title {
+  width: 100%;
+  max-width: 520px;
+  animation: infinityBrightnessTitle 2s infinite ease;
+}
+.section-contents__header--title img {
+  width: 100%;
+}
+.section-contents__header--time {
+  width: 100%;
+  max-width: 240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-contents__header--time img {
+  width: 100%;
+}
+.section-contents__body--note {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 12px;
+}
+.section-contents__body--note p {
+  margin-bottom: 0.5rem;
+}
+.section-contents__body--gift {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gift-box {
+  width: 100%;
+}
+.gift-box__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.gift-box__img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.text-yellow-color {
+  color: #fcdf16;
+}
+
+.page-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-items: end;
+  align-items: end;
+  position: relative;
+  z-index: 1;
+  padding: 5rem 2rem 0 2rem;
+}
+.page-body .section-contents {
+  width: 100%;
+}
+.page-body .section-contents--decor {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .section-contents__header--title {
+    max-width: 768px;
+  }
+  .section-contents__header--time {
+    max-width: 320px;
+  }
+  .section-contents__body--note {
+    font-size: 14px;
+  }
+  .section-contents__body--gift {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .page-body .section-contents {
+    width: 60%;
+  }
+  .page-body .section-contents--decor {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .page-body .section-contents--decor img {
+    width: 100%;
+  }
+  .section-contents__header--title {
+    max-width: 768px;
+  }
+  .section-contents__header--time {
+    max-width: 320px;
+  }
+  .section-contents__body--note {
+    font-size: 12px;
+  }
+}
+.footer {
+  width: 100%;
+}
+.footer img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1654/103;
+}
+
+@keyframes infinityBrightness {
+  from {
+    filter: brightness(0.75);
+  }
+  15% {
+    filter: brightness(1);
+  }
+  30% {
+    filter: brightness(0.75);
+  }
+  50% {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(0.75);
+  }
+}
+@keyframes infinityBrightnessTitle {
+  from {
+    filter: brightness(0.75);
+  }
+  15% {
+    filter: brightness(1.15);
+  }
+  30% {
+    filter: brightness(0.75);
+  }
+  50% {
+    filter: brightness(1.15);
+  }
+  to {
+    filter: brightness(0.75);
+  }
+}
+@keyframes zoomInOut {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}

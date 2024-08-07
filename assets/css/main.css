@@ -11,45 +11,19 @@
 }
 
 @font-face {
-  font-family: "SVN-Nolan Next";
-  src: url("../fonts/SVN-NolanNext-Medium.eot");
-  src: url("../fonts/SVN-NolanNext-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-Medium.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-Medium.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-Medium.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SVN-Nolan Next Bold";
-  src: url("../fonts/SVN-NolanNext-Bold.eot");
-  src: url("../fonts/SVN-NolanNext-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-Bold.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-Bold.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SVN-Nolan Next Extra Bold";
-  src: url("../fonts/SVN-NolanNext-ExtraBold.eot");
-  src: url("../fonts/SVN-NolanNext-ExtraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-ExtraBold.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-ExtraBold.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-ExtraBold.ttf") format("truetype");
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "SVN-Nolan Next";
+  font-family: "Montserrat Bold";
   font-weight: normal;
   font-style: normal;
 }
@@ -60,10 +34,4 @@ body {
   box-sizing: border-box;
 }
 
-.container-page {
-  max-width: 1200px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
 
