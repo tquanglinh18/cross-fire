@@ -11,47 +11,23 @@
 }
 
 @font-face {
-  font-family: "SVN-Nolan Next";
-  src: url("../fonts/SVN-NolanNext-Medium.eot");
-  src: url("../fonts/SVN-NolanNext-Medium.eot?#iefix")
+  font-family: "SVN-BebasNeuePro-Bold";
+  src: url("../fonts/SVN-BebasNeuePro-Bold.eot");
+  src: url("../fonts/SVN-BebasNeuePro-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-Medium.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-Medium.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-Medium.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SVN-Nolan Next Bold";
-  src: url("../fonts/SVN-NolanNext-Bold.eot");
-  src: url("../fonts/SVN-NolanNext-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-Bold.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-Bold.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SVN-Nolan Next Extra Bold";
-  src: url("../fonts/SVN-NolanNext-ExtraBold.eot");
-  src: url("../fonts/SVN-NolanNext-ExtraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/SVN-NolanNext-ExtraBold.woff2") format("woff2"),
-    url("../fonts/SVN-NolanNext-ExtraBold.woff") format("woff"),
-    url("../fonts/SVN-NolanNext-ExtraBold.ttf") format("truetype");
+    url("../fonts/SVN-BebasNeuePro-Bold.woff2") format("woff2"),
+    url("../fonts/SVN-BebasNeuePro-Bold.woff") format("woff"),
+    url("../fonts/SVN-BebasNeuePro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "SVN-Nolan Next";
+  font-family: "SVN-BebasNeuePro-Bold";
   font-weight: normal;
   font-style: normal;
+  background-color: #000;
 }
 
 * {
@@ -61,9 +37,176 @@ body {
 }
 
 .container-page {
-  max-width: 1200px;
+  max-width: 768px;
   width: 100%;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../images/bg_main_page.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  z-index: 5;
+}
+
+.decorate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  max-width: 768px;
   margin-right: auto;
   margin-left: auto;
 }
+.decorate__more {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  height: 100%;
+  background-image: url("../images/img_decorate_more_check_in.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: center bottom;
 
+  z-index: 3;
+}
+.decorate__more img {
+  width: 100%;
+}
+.decorate__left {
+  height: 750vh;
+  margin-left: 0.75rem;
+  overflow-y: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-image: url("../images/text_decorate_left.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  width: 18px;
+  animation: loopInfiTextDecorDown 60s infinite linear;
+  z-index: 1;
+}
+.decorate__right {
+  height: 750vh;
+  margin-right: 0.75rem;
+  overflow-y: hidden;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-image: url("../images/text_decorate_right.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  width: 18px;
+  animation: loopInfiTextDecorUp 60s infinite linear;
+  z-index: 1;
+}
+.decorate__right::after,
+.decorate__right::before {
+  background-image: url("../images/text_decorate_right.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  width: 18px;
+}
+
+.decorate__over {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: repeating-linear-gradient(
+    #000,
+    transparent 25%,
+    transparent 75%,
+    #000 100%
+  );
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+@keyframes loopInfiTextDecorUp {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loopInfiTextDecorDown {
+  from {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes loopTransRubic {
+  from {
+    transform: translateY(0);
+    filter: brightness(1.05);
+  }
+  50% {
+    transform: translateY(-1rem);
+    filter: brightness(0.75);
+  }
+  to {
+    transform: translateY(0);
+    filter: brightness(1.05);
+  }
+}
+
+@keyframes infinityBrightness {
+  from {
+    filter: brightness(1.2);
+  }
+  15% {
+    filter: brightness(0.9);
+  }
+  30% {
+    filter: brightness(1, 1);
+  }
+  50% {
+    filter: brightness(0.9);
+  }
+  to {
+    filter: brightness(1.2);
+  }
+}
+
+.btn-base-img {
+  position: relative;
+  max-width: 186px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-base-img:hover p {
+  transition: all 0.5s ease;
+  transform: scale(1.25);
+}
+.btn-base-img__bg {
+  width: 100%;
+  background-color: black;
+}
+.btn-base-img__bg img {
+  width: 100%;
+}
+.btn-base-img__title {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #121212;
+}
