@@ -1,1 +1,148 @@
-@import "responsive";
+@use "responsive";
+
+$grey-505050: #505050;
+$yl-feebcc: #feebcc;
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header {
+  width: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 3px solid $grey-505050;
+}
+.header-action {
+  @include flex-row-center();
+  padding: 1rem 0;
+  img {
+    width: 100%;
+    max-width: 0.75rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+}
+
+.header-nav {
+  flex-grow: 1;
+  .nav-tabs {
+    border: none;
+  }
+
+  .nav-link {
+    border: none;
+    padding: 0 1rem;
+    border-right: 3px solid $grey-505050 !important;
+    background-color: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    &:first-child {
+      border-left: 3px solid $grey-505050 !important;
+    }
+
+    &:hover {
+      color: $yl-feebcc;
+    }
+
+    &.active {
+      background-color: transparent;
+      color: $yl-feebcc;
+    }
+  }
+}
+
+.btn-base {
+  width: 100%;
+  height: 100%;
+  min-width: 124px;
+  max-width: 136px;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  &__red {
+    background-color: #ff3030;
+    background: url("../images/bg_btn_base_red.png") no-repeat center;
+    background-size: auto 100%;
+  }
+
+  &__blue {
+    background-color: #00aeeb;
+    background: url("../images/bg_btn_base_blue.png") no-repeat center;
+    background-size: auto 100%;
+  }
+}
+
+.header-user-action {
+  height: 100%;
+}
+
+.page-content {
+  padding: 1.5rem 2rem;
+  @include flex-col-center();
+}
+
+#carousel-banner {
+  width: 100%;
+  aspect-ratio: 960/270;
+  border: 1px solid $grey-505050;
+  margin-bottom: 1rem;
+}
+.carousel {
+  .carousel-indicators {
+    justify-content: start;
+
+    li {
+      height: 0.5rem;
+      width: 3rem;
+    }
+  }
+
+  .carousel-inner {
+    .carousel-item {
+      img {
+        width: 100%;
+        aspect-ratio: 960/270;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.lst-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-items: center;
+  gap: 1.5rem;
+
+  .news-card {
+    width: 100%;
+    border: 2px solid $grey-505050;
+    aspect-ratio: 370/208;
+
+    img {
+      width: 100%;
+      aspect-ratio: 370/208;
+      object-fit: cover;
+    }
+  }
+}

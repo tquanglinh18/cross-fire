@@ -1,0 +1,123 @@
+header {
+  width: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 3px solid #505050;
+}
+
+.header-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.header-action img {
+  width: 100%;
+  max-width: 0.75rem;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.header-nav {
+  flex-grow: 1;
+}
+.header-nav .nav-tabs {
+  border: none;
+}
+.header-nav .nav-link {
+  border: none;
+  padding: 0 1rem;
+  border-right: 3px solid #505050 !important;
+  background-color: transparent;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+.header-nav .nav-link:first-child {
+  border-left: 3px solid #505050 !important;
+}
+.header-nav .nav-link:hover {
+  color: #feebcc;
+}
+.header-nav .nav-link.active {
+  background-color: transparent;
+  color: #feebcc;
+}
+
+.btn-base {
+  width: 100%;
+  height: 100%;
+  min-width: 124px;
+  max-width: 136px;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-base__red {
+  background-color: #ff3030;
+  background: url("../images/bg_btn_base_red.png") no-repeat center;
+  background-size: auto 100%;
+}
+.btn-base__blue {
+  background-color: #00aeeb;
+  background: url("../images/bg_btn_base_blue.png") no-repeat center;
+  background-size: auto 100%;
+}
+
+.header-user-action {
+  height: 100%;
+}
+
+.page-content {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#carousel-banner {
+  width: 100%;
+  aspect-ratio: 960/270;
+  border: 1px solid #505050;
+  margin-bottom: 1rem;
+}
+
+.carousel .carousel-indicators {
+  justify-content: start;
+}
+.carousel .carousel-indicators li {
+  height: 0.5rem;
+  width: 3rem;
+}
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  aspect-ratio: 960/270;
+  object-fit: cover;
+}
+
+.lst-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-items: center;
+  gap: 1.5rem;
+}
+.lst-news .news-card {
+  width: 100%;
+  border: 2px solid #505050;
+  aspect-ratio: 370/208;
+}
+.lst-news .news-card img {
+  width: 100%;
+  aspect-ratio: 370/208;
+  object-fit: cover;
+}

@@ -52,6 +52,11 @@ body {
   font-family: "SVN-Nolan Next";
   font-weight: normal;
   font-style: normal;
+  background-color: #1c1c1c;
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  border: 3px solid #505050;
 }
 
 * {
@@ -67,3 +72,9 @@ body {
   margin-left: auto;
 }
 
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
