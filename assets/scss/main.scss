@@ -53,9 +53,6 @@ header {
     text-transform: uppercase;
     color: white;
     font-weight: bold;
-    &:first-child {
-      border-left: 3px solid $grey-505050 !important;
-    }
 
     &:hover {
       color: $yl-feebcc;
@@ -85,11 +82,13 @@ button {
   @include flex-col-center();
   transition: all 0.3s ease;
   &__red {
-    background-color: #ff3030;
+    background: url("../images/bg_btn_base_red.png") no-repeat center;
+    background-size: 100% 100%;
   }
 
   &__blue {
-    background-color: #00aeeb;
+    background: url("../images/bg_btn_base_blue.png") no-repeat center;
+    background-size: 100% 100%;
   }
   &:hover {
     color: white;
@@ -122,7 +121,7 @@ button {
 }
 .carousel {
   .carousel-indicators {
-    margin: 0 10%;
+    margin: 0 10% 3% 10%;
     justify-content: start;
 
     li {

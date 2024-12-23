@@ -39,9 +39,6 @@ header {
   color: white;
   font-weight: bold;
 }
-.header-nav .nav-link:first-child {
-  border-left: 3px solid #505050 !important;
-}
 .header-nav .nav-link:hover {
   color: #feebcc;
 }
@@ -72,10 +69,12 @@ button {
   transition: all 0.3s ease;
 }
 .btn-base__red {
-  background-color: #ff3030;
+  background: url("../images/bg_btn_base_red.png") no-repeat center;
+  background-size: 100% 100%;
 }
 .btn-base__blue {
-  background-color: #00aeeb;
+  background: url("../images/bg_btn_base_blue.png") no-repeat center;
+  background-size: 100% 100%;
 }
 .btn-base:hover {
   color: white;
@@ -112,7 +111,7 @@ button {
 }
 
 .carousel .carousel-indicators {
-  margin: 0 10%;
+  margin: 0 10% 3% 10%;
   justify-content: start;
 }
 .carousel .carousel-indicators li {
