@@ -32,8 +32,7 @@ header {
   @include flex-row-center();
   padding: 1rem 0;
   img {
-    width: 100%;
-    max-width: 0.75rem;
+    width: 1.125rem;
     aspect-ratio: 1/1;
     object-fit: contain;
   }
@@ -69,30 +68,45 @@ header {
   }
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .btn-base {
   width: 100%;
-  height: 100%;
   min-width: 124px;
   max-width: 136px;
   padding: 1rem;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+  @include flex-col-center();
+  transition: all 0.3s ease;
   &__red {
     background-color: #ff3030;
-    background: url("../images/bg_btn_base_red.png") no-repeat center;
-    background-size: auto 100%;
   }
 
   &__blue {
     background-color: #00aeeb;
-    background: url("../images/bg_btn_base_blue.png") no-repeat center;
-    background-size: auto 100%;
+  }
+  &:hover {
+    color: white;
+    transform: scale(1.05);
+  }
+
+  &--no-scale {
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 
 .header-user-action {
   height: 100%;
+  @include flex-row-center();
+  gap: 0;
 }
 
 .page-content {
@@ -108,11 +122,15 @@ header {
 }
 .carousel {
   .carousel-indicators {
+    margin: 0 10%;
     justify-content: start;
 
     li {
       height: 0.5rem;
       width: 3rem;
+      &.active {
+        background-color: $yl-feebcc;
+      }
     }
   }
 
@@ -136,6 +154,7 @@ header {
 
   .news-card {
     width: 100%;
+    height: 100%;
     border: 2px solid $grey-505050;
     aspect-ratio: 370/208;
 
@@ -144,5 +163,157 @@ header {
       aspect-ratio: 370/208;
       object-fit: cover;
     }
+  }
+}
+
+.page-normal {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  @include flex-col-center();
+  gap: 2rem;
+  &__title {
+    width: 100%;
+    color: $yl-feebcc;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      text-transform: none;
+      font-size: 1rem;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    .form-group {
+      width: 100%;
+      margin-bottom: 1rem;
+
+      label {
+        width: 100%;
+        text-align: start;
+        color: $yl-feebcc;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.75rem 1ƒrem;
+        border: 1px solid $grey-505050;
+        border-radius: 0;
+        background-color: transparent;
+        color: $yl-feebcc;
+      }
+
+      .field-input-pass {
+        width: 100%;
+        position: relative;
+      }
+
+      .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 3%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        width: 1rem;
+        aspect-ratio: 1/1;
+        &:hover {
+          img {
+            transform: scale(1.25);
+          }
+        }
+
+        &--show {
+          background: url("../images/ic_eye_hidden.png") no-repeat center;
+        }
+
+        &--hide {
+          background: url("../images/ic_eye.png") no-repeat center;
+        }
+      }
+
+      .text-danger {
+        font-style: italic;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__action {
+    .btn-base {
+      padding: 0.5rem 1rem;
+      max-width: none;
+    }
+  }
+
+  &__note {
+    .text-danger {
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+}
+
+#otp-verify {
+  input {
+    text-align: center;
+    color: $yl-feebcc;
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.75);
+  .btn-base {
+    width: fit-content;
+    max-width: none;
+    padding: 0.25rem 1rem;
+  }
+}
+.modal-dialog {
+  width: 100%;
+}
+.modal-content {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  min-height: 300px;
+  @include flex-col-center();
+  background-color: #1c1c1c;
+  border: 2px solid $grey-505050;
+  color: $yl-feebcc;
+  .modal-header {
+    @include flex-row-center();
+    border-bottom: none;
+    color: $yl-feebcc;
+    text-transform: uppercase;
+  }
+
+  .modal-body {
+    width: 100%;
+    color: $yl-feebcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .modal-footer {
+    @include flex-row-center();
+    border-top: none;
   }
 }

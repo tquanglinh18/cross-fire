@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CF</title>
   <link rel="stylesheet" href="./assets/css/bootstrap-4.6.2/bootstrap.min.css" />
-  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="stylesheet" href="./assets/css/base.css" />
   <link rel="stylesheet" href="./assets/css/styles-scss.css" />
 </head>
 
@@ -46,10 +44,10 @@
     </div>
 
     <div class="header-user-action">
-      <a href="" class="btn-base btn-base__red">
+      <a href="" class="btn-base btn-base__red btn-base--no-scale">
         Nạp GO
       </a>
-      <a href="" class="btn-base btn-base__blue">
+      <a href="" class="btn-base btn-base__blue btn-base--no-scale">
         Đăng ký
       </a>
     </div>
@@ -89,19 +87,153 @@
 
       <div class="lst-news">
         <a href="" class="news-card">
-          <img src="https://ttol.vietnamnetjsc.vn/images/2021/08/09/17/15/101458j1.jpg" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqMgsuriEScIxQVGPzCo7ozgOkRKVn210EA&s"
+            alt="">
         </a>
 
         <a href="" class="news-card">
-          <img src="https://thanhnien.mediacdn.vn/Uploaded/haoph/2021_10_21/jack-va-thien-an-5805.jpeg" alt="">
+          <img
+            src="https://photoservice.goplay.vn///Resources/Upload/Images/News/32/a09eee64-a770-4ad9-8103-a4bb6a16bc63.jpg"
+            alt="">
         </a>
 
         <a href="" class="news-card">
-          <img src="https://down-vn.img.susercontent.com/file/sg-11134201-7rdwf-lzrm4hilfqnr93" alt="">
+          <img
+            src="https://photoservice.goplay.vn///Resources/Upload/Images/News/32/e92cf01d-d7ba-47b2-ab73-548308c74505.jpg"
+            alt="">
+        </a>
+
+      </div>
+    </div>
+<!-- 
+    <div class="page-content">
+      <div class="page-normal">
+        <div class="page-normal__title">
+          <h2>Đăng ký nhanh</h2>
+        </div>
+        <div class="page-normal__form">
+          <form action="">
+            <div class="form-group">
+              <label for="username">Tên đăng nhập</label>
+              <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập">
+              <span class="text-danger">*Vui lòng không để trống</span>
+            </div>
+            <div class="form-group">
+              <label for="password">Mật khẩu</label>
+              <div class="field-input-pass">
+                <div class="toggle-password toggle-password--show">
+                </div>
+                <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+              </div>
+              <span class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="re-password">Nhập lại mật khẩu</label>
+              <div class="field-input-pass">
+                <div class="toggle-password toggle-password--hide">
+                </div>
+                <input type="password" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+              </div>
+              <span class="text-danger">*Mật khẩu không trùng khớp</span>
+            </div>
+          </form>
+        </div>
+
+        <div class="page-normal__action">
+          <a href="" class="btn-base btn-base__red">
+            Xác nhận
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="otp-verify" class="page-normal">
+      <div class="page-normal__title">
+        <h2>Xác thực số điện thoại</h2>
+      </div>
+
+      <div class="page-normal__form">
+        <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control" id="phone-number" aria-describedby="phoneNumber"
+              placeholder="Nhập số điện thoại">
+            <span class="text-danger">*Vui lòng không để trống</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="page-normal__action">
+        <a href="" class="btn-base btn-base__red">
+          Xác nhận
+        </a>
+      </div>
+
+      <div class="page-normal__title">
+        <h3>
+          Nhập OTP gửi về điện thoại của bạn để xác thực tài khoản
+        </h3>
+        <h3>(Mã OTP chỉ sử dụng trong 5 phút)</h3>
+      </div>
+
+      <div class="page-normal__form">
+        <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control" id="otp-verify-phone" aria-describedby="otpVerifyPhone"
+              placeholder="Nhập OTP tại đây">
+            <span class="text-danger">*Vui lòng không để trống</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="page-normal__action">
+        <button type="submit" data-toggle="modal" data-target="#staticBackdrop" class="btn-base btn-base__red">
+          Xác nhận
+        </button>
+
+
+      </div>
+
+      <div class="page-normal__note">
+        <p class="text-danger">Lưu ý: Cần hoàn thành xác thực số điện thoại để có thể truy cập vào game.</p>
+      </div>
+    </div>
+
+    <div class="page-normal">
+      <div class="page-normal__title">
+        <h1>Tạo tài khoản thành công</h1>
+      </div>
+
+      <div class="page-normal__action">
+        <a href="" class="btn-base btn-base__red">
+          Đi tới bảng tin
         </a>
       </div>
     </div>
+
+    <div class="modal" tabindex="-1" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thông báo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Xác thực số điện thoại thành công</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-base btn-base__red" data-dismiss="modal">Xác nhận</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
   </section>
+
+
 
   <script src="./assets/js/jquery-3.7.1.min.js"></script>
   <script src="./assets/js/bootstrap-4.6.2/bootstrap.bundle.js"></script>
