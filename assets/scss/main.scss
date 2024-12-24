@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  border-bottom: 3px solid $grey-505050;
+  border-bottom: 1px solid $grey-505050;
 }
 .header-action {
   @include flex-row-center();
@@ -47,12 +47,13 @@ header {
   .nav-link {
     border: none;
     padding: 0 1rem;
-    border-right: 3px solid $grey-505050 !important;
+    border-right: 2px solid $grey-505050 !important;
     background-color: transparent;
     border-radius: 0;
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    font-size: 10px;
 
     &:hover {
       color: $yl-feebcc;
@@ -81,6 +82,7 @@ button {
   text-transform: uppercase;
   @include flex-col-center();
   transition: all 0.3s ease;
+  font-size: 12px;
   &__red {
     background: url("../images/bg_btn_base_red.png") no-repeat center;
     background-size: 100% 100%;
@@ -90,6 +92,16 @@ button {
     background: url("../images/bg_btn_base_blue.png") no-repeat center;
     background-size: 100% 100%;
   }
+
+  &__grey {
+    background-color: #ccc;
+    color: black;
+
+    &:hover {
+      color: black !important;
+    }
+  }
+
   &:hover {
     color: white;
     transform: scale(1.05);
