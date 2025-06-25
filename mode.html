@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chế độ chơi nổi bật</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="relative min-h-screen text-white font-sans bg-black overflow-hidden">
+
+    <!-- Nền background toàn trang -->
+    <div id="bg" class="absolute inset-0 bg-cover bg-center opacity-60 transition-all duration-700 scale-100 z-0"></div>
+
+    <!-- Nội dung chính -->
+    <div class="relative z-10 h-screen p-12 flex flex-col justify-between">
+
+        <!-- Tiêu đề -->
+        <h1 class="text-3xl font-bold">Các Chế Độ Nổi Bật Trong Game</h1>
+
+        <!-- Phần chính -->
+        <div class="flex flex-1 items-end justify-between gap-8">
+
+            <!-- Sidebar ảnh scrollable -->
+            <div
+                class="relative w-full max-w-[460px] max-h-[80vh] overflow-y-auto scroll-smooth rounded-lg bg-[#121212]">
+                <div class="absolute left-0 w-5 h-5 aspect-square bg-yellow-400 transition-transform duration-300 ease-in-out z-10"
+                    id="indicator"></div>
+                <div id="modeList" class="flex flex-col gap-4 px-4 py-6">
+                    <div class="mode-btn active relative rounded-lg overflow-hidden border-2 border-yellow-400 transition-all duration-300 ease-in-out cursor-pointer ml-12"
+                        data-mode="bomb">
+                        <img src="https://images.unsplash.com/photo-1581091012184-5c4ef3d62217?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover aspect-[263/183] max-w-[2]">
+                        <div class="absolute inset-0"></div>
+                    </div>
+                    <div class="mode-btn relative rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 ease-in-out cursor-pointer ml-12"
+                        data-mode="team">
+                        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover opacity-40 hover:opacity-80 transition duration-300 aspect-[263/183] max-w-[2]">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class="mode-btn relative rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 ease-in-out cursor-pointer ml-12"
+                        data-mode="zombie">
+                        <img src="https://cdn.pixabay.com/photo/2020/10/20/13/48/zombie-5670025_1280.jpg"
+                            class="w-full h-full object-cover opacity-40 hover:opacity-80 transition duration-300 aspect-[263/183] max-w-[2]">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class="mode-btn relative rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 ease-in-out cursor-pointer ml-12"
+                        data-mode="ghost">
+                        <img src="https://cdn.pixabay.com/photo/2022/10/20/09/27/swat-7533870_1280.jpg"
+                            class="w-full h-full object-cover opacity-40 hover:opacity-80 transition duration-300 aspect-[263/183] max-w-[2]">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class="mode-btn relative rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 ease-in-out cursor-pointer ml-12"
+                        data-mode="knife">
+                        <img src="https://cdn.pixabay.com/photo/2021/08/11/20/20/knife-6539567_1280.jpg"
+                            class="w-full h-full object-cover opacity-40 hover:opacity-80 transition duration-300 aspect-[263/183] max-w-[2]">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class="mode-btn relative rounded-lg overflow-hidden border-2 border-transparent transition-all duration-300 ease-in-out cursor-pointer ml-12"
+                        data-mode="sniper">
+                        <img src="https://cdn.pixabay.com/photo/2018/07/04/16/53/sniper-3517849_1280.jpg"
+                            class="w-full h-full object-cover opacity-40 hover:opacity-80 transition duration-300 aspect-[263/183] max-w-[2]">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nội dung bên phải -->
+            <div id="content"
+                class="bg-black/40 backdrop-blur-sm p-8 rounded-lg max-w-screen-sm text-right transition-all duration-500">
+                <h2 class="text-2xl font-bold mb-4">Nhiệm Vụ Phe Phòng Thủ (GLOBAL RISK)</h2>
+                <p class="mb-6 text-base leading-relaxed">Tiêu diệt toàn bộ kẻ địch ở phe Black List hoặc vô hiệu hóa
+                    C4.</p>
+                <h2 class="text-2xl font-bold mb-4">Nhiệm Vụ Phe Tấn Công (BLACK LIST)</h2>
+                <p class="text-base leading-relaxed">Phá hủy mục tiêu ở 1 trong 2 khu vực A và B hoặc tiêu diệt toàn bộ
+                    phe Global Risk.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modes = {
+            bomb: {
+                background: 'https://images.unsplash.com/photo-1581091012184-5c4ef3d62217?auto=format&fit=crop&w=1600&q=80',
+                content: `
+          <h2 class='text-2xl font-bold mb-4'>Nhiệm Vụ Phe Phòng Thủ (GLOBAL RISK)</h2>
+          <p class='mb-6 text-base leading-relaxed'>Tiêu diệt toàn bộ kẻ địch ở phe Black List hoặc vô hiệu hóa C4.</p>
+          <h2 class='text-2xl font-bold mb-4'>Nhiệm Vụ Phe Tấn Công (BLACK LIST)</h2>
+          <p class='text-base leading-relaxed'>Phá hủy mục tiêu ở 1 trong 2 khu vực A và B hoặc tiêu diệt toàn bộ phe Global Risk.</p>
+        `
+            },
+            team: {
+                background: 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1600&q=80',
+                content: `
+          <h2 class='text-2xl font-bold mb-4'>Đấu Đội Sinh Tử</h2>
+          <p class='text-base leading-relaxed'>Hai phe đấu súng gay cấn đến khi đạt đủ số mạng. Ai nhanh hơn, người đó thắng.</p>
+        `
+            },
+            zombie: {
+                background: 'https://cdn.pixabay.com/photo/2020/10/20/13/48/zombie-5670025_1280.jpg',
+                content: `
+          <h2 class='text-2xl font-bold mb-4'>Chế Độ Zombie</h2>
+          <p class='text-base leading-relaxed'>Người chơi chống lại zombie hoặc bị lây nhiễm. Đừng để bị cắn!</p>
+        `
+            },
+            ghost: {
+                background: 'https://cdn.pixabay.com/photo/2022/10/20/09/27/swat-7533870_1280.jpg',
+                content: `
+          <h2 class='text-2xl font-bold mb-4'>Ghost Mode</h2>
+          <p class='text-base leading-relaxed'>Phe Ghost tàng hình khi đứng yên. Đòn đánh bất ngờ và tốc độ là vũ khí chủ lực.</p>
+        `
+            },
+            knife: {
+                background: 'https://cdn.pixabay.com/photo/2021/08/11/20/20/knife-6539567_1280.jpg',
+                content: `
+          <h2 class='text-2xl font-bold mb-4'>Đấu Dao</h2>
+          <p class='text-base leading-relaxed'>Không súng, chỉ có dao. Đọ kỹ năng di chuyển và phản xạ. Một nhát là ngã!</p>
+        `
+            },
+            sniper: {
+                background: 'https://cdn.pixabay.com/photo/2018/07/04/16/53/sniper-3517849_1280.jpg',
+                content: `
+          <h2 class='text-2xl font-bold mb-4'>Bắn Tỉa</h2>
+          <p class='text-base leading-relaxed'>Chế độ bắn tỉa đòi hỏi độ chính xác tuyệt đối. Mỗi phát bắn đều phải có giá trị.</p>
+        `
+            }
+        };
+
+        const buttons = document.querySelectorAll('.mode-btn');
+        const indicator = document.getElementById('indicator');
+        const content = document.getElementById('content');
+        const bg = document.getElementById('bg');
+
+        function updateIndicator(el) {
+            const parentTop = el.parentElement.getBoundingClientRect().top;
+            const elTop = el.getBoundingClientRect().top;
+            indicator.style.transform = `translateY(${elTop - parentTop}px)`;
+        }
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('active')) return;
+
+                document.querySelector('.mode-btn.active')?.classList.remove('active');
+                btn.classList.add('active');
+
+                const mode = btn.dataset.mode;
+                bg.classList.add('opacity-0', 'scale-105');
+                content.classList.add('translate-x-5', 'opacity-0');
+
+                setTimeout(() => {
+                    bg.style.backgroundImage = `url('${modes[mode].background}')`;
+                    content.innerHTML = modes[mode].content;
+                    bg.classList.remove('opacity-0', 'scale-105');
+                    content.classList.remove('translate-x-5', 'opacity-0');
+                }, 400);
+
+                updateIndicator(btn);
+
+                buttons.forEach(b => {
+                    const img = b.querySelector('img');
+                    if (b === btn) {
+                        b.classList.add("border-yellow-400");
+                        img.classList.remove("opacity-40");
+                    } else {
+                        b.classList.remove("border-yellow-400");
+                        img.classList.add("opacity-40");
+                    }
+                });
+            });
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const activeBtn = document.querySelector('.mode-btn.active');
+            updateIndicator(activeBtn);
+            bg.style.backgroundImage = `url('${modes.bomb.background}')`;
+        });
+    </script>
+</body>
+
+</html>

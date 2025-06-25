@@ -1,0 +1,65 @@
+@keyframes idle-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-idle-float {
+  animation: idle-float 1.5s ease-in-out infinite;
+}
+
+/* Custom bounce-glow animation for hover */
+@keyframes bounce-glow {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px rgba(255, 223, 0, 0.5));
+  }
+  50% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px rgba(255, 223, 0, 0.9));
+  }
+}
+.hover\:animate-bounce-glow:hover {
+  animation: bounce-glow 1.5s infinite;
+}
+.btn-img {
+  position: relative;
+  width: 365px;
+  height: 85px;
+}
+.btn-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.5s ease;
+}
+.btn-img img.hover-img {
+  opacity: 0;
+}
+
+.btn-img:hover img.default-img {
+  opacity: 0;
+}
+.btn-img:hover img.hover-img {
+  opacity: 1;
+}
+
+@keyframes zoom-loop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.btn-img:hover {
+  animation: zoom-loop 1s ease-in-out infinite;
+}

@@ -5,8 +5,7 @@
   "license": "MIT",
   "main": "index.html",
   "scripts": {
-    "start": "npx tailwindcss -i ./styles.css -o ./assets/css/styles-tailwind.css --watch",
-    "runSass": "sass --watch ./assets/scss/main.scss ./assets/css/styles-scss.css --no-source-map"
+    "start": "npx tailwindcss -i ./styles.css -o ./assets/css/styles.css --watch"
   },
   "dependencies": {
     "sass": "^1.69.6",
